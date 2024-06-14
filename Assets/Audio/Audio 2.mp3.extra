@@ -1,0 +1,18 @@
+[
+  {
+    "guid": {
+      "a": "92d02137-01d8-7434-3265-1a6146787b5d",
+      "b": ""
+    },
+    "extraType": "ResItemMP3",
+    "name": "Audio 2",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "AudioClip",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "mccState": "SUCCESS",
+    "resourceFilePath": "/Users/abdullah/Documents/recording stuff/effect/letters/kasrah/Audio 2.mp3"
+  }
+]

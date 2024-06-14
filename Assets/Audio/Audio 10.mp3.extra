@@ -1,0 +1,18 @@
+[
+  {
+    "guid": {
+      "a": "6cb3a48e-1a5d-daa2-0013-60ac8693d9c9",
+      "b": ""
+    },
+    "extraType": "ResItemMP3",
+    "name": "Audio 10",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "AudioClip",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "mccState": "SUCCESS",
+    "resourceFilePath": "/Users/abdullah/Documents/recording stuff/effect/letters/kasrah/Audio 10.mp3"
+  }
+]

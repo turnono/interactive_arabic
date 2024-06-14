@@ -1,0 +1,30 @@
+[
+  {
+    "guid": {
+      "a": "870f08d8-0d53-9edf-dec9-0b99a24f4488",
+      "b": ""
+    },
+    "extraType": "ResItemPreset",
+    "name": "translit text",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Preset",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "presetType": "TextJS",
+    "editorData": {
+      "inspectorUICtx": {}
+    },
+    "resourceData": [
+      {
+        "propertyName": "TextGlowMaterial",
+        "value": "00000000-0000-0000-0000-000000001559"
+      },
+      {
+        "propertyName": "TextNeonGlowMaterial",
+        "value": "00000000-0000-0000-0000-000000001568"
+      }
+    ]
+  }
+]

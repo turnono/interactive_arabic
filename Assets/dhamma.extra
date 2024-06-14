@@ -1,0 +1,15 @@
+[
+  {
+    "guid": {
+      "a": "02000675-e517-1efb-e843-24c13b40bd26",
+      "b": ""
+    },
+    "extraType": "ResItemFolder",
+    "name": "dhamma",
+    "expandInPanel": true,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": ""
+  }
+]

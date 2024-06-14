@@ -1,0 +1,15 @@
+[
+  {
+    "guid": {
+      "a": "b8809bd0-df55-e3db-dec3-2f1bb0c36298",
+      "b": ""
+    },
+    "extraType": "ResItemFolder",
+    "name": "arabic_alphabet",
+    "expandInPanel": true,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": ""
+  }
+]

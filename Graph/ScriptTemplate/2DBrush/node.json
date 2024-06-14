@@ -1,0 +1,119 @@
+{
+	"name": "2D Brush",
+	"id": "fa4493b5-2ebf-9e6a-7ae7-d3b0afac0890",
+	"inputs": [
+		{
+			"name": "Brush On",
+			"nameKey": "graph_2d_brush_input_brushon",
+			"description": "Activate the drawing state",
+			"descriptionKey": "graph_2d_brush_input_brushon_description",
+			"type": "Pulse",
+			"displayType": "Exec",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "Brush Off",
+			"nameKey": "graph_2d_brush_input_brushoff",
+			"description": "Deactivate the drawing state. No drawing will appear even if the brush position changes.",
+			"descriptionKey": "graph_2d_brush_input_brushoff_description",
+			"type": "Pulse",
+			"displayType": "Exec",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "Clear Canvas",
+			"nameKey": "graph_2d_brush_input_clearcanvas",
+			"description": "Clear all drawings",
+			"descriptionKey": "graph_2d_brush_input_clearcanvas_description",
+			"type": "Pulse",
+			"displayType": "Exec",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "Brush Material",
+			"nameKey": "graph_2d_brush_input_brushmaterial",
+			"description": "The material used to render on the mesh quad",
+			"descriptionKey": "graph_2d_brush_input_brushmaterial_description",
+			"type": "Material",
+			"displayType": "Material",
+			"displayTypeKey": "graph_type_material"
+		},
+		{
+			"name": "Brush Position",
+			"nameKey": "graph_2d_brush_input_brushposition",
+			"description": "The current position of the brush",
+			"descriptionKey": "graph_2d_brush_input_brushposition_description",
+			"type": "Vector2f",
+			"displayType": "Vec2",
+			"displayTypeKey": "graph_type_vec2"
+		},
+		{
+			"name": "Brush Size",
+			"nameKey": "graph_2d_brush_input_brushsize",
+			"description": "The size of the mesh quad brush material",
+			"descriptionKey": "graph_2d_brush_input_brushsize_description",
+			"default_value": 0.1,
+			"type": "Double",
+			"displayType": "Number",
+			"displayTypeKey": "graph_type_number"
+		},
+		{
+			"name": "Interpolate Density",
+			"nameKey": "graph_2d_brush_input_interpolatedensity",
+			"description": "The number of interpolated rendering times in between frames. The range is from 0 to 100, the actual value will be clamped to 0, ..., .33(1/2), .5(1/2), 1, 2, 3, ... , 100; 0 will draw nothing, .5 will draw once every 2 frames, 1 will draw once every frame, 2 means twice every frame, and so on. When it is equal to or greater than 2, the interpolation will implement Catmull-Rom spline algorithm, thus the first and last segment will not be drawn; when it is equal to or less then 1, there will be no actual interpolation, then the first frame will be drawn.",
+			"descriptionKey": "graph_2d_brush_input_interpolatedensity_description",
+			"type": "Double",
+			"default_value": 1,
+			"displayType": "Number",
+			"displayTypeKey": "graph_type_number",
+			"range": [
+				[
+					0,
+					100,
+					0.001
+				]
+			]
+		},
+		{
+			"name": "Interpolate Rotation",
+			"description": "Control whether brush stroke is rotated while drawing across the canvas. It only works when interpolate density is equal to or greater than 2.",
+			"type": "Bool",
+			"displayType": "Boolean",
+			"default_value": false,
+			"nameKey": "graph_2d_brush_input_interpolaterotation",
+			"descriptionKey": "graph_2d_brush_input_interpolaterotation_description",
+			"displayTypeKey": "graph_type_boolean"
+		}
+	],
+	"outputs": [
+		{
+			"name": "Canvas Output",
+			"type": "Texture2D",
+			"item_type": "",
+			"description": "The result of the finger drawing as a 2D texture",
+			"displayType": "Texture 2D",
+			"nameKey": "graph_2d_brush_output_canvasoutput",
+			"descriptionKey": "graph_2d_brush_output_canvasoutput_description",
+			"displayTypeKey": "graph_type_texture2d"
+		}
+	],
+	"scriptSupport": "js",
+	"js": "CGBrush.js",
+	"version": "1.0.0",
+	"category": "Utility",
+	"nodeEvent": [
+		"beforeStart",
+		"onUpdate",
+		"onDestroy",
+		"resetOnRecord"
+	],
+	"description": "Outputs a saved finger drawing as a 2D texture. Can be set to other 2D texture properties, such as 2D image.",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"nameKey": "graph_2d_brush_name",
+	"categoryKey": "graph_category_utility",
+	"descriptionKey": "graph_2d_brush_description"
+}

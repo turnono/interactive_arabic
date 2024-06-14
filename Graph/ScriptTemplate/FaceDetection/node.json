@@ -1,0 +1,97 @@
+{
+	"name": "Face Detection",
+	"id": "e14ecca1-0c11-3918-d186-56f4fa44b49b",
+	"inputs": [
+		{
+			"name": "Detect",
+			"description": "The face to apply the effect to. Face 0 represents the first face appearing in the scene, Face 4 represents the fifth face appearing in the scene.",
+			"type": "String",
+			"value_list": [
+				"Face 0",
+				"Face 1",
+				"Face 2",
+				"Face 3",
+				"Face 4"
+			],
+			"displayType": "String",
+			"nameKey": "graph_face_detection_input_detect",
+			"descriptionKey": "graph_face_detection_input_detect_description",
+			"displayTypeKey": "graph_type_string",
+			"value_list_i18n_keys": [
+				"graph_face_detection_input_detect_valueList_face0",
+				"graph_face_detection_input_detect_valueList_face1",
+				"graph_face_detection_input_detect_valueList_face2",
+				"graph_face_detection_input_detect_valueList_face3",
+				"graph_face_detection_input_detect_valueList_face4"
+			]
+		}
+	],
+	"outputs": [
+		{
+			"name": "Begin",
+			"description": "Execute the next node when the face is detected",
+			"type": "Pulse",
+			"displayType": "Exec",
+			"nameKey": "graph_face_detection_output_begin",
+			"descriptionKey": "graph_face_detection_output_begin_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "Stay",
+			"description": "Keep executing the next node when the face stays in the scene",
+			"type": "Pulse",
+			"displayType": "Exec",
+			"nameKey": "graph_face_detection_output_stay",
+			"descriptionKey": "graph_face_detection_output_stay_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "End",
+			"description": "Execute the next node when the face disappeared",
+			"type": "Pulse",
+			"displayType": "Exec",
+			"nameKey": "graph_face_detection_output_end",
+			"descriptionKey": "graph_face_detection_output_end_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "None",
+			"description": "Keep executing the next node when the certain face is not detected",
+			"type": "Pulse",
+			"displayType": "Exec",
+			"nameKey": "graph_face_detection_output_none",
+			"descriptionKey": "graph_face_detection_output_none_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "Face Count",
+			"description": "The number of faces in the scene, the max is 5",
+			"type": "Int",
+			"displayType": "Number",
+			"nameKey": "graph_face_detection_output_facecount",
+			"descriptionKey": "graph_face_detection_output_facecount_description",
+			"displayTypeKey": "graph_type_number"
+		}
+	],
+	"category": "Head & Face",
+	"description": "Detect faces of people using this effect. To detect more than one face, assign a Face Detection node to each face in the scene. It can detect up to five faces.",
+	"js": "CGFaceDetection.js",
+	"version": "2.0.0",
+	"amazingVersion": "10.40.0",
+	"nodeEvent": [
+		"onUpdate",
+		"resetOnRecord"
+	],
+	"graphAlgorithms": [
+		"faceDetect"
+	],
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"onlineWebsite": "graph_face_detection_website",
+	"nameKey": "graph_face_detection_name",
+	"categoryKey": "graph_category_headface",
+	"descriptionKey": "graph_face_detection_description"
+}

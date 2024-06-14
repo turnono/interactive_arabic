@@ -1,0 +1,183 @@
+{
+	"displayName": "Spawn Rate",
+	"function": "SpawnRate",
+	"templateGuid": "914193a0-0acb-41c4-b584-56b134253080",
+	"NodeType": "VFXGRAPHBLOCK",
+	"options": [
+		{
+			"type": "Mode",
+			"values": [
+				"Constant",
+				"Random",
+				"Periodic Burst"
+			]
+		}
+	],
+	"inputs": [
+		{
+			"displayName": "Expose Parameters",
+			"name": "ExposeParameters",
+			"description": "Enable control from outside the graph asset",
+			"type": "Boolean",
+			"default": false,
+			"hidePort": true,
+			"allowedTypes": []
+		}
+	],
+	"optionalInputs": [
+		{
+			"optionType": "Mode",
+			"optionValue": "Constant",
+			"input": {
+				"displayName": "Spawn Rate",
+				"name": "spawnRate",
+				"description": "The spawn rate per second",
+				"type": "Float",
+				"default": 5.0001,
+				"hidePort": true,
+				"allowedTypes": [],
+				"range": [
+					[
+						0,
+						500000,
+						0.001
+					]
+				]
+			}
+		},
+		{
+			"optionType": "Mode",
+			"optionValue": "Random",
+			"input": {
+				"displayName": "Count Min",
+				"name": "spawnRateMin",
+				"description": "The minimum number of particles to spawn",
+				"type": "Int",
+				"default": 10.0,
+				"hidePort": true,
+				"allowedTypes": [],
+				"range": [
+					[
+						0,
+						500000,
+						1
+					]
+				]
+			}
+		},
+		{
+			"optionType": "Mode",
+			"optionValue": "Random",
+			"input": {
+				"displayName": "Count Max",
+				"name": "spawnRateMax",
+				"description": "The maximum number of particles to spawn",
+				"type": "Int",
+				"default": 30.0,
+				"hidePort": true,
+				"allowedTypes": [],
+				"range": [
+					[
+						0,
+						500000,
+						1
+					]
+				]
+			}
+		},
+		{
+			"optionType": "Mode",
+			"optionValue": "Random",
+			"input": {
+				"displayName": "Delay Min",
+				"name": "delayMin",
+				"description": "The minimum duration of the delay this Block waits for before it spawns a burst of particles",
+				"type": "Float",
+				"default": 0.0001,
+				"hidePort": true,
+				"allowedTypes": [],
+				"range": [
+					[
+						0,
+						"inf",
+						0.001
+					]
+				]
+			}
+		},
+		{
+			"optionType": "Mode",
+			"optionValue": "Random",
+			"input": {
+				"displayName": "Delay Max",
+				"name": "delayMax",
+				"description": "The maximum duration of the delay this Block waits for before it spawns a burst of particles",
+				"type": "Float",
+				"default": 0.50001,
+				"hidePort": true,
+				"allowedTypes": [],
+				"range": [
+					[
+						0,
+						"inf",
+						0.001
+					]
+				]
+			}
+		},
+		{
+			"optionType": "Mode",
+			"optionValue": "Periodic Burst",
+			"input": {
+				"displayName": "Count",
+				"name": "burstCount",
+				"description": "The number of particles in each burst spawn",
+				"type": "Int",
+				"default": 10,
+				"hidePort": true,
+				"allowedTypes": [],
+				"range": [
+					[
+						0,
+						500000,
+						1
+					]
+				]
+			}
+		},
+		{
+			"optionType": "Mode",
+			"optionValue": "Periodic Burst",
+			"input": {
+				"displayName": "Delay",
+				"name": "burstDelay",
+				"description": "The duration of the delay this Block waits for before it spawns a burst of particles",
+				"type": "Float",
+				"default": 3.0001,
+				"hidePort": true,
+				"allowedTypes": [],
+				"range": [
+					[
+						0,
+						"inf",
+						0.001
+					]
+				]
+			}
+		}
+	],
+	"outputs": [],
+	"category": "Spawn",
+	"description": "Spawns a number of particles in different modes. Constant: Add a spawn count over time at a constant rate. For instance, if the rate is 10, this Block triggers 10 spawn events per second for its Spawner Context. \nPeriodic: Spawn a number of particles instantly periodically using a delay. \nRandom: Spawns a random number of particles between two boundaries. The delay time is of a random duration between two boundaries.",
+	"version": "1.0.0",
+	"compatibleContexts": [
+		"Spawn"
+	],
+	"TSPATH": "",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"hideEnableCheckbox": true
+}

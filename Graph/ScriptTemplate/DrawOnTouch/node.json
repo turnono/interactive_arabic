@@ -1,0 +1,121 @@
+{
+	"name": "Draw on Touch",
+	"nameKey": "graph_draw_on_touch_name",
+	"id": "af0ea9fb-cfa3-84b8-413e-766fca0f5e17",
+	"inputs": [
+		{
+			"name": "Clear Canvas",
+			"nameKey": "graph_draw_on_touch_input_clearcanvas",
+			"description": "Clear all the drawings",
+			"descriptionKey": "graph_draw_on_touch_input_clearcanvas_description",
+			"type": "Pulse",
+			"displayType": "Exec",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "Target Canvas",
+			"nameKey": "graph_draw_on_touch_input_targetcanvas",
+			"description": "The object where the 2D image to draw on is attached",
+			"descriptionKey": "graph_draw_on_touch_input_targetcanvas_description",
+			"type": "Entity",
+			"displayType": "Scene Object",
+			"displayTypeKey": "graph_type_sceneobject"
+		},
+		{
+			"name": "Brush Size",
+			"nameKey": "graph_draw_on_touch_input_brushsize",
+			"description": "The size of the mesh quad brush material",
+			"descriptionKey": "graph_draw_on_touch_input_brushsize_description",
+			"type": "Vector2f",
+			"displayType": "Vec2",
+			"displayTypeKey": "graph_type_vec2"
+		},
+		{
+			"name": "Override Brush Mat Settings",
+			"nameKey": "graph_draw_on_touch_input_overridebrushmatsettings",
+			"description": "When checked, override brush material parameters, including Brush Mat Color, Brush Mat Texture, and Brush Mat Feathering Radius",
+			"descriptionKey": "graph_draw_on_touch_input_overridebrushmatsettings_description",
+			"type": "Bool",
+			"displayType": "Boolean",
+			"displayTypeKey": "graph_type_boolean"
+		},
+		{
+			"name": "Brush Mat Color",
+			"nameKey": "graph_draw_on_touch_input_brushmatcolor",
+			"description": "The base color of the default brush material",
+			"descriptionKey": "graph_draw_on_touch_input_brushmatcolor_description",
+			"type": "Color",
+			"displayType": "Color",
+			"displayTypeKey": "graph_type_color"
+		},
+		{
+			"name": "Enable Texture",
+			"nameKey": "graph_draw_on_touch_input_enabletexture",
+			"description": "Check to use brush mat texture, uncheck to render without texture",
+			"descriptionKey": "graph_draw_on_touch_input_enabletexture_description",
+			"type": "Bool",
+			"displayType": "Boolean",
+			"displayTypeKey": "graph_type_boolean"
+		},
+		{
+			"name": "Brush Mat Texture",
+			"nameKey": "graph_draw_on_touch_input_brushmattexture",
+			"description": "The texture of the default brush material",
+			"descriptionKey": "graph_draw_on_touch_input_brushmattexture_description",
+			"type": "Texture2D",
+			"displayType": "Texture 2D",
+			"displayTypeKey": "graph_type_texture2d"
+		},
+		{
+			"name": "Enable Feathering Mask",
+			"nameKey": "graph_draw_on_touch_input_enablefeatheringmask",
+			"description": "Check to enable a round mask at the center of the image, uncheck to use the original image",
+			"descriptionKey": "graph_draw_on_touch_input_enablefeatheringmask_description",
+			"type": "Bool",
+			"displayType": "Boolean",
+			"displayTypeKey": "graph_type_boolean"
+		},
+		{
+			"name": "Brush Mat Feathering Radius",
+			"nameKey": "graph_draw_on_touch_input_brushmatfeatheringradius",
+			"description": "The feathering radius opacity of the brush material, the range is from 0 to 1.",
+			"descriptionKey": "graph_draw_on_touch_input_brushmatfeatheringradius_description",
+			"type": "Double",
+			"default_value": "0",
+			"range": [
+				[
+					0,
+					1,
+					0.001
+				]
+			],
+			"displayType": "Number",
+			"displayTypeKey": "graph_type_number"
+		}
+	],
+	"outputs": [
+		{
+			"name": "Canvas Output",
+			"nameKey": "graph_draw_on_touch_output_canvasoutput",
+			"description": "The result of the finger drawing as a 2D texture",
+			"descriptionKey": "graph_draw_on_touch_output_canvasoutput_description",
+			"type": "Texture2D",
+			"displayType": "Texture 2D",
+			"displayTypeKey": "graph_type_texture2d"
+		}
+	],
+	"category": "Interaction",
+	"categoryKey": "graph_category_interaction",
+	"version": "1.0.0",
+	"description": "Draws on a 2D image where a finger touches the screen",
+	"descriptionKey": "graph_draw_on_touch_description",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"subgraphPath": "DrawOnTouch.ssubgraph",
+	"foldable": true,
+	"expandable": true,
+	"groupTemplate": true
+}

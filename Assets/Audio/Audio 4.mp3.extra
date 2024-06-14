@@ -1,0 +1,18 @@
+[
+  {
+    "guid": {
+      "a": "5f69e1a6-a981-3177-df65-b96a8e3b9169",
+      "b": ""
+    },
+    "extraType": "ResItemMP3",
+    "name": "Audio 4",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "AudioClip",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "mccState": "SUCCESS",
+    "resourceFilePath": "/Users/abdullah/Documents/recording stuff/effect/letters/kasrah/Audio 4.mp3"
+  }
+]

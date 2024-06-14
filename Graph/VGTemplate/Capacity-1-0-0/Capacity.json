@@ -1,0 +1,41 @@
+{
+	"displayName": "Capacity",
+	"function": "Capacity",
+	"templateGuid": "60cdbd19-93e4-f4d1-d6a0-e181b0fe35bc",
+	"NodeType": "VFXGRAPHBLOCK",
+	"inputs": [
+		{
+			"name": "Capacity",
+			"displayName": "Capacity",
+			"description": "The fixed amount of elements in the simulation",
+			"type": "Uint",
+			"default": 2000,
+			"hidePort": true,
+			"allowedTypes": [],
+			"range": [
+				[
+					0,
+					500000,
+					1
+				]
+			]
+		}
+	],
+	"outputs": [],
+	"category": "Attribute Set",
+	"description": "Defines the amount of elements in the simulation",
+	"version": "1.0.0",
+	"compatibleContexts": [
+		"Init"
+	],
+	"attributes": [
+		"position",
+		"size"
+	],
+	"TSPATH": "",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	]
+}

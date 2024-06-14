@@ -1,0 +1,30 @@
+[
+  {
+    "guid": {
+      "a": "fab5021c-7c45-28eb-32b6-9495b5a22920",
+      "b": ""
+    },
+    "extraType": "ResItemPreset",
+    "name": "letter position",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Preset",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "presetType": "Transform",
+    "editorData": {
+      "eulerAngle": {
+        "value": [
+          0,
+          0,
+          0
+        ]
+      },
+      "linkage": {
+        "value": 0
+      },
+      "inspectorUICtx": {}
+    }
+  }
+]

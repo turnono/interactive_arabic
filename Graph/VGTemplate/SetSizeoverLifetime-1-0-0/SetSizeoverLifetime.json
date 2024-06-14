@@ -1,0 +1,36 @@
+{
+	"displayName": "Set Size Over Lifetime",
+	"function": "SetSizeoverLifetime",
+	"templateGuid": "27434503-a561-fd30-572c-d82246a2ca2d",
+	"NodeType": "VFXGRAPHBLOCK",
+	"inputs": [
+		{
+			"displayName": "Curve",
+			"name": "Curve",
+			"description": "The texture to sample from to calculate the particles' relative age",
+			"type": "Texture2D",
+			"allowedTypes": []
+		}
+	],
+	"outputs": [],
+	"category": "Attribute Set",
+	"description": "Sets the size of the particles based on their relative age (age over lifetime value)",
+	"version": "1.0.0",
+	"compatibleContexts": [
+		"Init",
+		"Update",
+		"Output"
+	],
+	"attributes": [
+		"size",
+		"age",
+		"lifetime"
+	],
+	"methodBody": "float t =  texture(Curve, vec2(age / lifetime, 0.5)).r;\nsize.x = t;\nsize.y = t;\nsize.z = t;",
+	"TSPATH": "",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	]
+}

@@ -1,0 +1,58 @@
+{
+	"displayName": "Normalize",
+	"templateGuid": "182046e7-bb03-0bd1-5031-fb231709e0eb",
+	"inputs": [
+		{
+			"displayName": "A",
+			"description": "The input vector",
+			"name": "A",
+			"type": "Vec3",
+			"default": {
+				"x": 1,
+				"y": 0,
+				"z": 0
+			},
+			"allowedTypes": [
+				"Vector4f",
+				"Vector3f",
+				"Vector2f"
+			],
+			"isShowColor": false
+		}
+	],
+	"outputs": [
+		{
+			"displayName": "Result",
+			"description": "The normalized vector with a length of 1",
+			"type": "Vec3",
+			"allowedTypes": []
+		}
+	],
+	"supportedInputs": [
+		{
+			"in": [
+				"genType"
+			],
+			"out": [
+				"genType"
+			]
+		}
+	],
+	"category": "Vector Operations",
+	"description": "Normalizes the input vector by returning a vector of the same direction as the input and with a length of 1",
+	"version": "1.0.0",
+	"uniforms": [],
+	"parameters": [],
+	"externalVariables": [],
+	"TSPATH": "",
+	"NodeType": "VFXGRAPHOPERATOR",
+	"outputPortTypeUpdate": "HighestInput",
+	"invokeString": "normalize(%A%);",
+	"deprecatedInvokeString": "normalize(%%);",
+	"function": "GetNormalized",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	]
+}

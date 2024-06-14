@@ -1,0 +1,18 @@
+[
+  {
+    "guid": {
+      "a": "64881d34-36d5-253e-4b5f-e94a8c26a15d",
+      "b": ""
+    },
+    "extraType": "ResItemMP3",
+    "name": "Audio 16",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "AudioClip",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "mccState": "SUCCESS",
+    "resourceFilePath": "/Users/abdullah/Documents/recording stuff/effect/letters/kasrah/Audio 16.mp3"
+  }
+]

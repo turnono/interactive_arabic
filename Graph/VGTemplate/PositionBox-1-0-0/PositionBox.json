@@ -1,0 +1,76 @@
+{
+	"displayName": "Position: Box",
+	"function": "PositionBox",
+	"templateGuid": "1f8d033e-8a29-a781-b60f-89c82ba4c2e8",
+	"NodeType": "VFXGRAPHBLOCK",
+	"options": [
+		{
+			"type": "Set Position",
+			"values": [
+				"Volume",
+				"Surface"
+			]
+		}
+	],
+	"inputs": [
+		{
+			"displayName": "Position",
+			"name": "Position",
+			"description": "The position of the box",
+			"type": "Vec3",
+			"allowedTypes": []
+		},
+		{
+			"displayName": "Scale",
+			"name": "Size",
+			"description": "The size of the box",
+			"type": "Vec3",
+			"default": {
+				"x": 6,
+				"y": 6,
+				"z": 6
+			},
+			"allowedTypes": []
+		},
+		{
+			"displayName": "Orientation",
+			"description": "The orientation of the box",
+			"type": "Vec3",
+			"allowedTypes": []
+		}
+	],
+	"outputs": [],
+	"category": "Transform",
+	"description": "Sets the position of the particles within a box",
+	"version": "1.0.0",
+	"compatibleContexts": [
+		"Init",
+		"Update"
+	],
+	"attributes": [
+		"position",
+		"direction",
+		"seed"
+	],
+	"optionalMethodBodies": [
+		{
+			"optionType": "Set Position",
+			"optionValue": "Volume",
+			"shaderCode": "PositionBox_Volume.glsl"
+		},
+		{
+			"optionType": "Set Position",
+			"optionValue": "Surface",
+			"shaderCode": "PositionBox_Surface.glsl"
+		}
+	],
+	"TSPATH": "",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"prevAliases": [
+		"Set Position Box"
+	]
+}

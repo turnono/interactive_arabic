@@ -1,0 +1,15 @@
+[
+  {
+    "guid": {
+      "a": "8be6cf38-f187-12d5-3de5-d99707fac9df",
+      "b": ""
+    },
+    "extraType": "ResItemFolder",
+    "name": "Audio",
+    "expandInPanel": false,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": ""
+  }
+]

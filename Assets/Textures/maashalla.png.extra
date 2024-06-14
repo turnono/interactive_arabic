@@ -1,0 +1,28 @@
+[
+  {
+    "guid": {
+      "a": "e65d75d1-36c9-52a0-0e76-6175b2ab2185",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "maashalla",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Texture2D",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false,
+    "compressionType": 0,
+    "quality": 0,
+    "maxResolution": 512,
+    "resourceFilePath": "/Users/abdullah/Downloads/maashallah.png"
+  }
+]

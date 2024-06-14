@@ -1,0 +1,59 @@
+{
+	"name": "Scene Object Info",
+	"nameKey": "graph_scene_object_info_name",
+	"id": "5d4ce94a-0631-5eb4-14e5-0040dad956c6",
+	"inputs": [
+		{
+			"name": "Scene Object",
+			"nameKey": "graph_scene_object_info_input_sceneobject",
+			"description": "The scene object to get properties from",
+			"descriptionKey": "graph_scene_object_info_input_sceneobject_description",
+			"type": "Entity",
+			"displayType": "Scene Object",
+			"displayTypeKey": "graph_type_sceneobject"
+		}
+	],
+	"outputs": [
+		{
+			"name": "Name",
+			"nameKey": "graph_scene_object_info_output_name",
+			"description": "The name of the scene object",
+			"descriptionKey": "graph_scene_object_info_output_name_description",
+			"type": "String",
+			"displayType": "String",
+			"displayTypeKey": "graph_type_string"
+		},
+		{
+			"name": "Layer",
+			"nameKey": "graph_scene_object_info_output_layer",
+			"description": "The layer of the scene object",
+			"descriptionKey": "graph_scene_object_info_output_layer_description",
+			"type": "String",
+			"displayType": "String",
+			"displayTypeKey": "graph_type_string"
+		},
+		{
+			"name": "Visibility",
+			"nameKey": "graph_scene_object_info_output_visibility",
+			"description": "The visibility state of the scene object",
+			"descriptionKey": "graph_scene_object_info_output_visibility_description",
+			"type": "Bool",
+			"displayType": "Boolean",
+			"displayTypeKey": "graph_type_boolean"
+		}
+	],
+	"category": "Utility",
+	"categoryKey": "graph_category_utility",
+	"version": "1.0.0",
+	"description": "Get the relevant properties of a Scene Object",
+	"descriptionKey": "graph_scene_object_info_description",
+	"nodeEvent": [
+		"beforeStart"
+	],
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"js": "CGSceneObjectInfo.js"
+}

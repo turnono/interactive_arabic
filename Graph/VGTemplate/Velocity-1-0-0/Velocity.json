@@ -1,0 +1,35 @@
+{
+	"displayName": "Get Velocity",
+	"templateGuid": "2a960671-eda0-bced-6c9d-e1f973401437",
+	"inputs": [],
+	"outputs": [
+		{
+			"displayName": "Velocity",
+			"description": "The velocity of the particles",
+			"type": "Vec3",
+			"allowedTypes": []
+		}
+	],
+	"category": "Get Attribute",
+	"description": "Retrieves the velocity of the particles",
+	"version": "1.0.0",
+	"uniforms": [],
+	"parameters": [],
+	"externalVariables": [],
+	"TSPATH": "",
+	"NodeType": "VFXGRAPHOPERATOR",
+	"outputPortTypeUpdate": "FirstInput",
+	"invokeString": "velocity;",
+	"function": "GetVelocity",
+	"attributes": [
+		"velocity"
+	],
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"prevAliases": [
+		"Get Attribute: velocity"
+	]
+}

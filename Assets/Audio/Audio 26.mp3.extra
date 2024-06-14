@@ -1,0 +1,18 @@
+[
+  {
+    "guid": {
+      "a": "dfc47894-5480-0f81-6f86-5de2fc1450e7",
+      "b": ""
+    },
+    "extraType": "ResItemMP3",
+    "name": "Audio 26",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "AudioClip",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "mccState": "SUCCESS",
+    "resourceFilePath": "/Users/abdullah/Documents/recording stuff/effect/letters/kasrah/Audio 26.mp3"
+  }
+]

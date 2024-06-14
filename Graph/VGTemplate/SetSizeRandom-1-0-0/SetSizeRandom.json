@@ -1,0 +1,50 @@
+{
+	"displayName": "Set Random Size",
+	"function": "SetRandomSize",
+	"templateGuid": "9dbe8195-bb70-55f6-0816-c7f013c43ca5",
+	"NodeType": "VFXGRAPHBLOCK",
+	"inputs": [
+		{
+			"displayName": "Min",
+			"name": "Min",
+			"description": "The minimum value",
+			"type": "Vec3",
+			"allowedTypes": []
+		},
+		{
+			"displayName": "Max",
+			"name": "Max",
+			"description": "The maximum value",
+			"type": "Vec3",
+			"default": {
+				"x": 1,
+				"y": 1,
+				"z": 1
+			},
+			"allowedTypes": []
+		}
+	],
+	"outputs": [],
+	"category": "Attribute Set",
+	"description": "Sets a random size for the particles ",
+	"version": "1.0.0",
+	"compatibleContexts": [
+		"Init",
+		"Update",
+		"Output"
+	],
+	"attributes": [
+		"size",
+		"seed"
+	],
+	"methodBody": "size.xyz = random3(seed, Min.xyz, Max.xyz);",
+	"TSPATH": "",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"prevAliases": [
+		"SetRandomSize"
+	]
+}

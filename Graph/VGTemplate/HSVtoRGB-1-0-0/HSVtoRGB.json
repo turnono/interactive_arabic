@@ -1,0 +1,43 @@
+{
+	"templateGuid": "5e826a2a-7639-4431-b577-ed45292ad030",
+	"displayName": "HSV to RGB",
+	"category": "Color",
+	"function": "HSVtoRGB",
+	"NodeType": "VFXGRAPHOPERATOR",
+	"inputs": [
+		{
+			"displayName": "HSV",
+			"name": "HSV",
+			"type": "Vec3",
+			"default": {
+				"x": 0.5,
+				"y": 0.5,
+				"z": 0.5
+			},
+			"allowedTypes": [],
+			"isShowColor": false,
+			"description": "The input HSV value"
+		}
+	],
+	"outputs": [
+		{
+			"displayName": "Result",
+			"name": "RGBOutput",
+			"type": "Vec3",
+			"description": "The coverted RGB value"
+		}
+	],
+	"uniforms": [],
+	"parameters": [],
+	"invokeString": "HSVtoRGB(%HSV%);",
+	"outputPortTypeUpdate": "Default",
+	"externalVariables": [],
+	"description": "Converts an HSV value to its RGB value",
+	"version": "1.0.0",
+	"TSPATH": "",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	]
+}

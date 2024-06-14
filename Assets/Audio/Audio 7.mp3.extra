@@ -1,0 +1,18 @@
+[
+  {
+    "guid": {
+      "a": "bfdc4956-303c-d57e-12fb-e09584db8fb0",
+      "b": ""
+    },
+    "extraType": "ResItemMP3",
+    "name": "Audio 7",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "AudioClip",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "mccState": "SUCCESS",
+    "resourceFilePath": "/Users/abdullah/Documents/recording stuff/effect/letters/kasrah/Audio 7.mp3"
+  }
+]

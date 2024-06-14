@@ -1,0 +1,31 @@
+[
+  {
+    "guid": {
+      "a": "13511347-5ffc-db81-9482-0289f77b382c",
+      "b": ""
+    },
+    "extraType": "ResItemAssimpAsset",
+    "name": "dhamma",
+    "expandInPanel": true,
+    "objGuid": "",
+    "rttiType": "Model",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "importVertexColor": false,
+    "importBlendshape": true,
+    "importAnimation": false,
+    "importNormalTangentBinormal": true,
+    "regenerateNormalTangentBinormal": true,
+    "importCamera": false,
+    "importLights": false,
+    "resourceFilePath": "/Users/abdullah/Downloads/dhamma.glb",
+    "materialsGUIDs": [
+      "e0fdc213-0265-d58e-b567-8cbfd7de258a"
+    ],
+    "meshGUIDs": [
+      "748d7580-1a95-d0a4-1812-27fa88fbc9e5"
+    ],
+    "animazGUIDs": []
+  }
+]

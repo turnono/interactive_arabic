@@ -1,0 +1,68 @@
+{
+	"displayName": "Const Vec3",
+	"templateGuid": "ed8bb385-2734-1ffc-8927-f6b9e52800bd",
+	"NodeType": "VFXGRAPHOPERATOR",
+	"inputs": [
+		{
+			"displayName": "X",
+			"name": "X",
+			"type": "Float",
+			"default": 0.5,
+			"allowedTypes": [
+				"Float"
+			],
+			"isShowColor": false,
+			"targetType": "output",
+			"description": "The first value of the vector3"
+		},
+		{
+			"displayName": "Y",
+			"name": "Y",
+			"type": "Float",
+			"default": 0.5,
+			"allowedTypes": [
+				"Float"
+			],
+			"isShowColor": false,
+			"targetType": "output",
+			"description": "The second value of the vector3"
+		},
+		{
+			"displayName": "Z",
+			"name": "Z",
+			"type": "Float",
+			"default": 0.5,
+			"allowedTypes": [
+				"Float"
+			],
+			"isShowColor": false,
+			"targetType": "output",
+			"description": "The third value of the vector3"
+		}
+	],
+	"outputs": [
+		{
+			"displayName": "Result",
+			"description": "The value of the operator",
+			"type": "Vec3",
+			"allowedTypes": []
+		}
+	],
+	"category": "Constant",
+	"description": "Stores an instance of a vector3",
+	"uniforms": [],
+	"parameters": [],
+	"invokeString": "vec3(%X%,%Y%,%Z%);",
+	"outputPortTypeUpdate": "Default",
+	"externalVariables": [],
+	"version": "1.0.0",
+	"TSPATH": "",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"prevAliases": [
+		"Vector3"
+	]
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "guid": {
+      "a": "686a403a-4557-dd00-aaad-d76176cd6b8c",
+      "b": ""
+    },
+    "extraType": "JSAssetAnimSequence",
+    "name": "frame_000_delay-0.06s",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Texture2D",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false
+  }
+]

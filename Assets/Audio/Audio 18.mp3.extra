@@ -1,0 +1,18 @@
+[
+  {
+    "guid": {
+      "a": "c4e5239e-f460-ed3d-629e-0d86a13ef5f7",
+      "b": ""
+    },
+    "extraType": "ResItemMP3",
+    "name": "Audio 18",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "AudioClip",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "mccState": "SUCCESS",
+    "resourceFilePath": "/Users/abdullah/Documents/recording stuff/effect/letters/kasrah/Audio 18.mp3"
+  }
+]

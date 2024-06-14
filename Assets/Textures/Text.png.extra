@@ -1,0 +1,28 @@
+[
+  {
+    "guid": {
+      "a": "9ee1c002-0027-68b9-9db5-ce13e51fd3ba",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "Text",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Texture2D",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false,
+    "compressionType": 0,
+    "quality": 0,
+    "maxResolution": 512,
+    "resourceFilePath": "/Users/abdullah/Downloads/Text-Shadow--Streamline-Plump.png"
+  }
+]

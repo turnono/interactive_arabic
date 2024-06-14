@@ -1,0 +1,33 @@
+{
+	"name": "2D Brush Material",
+	"id": "7aa73d9e-d1a9-25af-f85b-7dd8db70bc9e",
+	"inputs": [],
+	"outputs": [
+		{
+			"name": "Material",
+			"description": "The material used to render on the mesh quad",
+			"type": "Material",
+			"displayType": "Material",
+			"nameKey": "graph_2d_brush_material_output_material",
+			"descriptionKey": "graph_2d_brush_material_output_material_description",
+			"displayTypeKey": "graph_type_material"
+		}
+	],
+	"nodeEvent": [
+		"beforeStart"
+	],
+	"scriptSupport": "js",
+	"js": "CG2DBrushMaterial.js",
+	"version": "1.0.0",
+	"category": "Utility",
+	"description": "The material used to render on the mesh quad",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI",
+		"Pre-QA"
+	],
+	"nameKey": "graph_2d_brush_material_name",
+	"categoryKey": "graph_category_utility",
+	"descriptionKey": "graph_2d_brush_material_description"
+}

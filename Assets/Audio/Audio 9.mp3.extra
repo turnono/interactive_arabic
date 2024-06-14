@@ -1,0 +1,18 @@
+[
+  {
+    "guid": {
+      "a": "ed649e71-c977-653f-e484-d782dde487a1",
+      "b": ""
+    },
+    "extraType": "ResItemMP3",
+    "name": "Audio 9",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "AudioClip",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "mccState": "SUCCESS",
+    "resourceFilePath": "/Users/abdullah/Documents/recording stuff/effect/letters/kasrah/Audio 9.mp3"
+  }
+]

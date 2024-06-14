@@ -1,0 +1,28 @@
+[
+  {
+    "guid": {
+      "a": "dbf27401-002b-0ccb-9a5e-c52e49cc8ae5",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "Reset",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Texture2D",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false,
+    "compressionType": 0,
+    "quality": 0,
+    "maxResolution": 512,
+    "resourceFilePath": "/Users/abdullah/Downloads/Drawing Effect/Reset.png"
+  }
+]

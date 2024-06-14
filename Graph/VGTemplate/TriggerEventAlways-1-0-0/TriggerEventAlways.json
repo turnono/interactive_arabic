@@ -1,0 +1,51 @@
+{
+	"displayName": "Trigger Event: Always",
+	"function": "TriggerEventAlways",
+	"templateGuid": "239060d2-94c2-eb61-f7d0-10e03ad3d7c4",
+	"NodeType": "VFXGRAPHBLOCK",
+	"inputs": [
+		{
+			"displayName": "Count",
+			"name": "Count",
+			"description": "The number of particles spawned from this event",
+			"type": "Uint",
+			"default": 10,
+			"allowedTypes": [],
+			"range": [
+				[
+					0,
+					500000,
+					1
+				]
+			]
+		}
+	],
+	"outputs": [
+		{
+			"displayName": "Event",
+			"name": "Event",
+			"description": "Connect to the GPU Event context",
+			"type": "GPU Event",
+			"allowedTypes": []
+		}
+	],
+	"category": "Event",
+	"description": "Creates another particle system in each frame",
+	"version": "1.0.0",
+	"compatibleContexts": [
+		"Update"
+	],
+	"attributes": [
+		"eventCount"
+	],
+	"methodBody": "eventCount = uint(max(Count, 0));",
+	"TSPATH": "",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"contentFeature": [
+		"VFX_GPUEvent"
+	]
+}

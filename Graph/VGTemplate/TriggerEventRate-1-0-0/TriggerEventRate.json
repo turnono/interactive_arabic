@@ -1,0 +1,75 @@
+{
+	"displayName": "Trigger Event: Rate",
+	"function": "TriggerEventRate",
+	"templateGuid": "32955aeb-34a7-c9b8-c1ef-e1b502a4c3bc",
+	"NodeType": "VFXGRAPHBLOCK",
+	"options": [
+		{
+			"type": "Mode",
+			"values": [
+				"OverTime",
+				"OverDistance"
+			]
+		}
+	],
+	"inputs": [
+		{
+			"displayName": "Rate",
+			"name": "Rate",
+			"description": "The number of events triggered in one second",
+			"type": "Float",
+			"default": 0.5,
+			"allowedTypes": [],
+			"range": [
+				[
+					0,
+					500000,
+					0.001
+				]
+			]
+		}
+	],
+	"outputs": [
+		{
+			"displayName": "Event",
+			"name": "Event",
+			"description": "Connect to the GPU Event context",
+			"type": "GPU Event",
+			"allowedTypes": []
+		}
+	],
+	"category": "Event",
+	"description": "Creates another particle system at a specified rate per second",
+	"version": "1.0.0",
+	"compatibleContexts": [
+		"Update"
+	],
+	"attributes": [
+		"rateCount",
+		"eventCount",
+		"velocity"
+	],
+	"usedelta": true,
+	"methodBody": "",
+	"optionalMethodBodies": [
+		{
+			"optionType": "Mode",
+			"optionValue": "OverTime",
+			"methodBody": "rateCount += deltaTime * max(float(Rate), 0.0);\nuint count = uint(floor(rateCount));\nrateCount = fract(rateCount);\neventCount = count;"
+		},
+		{
+			"optionType": "Mode",
+			"optionValue": "OverDistance",
+			"methodBody": "rateCount += length(velocity) * deltaTime * max(float(Rate), 0.0);\nuint count = uint(floor(rateCount));\nrateCount = fract(rateCount);\neventCount = count;"
+		}
+	],
+	"TSPATH": "",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"contentFeature": [
+		"VFX_GPUEvent"
+	]
+}

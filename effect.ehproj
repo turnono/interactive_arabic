@@ -1,6 +1,6 @@
 {
   "name": "Untitled",
-  "lastModified": "Fri, 14 Jun 2024 20:43:12 GMT",
+  "lastModified": "Tue, 18 Jun 2024 22:04:57 GMT",
   "version": "4.2.5",
   "internalVersion": "3.7.0",
   "toolName": "Effect House",
@@ -77,12 +77,12 @@
     "62": "Layer 62",
     "63": "Layer 63"
   },
-  "durationToCreate": 3294405306,
-  "durationCreation": 1853154683,
-  "durationBackground": 1615177535,
+  "durationToCreate": 3644910063,
+  "durationCreation": 2144965537,
+  "durationBackground": 1885959698,
   "autoResetEffect": false,
   "selectedIdList": [
-    "amz:Guid(14648995381240661953, 18246274631626035903)"
+    "amz:Guid(16522382881305522032, 14304251646326686857)"
   ],
   "effectHint": "",
   "templateID": "templateID_none",
@@ -92,12 +92,12 @@
   "activityEnterFrom": "homepage",
   "activityType": "normal",
   "perfTested": true,
-  "lastSceneView": 1,
+  "lastSceneView": 0,
   "LastVideoInput": {
     "type": "preview_hand",
-    "name": "preview_hand_appear||4",
-    "index": 31,
-    "resourceUrl": "./BuiltinResource/preview/video/preview_hand/1person_handappear_4.mp4"
+    "name": "preview_hand_fist_tteh",
+    "index": 50,
+    "resourceUrl": "./BuiltinResource/preview/video/preview_hand/gesture_fist.png"
   },
   "soundStartTime": 0,
   "soundSelectedDuration": 0,

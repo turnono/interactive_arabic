@@ -1,7 +1,7 @@
 [
   {
     "guid": {
-      "a": "6cb3a48e-1a5d-daa2-0013-60ac8693d9c9",
+      "a": "5f652851-929f-5be9-453f-c226ac0d42f2",
       "b": ""
     },
     "extraType": "ResItemMP3",
@@ -13,6 +13,6 @@
     "isVisibleInInspector": true,
     "hideInPanel": false,
     "mccState": "SUCCESS",
-    "resourceFilePath": "/Users/abdullah/Documents/recording stuff/effect/letters/kasrah/Audio 10.mp3"
+    "resourceFilePath": "/Users/abdullah/Documents/recording stuff/effect/letters/dhammah/Audio 10.mp3"
   }
 ]

@@ -1,14 +1,14 @@
 [
   {
     "guid": {
-      "a": "686a403a-4557-dd00-aaad-d76176cd6b8c",
+      "a": "67b0c40a-f65f-c988-9196-073a56e48a71",
       "b": ""
     },
-    "extraType": "JSAssetAnimSequence",
-    "name": "frame_000_delay-0.06s",
+    "extraType": "JSAssetSegmentation",
+    "name": "Eye Segmentation Texture",
     "expandInPanel": false,
     "objGuid": "",
-    "rttiType": "Texture2D",
+    "rttiType": "ScreenRenderTexture",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false

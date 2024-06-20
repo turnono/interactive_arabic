@@ -2319,7 +2319,7 @@ entities:
           audioType: !<str> Bgm
           autoPlay: false
           duration: 444
-          isPreview: false
+          isPreview: true
           loopAmount: 1
           mute: false
           playMode: !<str> Once
@@ -2343,7 +2343,7 @@ entities:
           audioType: !<str> Bgm
           autoPlay: false
           duration: 679
-          isPreview: false
+          isPreview: true
           loopAmount: 1
           mute: false
           playMode: !<str> Once
@@ -2367,7 +2367,7 @@ entities:
           audioType: !<str> Bgm
           autoPlay: false
           duration: 600
-          isPreview: false
+          isPreview: true
           loopAmount: 1
           mute: false
           playMode: !<str> Once
@@ -2391,7 +2391,7 @@ entities:
           audioType: !<str> Bgm
           autoPlay: false
           duration: 783
-          isPreview: false
+          isPreview: true
           loopAmount: 1
           mute: false
           playMode: !<str> Once
@@ -2415,7 +2415,7 @@ entities:
           audioType: !<str> Bgm
           autoPlay: false
           duration: 600
-          isPreview: false
+          isPreview: true
           loopAmount: 1
           mute: false
           playMode: !<str> Once
@@ -2439,7 +2439,7 @@ entities:
           audioType: !<str> Bgm
           autoPlay: false
           duration: 757
-          isPreview: false
+          isPreview: true
           loopAmount: 1
           mute: false
           playMode: !<str> Once
@@ -2463,7 +2463,7 @@ entities:
           audioType: !<str> Bgm
           autoPlay: false
           duration: 679
-          isPreview: false
+          isPreview: true
           loopAmount: 1
           mute: false
           playMode: !<str> Once
@@ -2487,7 +2487,7 @@ entities:
           audioType: !<str> Bgm
           autoPlay: false
           duration: 783
-          isPreview: false
+          isPreview: true
           loopAmount: 1
           mute: false
           playMode: !<str> Once
@@ -2511,7 +2511,7 @@ entities:
           audioType: !<str> Bgm
           autoPlay: false
           duration: 731
-          isPreview: false
+          isPreview: true
           loopAmount: 1
           mute: false
           playMode: !<str> Once
@@ -2535,7 +2535,7 @@ entities:
           audioType: !<str> Bgm
           autoPlay: false
           duration: 757
-          isPreview: false
+          isPreview: true
           loopAmount: 1
           mute: false
           playMode: !<str> Once
@@ -2559,7 +2559,7 @@ entities:
           audioType: !<str> Bgm
           autoPlay: false
           duration: 731
-          isPreview: false
+          isPreview: true
           loopAmount: 1
           mute: false
           playMode: !<str> Once
@@ -2583,7 +2583,7 @@ entities:
           audioType: !<str> Bgm
           autoPlay: false
           duration: 757
-          isPreview: false
+          isPreview: true
           loopAmount: 1
           mute: false
           playMode: !<str> Once
@@ -2607,7 +2607,7 @@ entities:
           audioType: !<str> Bgm
           autoPlay: false
           duration: 888
-          isPreview: false
+          isPreview: true
           loopAmount: 1
           mute: false
           playMode: !<str> Once
@@ -2631,7 +2631,7 @@ entities:
           audioType: !<str> Bgm
           autoPlay: false
           duration: 731
-          isPreview: false
+          isPreview: true
           loopAmount: 1
           mute: false
           playMode: !<str> Once
@@ -2655,7 +2655,7 @@ entities:
           audioType: !<str> Bgm
           autoPlay: false
           duration: 783
-          isPreview: false
+          isPreview: true
           loopAmount: 1
           mute: false
           playMode: !<str> Once
@@ -2679,7 +2679,7 @@ entities:
           audioType: !<str> Bgm
           autoPlay: false
           duration: 705
-          isPreview: false
+          isPreview: true
           loopAmount: 1
           mute: false
           playMode: !<str> Once
@@ -2703,7 +2703,7 @@ entities:
           audioType: !<str> Bgm
           autoPlay: false
           duration: 653
-          isPreview: false
+          isPreview: true
           loopAmount: 1
           mute: false
           playMode: !<str> Once
@@ -2727,7 +2727,7 @@ entities:
           audioType: !<str> Bgm
           autoPlay: false
           duration: 783
-          isPreview: false
+          isPreview: true
           loopAmount: 1
           mute: false
           playMode: !<str> Once
@@ -2751,7 +2751,7 @@ entities:
           audioType: !<str> Bgm
           autoPlay: false
           duration: 600
-          isPreview: false
+          isPreview: true
           loopAmount: 1
           mute: false
           playMode: !<str> Once
@@ -2775,7 +2775,7 @@ entities:
           audioType: !<str> Bgm
           autoPlay: false
           duration: 548
-          isPreview: false
+          isPreview: true
           loopAmount: 1
           mute: false
           playMode: !<str> Once
@@ -2799,7 +2799,7 @@ entities:
           audioType: !<str> Bgm
           autoPlay: false
           duration: 679
-          isPreview: false
+          isPreview: true
           loopAmount: 1
           mute: false
           playMode: !<str> Once
@@ -2823,7 +2823,7 @@ entities:
           audioType: !<str> Bgm
           autoPlay: false
           duration: 600
-          isPreview: false
+          isPreview: true
           loopAmount: 1
           mute: false
           playMode: !<str> Once
@@ -2847,7 +2847,7 @@ entities:
           audioType: !<str> Bgm
           autoPlay: false
           duration: 679
-          isPreview: false
+          isPreview: true
           loopAmount: 1
           mute: false
           playMode: !<str> Once
@@ -2871,7 +2871,7 @@ entities:
           audioType: !<str> Bgm
           autoPlay: false
           duration: 757
-          isPreview: false
+          isPreview: true
           loopAmount: 1
           mute: false
           playMode: !<str> Once
@@ -3442,7 +3442,7 @@ entities:
           audioType: !<str> Bgm
           autoPlay: false
           duration: 757
-          isPreview: false
+          isPreview: true
           loopAmount: 1
           mute: false
           playMode: !<str> Once
@@ -3541,7 +3541,7 @@ entities:
           audioType: !<str> Bgm
           autoPlay: false
           duration: 783
-          isPreview: false
+          isPreview: true
           loopAmount: 1
           mute: false
           playMode: !<str> Once
@@ -3781,7 +3781,7 @@ entities:
           audioType: !<str> Bgm
           autoPlay: false
           duration: 679
-          isPreview: false
+          isPreview: true
           loopAmount: 1
           mute: false
           playMode: !<str> Once
@@ -3880,7 +3880,7 @@ entities:
           audioType: !<str> Bgm
           autoPlay: false
           duration: 679
-          isPreview: false
+          isPreview: true
           loopAmount: 1
           mute: false
           playMode: !<str> Once
@@ -4795,7 +4795,7 @@ config:
   __class: Map
 msaa:
   __class: MSAAMode
-  value: NONE
+  value: _4X
 jsScriptSystems:
   - !<str> js/GraphSystem.js
   - !<str> js/Main.js
@@ -4837,7 +4837,7 @@ mobility:
 name: !<str> ""
 guid: {a: 6143376645528203624, b: 7952591754679060664}
 enabled: true
-localPosition: {x: 70.31251, y: -110.6096, z: 0}
+localPosition: {x: 70.3125, y: -110.6096, z: 0}
 localScale: {x: 8.333334, y: 8.333334, z: 1}
 localOrientation: {w: 1, x: 0, y: 0, z: 0}
 parent: {localId: 693}
@@ -5265,7 +5265,7 @@ pixelsPerUnit: 32
 name: !<str> ""
 guid: {a: 18035665008515381411, b: 14890171848258515614}
 enabled: true
-localPosition: {x: -1.430511e-06, y: 0, z: 0}
+localPosition: {x: -1.430511e-06, y: -9.536743e-07, z: 0}
 localScale: {x: 1.5, y: 1.9, z: 1}
 localOrientation: {w: 1, x: 0, y: 0, z: 0}
 parent: {localId: 440}

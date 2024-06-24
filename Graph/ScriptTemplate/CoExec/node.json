@@ -1,0 +1,99 @@
+{
+	"name": "Co-Exec",
+	"id": "baf39225-4df9-47e6-a907-983fb67af7e1",
+	"inputs": [
+		{
+			"name": "Reset",
+			"type": "Pulse",
+			"item_type": "",
+			"description": "Reset node to execute again",
+			"displayType": "Exec",
+			"nameKey": "graph_coexec_input_reset",
+			"descriptionKey": "graph_coexec_input_reset_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "Threshold",
+			"type": "Double",
+			"item_type": "",
+			"description": "The number of frames (or seconds) displayed since the first input was executed. If the rest of the inputs are not executed within the threshold, the node will reset. Otherwise, execute the output once.",
+			"displayType": "Number",
+			"default_value": "0",
+			"range": [
+				[
+					0,
+					"inf",
+					0.001
+				]
+			],
+			"nameKey": "graph_coexec_input_threshold",
+			"descriptionKey": "graph_coexec_input_threshold_description",
+			"displayTypeKey": "graph_type_number"
+		},
+		{
+			"name": "As Frame",
+			"type": "Bool",
+			"item_type": "",
+			"description": "The type of Threshold. Set the number as frame when checked, otherwise, time (in seconds).",
+			"displayType": "Boolean",
+			"default_value": "false",
+			"nameKey": "graph_coexec_input_asframe",
+			"descriptionKey": "graph_coexec_input_asframe_description",
+			"displayTypeKey": "graph_type_boolean"
+		},
+		{
+			"name": "A",
+			"type": "Pulse",
+			"item_type": "",
+			"description": "The first input execution",
+			"displayType": "Exec",
+			"nameKey": "graph_coexec_input_a",
+			"descriptionKey": "graph_coexec_input_a_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "B",
+			"type": "Pulse",
+			"item_type": "",
+			"description": "The second input execution",
+			"displayType": "Exec",
+			"nameKey": "graph_coexec_input_b",
+			"descriptionKey": "graph_coexec_input_b_description",
+			"displayTypeKey": "graph_type_exec"
+		}
+	],
+	"outputs": [
+		{
+			"name": "Next",
+			"type": "Pulse",
+			"item_type": "",
+			"description": "Execute the next node when all inputs have been executed within the threshold",
+			"displayType": "Exec",
+			"nameKey": "graph_coexec_output_next",
+			"descriptionKey": "graph_coexec_output_next_description",
+			"displayTypeKey": "graph_type_exec"
+		}
+	],
+	"addableInput": {
+		"index": 4,
+		"baseName": "",
+		"increaseStartIndex": "C"
+	},
+	"js": "CGCoExec.js",
+	"version": "1.0.0",
+	"category": "Control",
+	"description": "Executes the next node when inputs A to Z have been triggered within the threshold. Click the Add button \"+\" to add more inputs.",
+	"nodeEvent": [
+		"onUpdate",
+		"resetOnRecord"
+	],
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"nameKey": "graph_coexec_name",
+	"categoryKey": "graph_category_control",
+	"descriptionKey": "graph_coexec_description",
+	"onlineWebsite": "graph_coexec_website"
+}

@@ -1,7 +1,7 @@
 [
   {
     "guid": {
-      "a": "12903be6-c57c-21dd-b804-35232f168aee",
+      "a": "1dc727aa-8d5d-8b7a-bac3-c57664acd8bd",
       "b": ""
     },
     "extraType": "ResItemMaterialOmtl",
@@ -13,15 +13,15 @@
     "isVisibleInInspector": true,
     "hideInPanel": false,
     "resourceFilePath": "/Applications/Effect House.app/Contents/Resources/BuiltinResource/InternalPlugins/Segmentation/PluginResource/materials/Default_Segmentation_Material.omtl",
-    "skinObjGuid": "Guid(6363230775143006607, 9225442033077673386)",
+    "skinObjGuid": "Guid(17673013115915445564, 10745628505174932868)",
     "references": [
       {
         "propertyName": "_SegTex",
-        "guid": "93a572fe-71e2-58ba-9f12-caca292e9cfb"
+        "guid": "ab08aafe-8109-45d3-33bc-8e78d8622832"
       },
       {
         "propertyName": "_MainTex",
-        "guid": "00000000-0000-0000-0000-000000001544"
+        "guid": "00000000-0000-0000-0000-00000000004b"
       }
     ],
     "currAuslVersion": "1.0.0"

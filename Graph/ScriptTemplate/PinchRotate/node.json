@@ -1,0 +1,47 @@
+{
+	"name": "Two-Finger Rotate",
+	"nameKey": "graph_twofinger_rotate_name",
+	"id": "6d9be69d-cd93-ef7b-95d8-dd3514b1dca2",
+	"inputs": [
+		{
+			"name": "Target",
+			"nameKey": "graph_twofinger_rotate_input_target",
+			"description": "The scene object to be rotated",
+			"descriptionKey": "graph_twofinger_rotate_input_target_description",
+			"type": "Entity",
+			"displayType": "Scene Object",
+			"displayTypeKey": "graph_type_sceneobject"
+		},
+		{
+			"name": "Rotation Sensitivity",
+			"nameKey": "graph_twofinger_rotate_input_rotationsensitivity",
+			"description": "The rate at which a scene object rotates in relation to the fingers' movement. A higher value will rotate the object as fast as the fingers, while a negative value will rotate the object in the reverse direction of the finger. Value range: -10 to 10",
+			"descriptionKey": "graph_twofinger_rotate_input_rotationsensitivity_description",
+			"type": "Double",
+			"range": [
+				[
+					-10,
+					10,
+					1
+				]
+			],
+			"displayType": "Number",
+			"displayTypeKey": "graph_type_number"
+		}
+	],
+	"outputs": [],
+	"category": "Interaction",
+	"categoryKey": "graph_category_interaction",
+	"groupTemplate": true,
+	"foldable": true,
+	"expandable": true,
+	"version": "1.0.0",
+	"description": "Rotates a scene object when two fingers pinch the screen and rotate",
+	"descriptionKey": "graph_twofinger_rotate_description",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"subgraphPath": "PinchRotate.ssubgraph"
+}

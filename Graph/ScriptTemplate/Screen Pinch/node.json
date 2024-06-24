@@ -1,0 +1,49 @@
+{
+	"name": "Pinch and Rotate",
+	"nameKey": "graph_pinch_and_rotate_name",
+	"id": "8d8b5f42-e51e-892b-4653-2016dd077660",
+	"inputs": [],
+	"outputs": [
+		{
+			"name": "Stay",
+			"nameKey": "graph_pinch_and_rotate_output_stay",
+			"description": "Executes the next node when 2 fingers touch and pinch the screen",
+			"descriptionKey": "graph_pinch_and_rotate_output_stay_description",
+			"type": "Pulse",
+			"displayType": "Exec",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "Relative Scale",
+			"nameKey": "graph_pinch_and_rotate_output_relativescale",
+			"description": "The scale multiplier change from the beginning frame of the pinch to the current frame",
+			"descriptionKey": "graph_pinch_and_rotate_output_relativescale_description",
+			"type": "Double",
+			"displayType": "Number",
+			"displayTypeKey": "graph_type_number"
+		},
+		{
+			"name": "Relative Angle",
+			"nameKey": "graph_pinch_and_rotate_output_relativeangle",
+			"description": "The angle change in radian from the beginning frame of the rotation to the current frame",
+			"descriptionKey": "graph_pinch_and_rotate_output_relativeangle_description",
+			"type": "Double",
+			"displayType": "Number",
+			"displayTypeKey": "graph_type_number"
+		}
+	],
+	"category": "Event",
+	"categoryKey": "graph_category_event",
+	"version": "1.0.0",
+	"description": "Tracks the scale multiplier changes when two fingers touch the screen and move inward and outward",
+	"descriptionKey": "graph_pinch_and_rotate_description",
+	"groupTemplate": true,
+	"productTypes": [
+		"EHI",
+		"EHD",
+		"EHO"
+	],
+	"foldable": false,
+	"expandable": false,
+	"subgraphPath": "ScreenPinch.ssubgraph"
+}

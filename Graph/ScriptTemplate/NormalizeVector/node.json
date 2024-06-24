@@ -1,0 +1,49 @@
+{
+	"name": "Normalize",
+	"id": "6a8ee906-3562-7c33-8277-fd1915138c2e",
+	"inputs": [
+		{
+			"name": "A",
+			"type": "Vector2f",
+			"item_type": "",
+			"dynamic": true,
+			"description": "The vector to be normalized",
+			"displayType": "Vec2",
+			"nameKey": "graph_normalize_input_a",
+			"descriptionKey": "graph_normalize_input_a_description",
+			"displayTypeKey": "graph_type_vec2"
+		}
+	],
+	"outputs": [
+		{
+			"name": "Result",
+			"type": "Vector2f",
+			"item_type": "",
+			"dynamic": true,
+			"description": "The normalized vector with a length of 1",
+			"displayType": "Vec2",
+			"nameKey": "graph_normalize_output_result",
+			"descriptionKey": "graph_normalize_output_result_description",
+			"displayTypeKey": "graph_type_vec2"
+		}
+	],
+	"js": "CGNormalizeVector.js",
+	"version": "1.0.0",
+	"amazingVersion": "10.40.0",
+	"category": "Math",
+	"description": "Normalize the input vector. That is, return a vector of the same direction as the input with a length of 1. Supported types: Vec2, Vec3, and Vec4.",
+	"supportedValueTypes": [
+		"Vector2f",
+		"Vector3f",
+		"Vector4f"
+	],
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"onlineWebsite": "graph_normalize_website",
+	"nameKey": "graph_normalize_name",
+	"categoryKey": "graph_category_math",
+	"descriptionKey": "graph_normalize_description"
+}

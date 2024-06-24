@@ -1,0 +1,47 @@
+{
+	"name": "Pinch to Scale",
+	"nameKey": "graph_pinch_to_scale_name",
+	"id": "fd818826-b808-43a4-fd27-cc62d67f556a",
+	"inputs": [
+		{
+			"name": "Target",
+			"nameKey": "graph_pinch_to_scale_input_target",
+			"description": "The scene object to be scaled up or down",
+			"descriptionKey": "graph_pinch_to_scale_input_target_description",
+			"type": "Entity",
+			"displayType": "Scene Object",
+			"displayTypeKey": "graph_type_sceneobject"
+		},
+		{
+			"name": "Scale Sensitivity",
+			"nameKey": "graph_pinch_to_scale_input_scalesensitivity",
+			"description": "The rate at which a scene object scales in relation to the fingers' movement. A higher value will scale the object as fast as the fingers, while a negative value will scale the object in the reverse direction of the finger. Value range: -10 to 10",
+			"descriptionKey": "graph_pinch_to_scale_input_scalesensitivity_description",
+			"type": "Double",
+			"range": [
+				[
+					-10,
+					10,
+					1
+				]
+			],
+			"displayType": "Number",
+			"displayTypeKey": "graph_type_number"
+		}
+	],
+	"outputs": [],
+	"category": "Interaction",
+	"categoryKey": "graph_category_interaction",
+	"groupTemplate": true,
+	"foldable": true,
+	"expandable": true,
+	"version": "1.0.0",
+	"description": "Shrinks or enlarges a scene object when two fingers move inward or outward",
+	"descriptionKey": "graph_pinch_to_scale_description",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"subgraphPath": "PinchZoom.ssubgraph"
+}

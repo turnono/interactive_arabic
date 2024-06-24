@@ -1,0 +1,60 @@
+{
+	"name": "Screen Pan",
+	"id": "a7500d9a-7682-3f02-8e87-f69e3eac8cd6",
+	"inputs": [],
+	"outputs": [
+		{
+			"name": "Next",
+			"type": "Pulse",
+			"description": "Execute the next node when finger is moving on the device screen",
+			"displayType": "Exec",
+			"nameKey": "graph_screen_pan_output_next",
+			"descriptionKey": "graph_screen_pan_output_next_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "Offset",
+			"type": "Vector2f",
+			"description": "The distance between the start position and the moving position of the finger on the device screen",
+			"displayType": "Vec2",
+			"nameKey": "graph_screen_pan_output_offset",
+			"descriptionKey": "graph_screen_pan_output_offset_description",
+			"displayTypeKey": "graph_type_vec2"
+		},
+		{
+			"name": "Position",
+			"type": "Vector2f",
+			"description": "The 2D position of the finger on the device screen",
+			"displayType": "Vec2",
+			"nameKey": "graph_screen_pan_output_position",
+			"descriptionKey": "graph_screen_pan_output_position_description",
+			"displayTypeKey": "graph_type_vec2"
+		}
+	],
+	"js": "CGScreenPan.js",
+	"version": "2.0.0",
+	"amazingVersion": "10.40.0",
+	"nodeEvent": [
+		"onCallBack",
+		"onEvent",
+		"onDestroy",
+		"beforeStart",
+		"resetOnRecord"
+	],
+	"category": "Event",
+	"subCategory": "Input",
+	"graphAlgorithms": [
+		"TouchGes"
+	],
+	"description": "Execute the next node when someone moves their finger on the device screen over 30 pixels.",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"onlineWebsite": "graph_screen_pan_website",
+	"nameKey": "graph_screen_pan_name",
+	"categoryKey": "graph_category_event",
+	"descriptionKey": "graph_screen_pan_description",
+	"contentFeature": ["ScreenPan"]
+}

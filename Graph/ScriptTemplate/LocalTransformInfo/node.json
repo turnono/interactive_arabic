@@ -1,0 +1,84 @@
+{
+	"name": "Local Transform Info",
+	"id": "f68b5063-bc44-90ba-e7ea-2c46f413a577",
+	"inputs": [
+		{
+			"name": "Transform",
+			"description": "The Transform component you want to get its local transform information",
+			"type": "Transform",
+			"displayType": "Transform",
+			"nameKey": "graph_local_transform_info_input_transform",
+			"descriptionKey": "graph_local_transform_info_input_transform_description",
+			"displayTypeKey": "graph_type_transform"
+		}
+	],
+	"outputs": [
+		{
+			"name": "Local Position",
+			"description": "The local position of the Transform component",
+			"type": "Vector3f",
+			"displayType": "Vec3",
+			"nameKey": "graph_local_transform_info_output_localposition",
+			"descriptionKey": "graph_local_transform_info_output_localposition_description",
+			"displayTypeKey": "graph_type_vec3"
+		},
+		{
+			"name": "Local Rotation",
+			"description": "The local rotation of the Transform component",
+			"type": "Vector3f",
+			"displayType": "Vec3",
+			"nameKey": "graph_local_transform_info_output_localrotation",
+			"descriptionKey": "graph_local_transform_info_output_localrotation_description",
+			"displayTypeKey": "graph_type_vec3"
+		},
+		{
+			"name": "Local Scale",
+			"description": "The local scale of the Transform component",
+			"type": "Vector3f",
+			"displayType": "Vec3",
+			"nameKey": "graph_local_transform_info_output_localscale",
+			"descriptionKey": "graph_local_transform_info_output_localscale_description",
+			"displayTypeKey": "graph_type_vec3"
+		},
+		{
+			"name": "Up Dir",
+			"description": "The local Y axis direction (green arrow) of the Transform component",
+			"type": "Vector3f",
+			"displayType": "Vec3",
+			"nameKey": "graph_local_transform_info_output_updir",
+			"descriptionKey": "graph_local_transform_info_output_updir_description",
+			"displayTypeKey": "graph_type_vec3"
+		},
+		{
+			"name": "Right Dir",
+			"description": "The local X axis direction (red arrow) of the Transform component",
+			"type": "Vector3f",
+			"displayType": "Vec3",
+			"nameKey": "graph_local_transform_info_output_rightdir",
+			"descriptionKey": "graph_local_transform_info_output_rightdir_description",
+			"displayTypeKey": "graph_type_vec3"
+		},
+		{
+			"name": "Forward Dir",
+			"description": "The local Z axis direction (blue arrow) of the Transform component",
+			"type": "Vector3f",
+			"displayType": "Vec3",
+			"nameKey": "graph_local_transform_info_output_forwarddir",
+			"descriptionKey": "graph_local_transform_info_output_forwarddir_description",
+			"displayTypeKey": "graph_type_vec3"
+		}
+	],
+	"js": "CGLocalPose.js",
+	"category": "Transform",
+	"description": "Get the local space position, rotation, and scale of a Transform component. If a Transform component is parented under another Transform component, it inherits the parent Transform component's local space coordinates.\n",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"version": "1.1.0",
+	"onlineWebsite": "graph_local_transform_info_website",
+	"nameKey": "graph_local_transform_info_name",
+	"categoryKey": "graph_category_transform",
+	"descriptionKey": "graph_local_transform_info_description"
+}

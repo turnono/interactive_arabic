@@ -1,0 +1,44 @@
+{
+	"name": "Rad to Deg",
+	"id": "597355d8-39a5-54cb-2c51-eb79cc261775",
+	"inputs": [
+		{
+			"name": "Rad",
+			"type": "Double",
+			"item_type": "",
+			"default_value": "0",
+			"description": "The input radian value",
+			"displayType": "Number",
+			"nameKey": "graph_rad_to_deg_input_rad",
+			"descriptionKey": "graph_rad_to_deg_input_rad_description",
+			"displayTypeKey": "graph_type_number"
+		}
+	],
+	"outputs": [
+		{
+			"name": "Deg",
+			"type": "Double",
+			"item_type": "",
+			"description": "The converted degree value",
+			"displayType": "Number",
+			"nameKey": "graph_rad_to_deg_output_deg",
+			"descriptionKey": "graph_rad_to_deg_output_deg_description",
+			"displayTypeKey": "graph_type_number"
+		}
+	],
+	"js": "CGRadianToDeg.js",
+	"lua": "CGRadianToDeg.lua",
+	"version": "1.0.1",
+	"amazingVersion": "10.40.0",
+	"luaFuncName": "CGRadianToDeg",
+	"category": "Math",
+	"description": "Convert radian to degree.",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"nameKey": "graph_rad_to_deg_name",
+	"categoryKey": "graph_category_math",
+	"descriptionKey": "graph_rad_to_deg_description"
+}

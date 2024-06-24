@@ -1,0 +1,16 @@
+[
+  {
+    "guid": {
+      "a": "ab08aafe-8109-45d3-33bc-8e78d8622832",
+      "b": ""
+    },
+    "extraType": "JSAssetSegmentation",
+    "name": "Subject Segmentation Texture",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "ScreenRenderTexture",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false
+  }
+]

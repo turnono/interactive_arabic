@@ -1,0 +1,16 @@
+[
+  {
+    "guid": {
+      "a": "78c40ae0-c536-b4a0-7537-1607a3705c4d",
+      "b": ""
+    },
+    "extraType": "JSAssetSocialKitAnimSequenceTT",
+    "name": "Profile Info Animated Texture",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Texture2D",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false
+  }
+]

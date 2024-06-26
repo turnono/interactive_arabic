@@ -6,14 +6,14 @@
     },
     "extraType": "ResItemMaterialOmtl",
     "name": "Segmentation Material",
-    "expandInPanel": false,
+    "expandInPanel": true,
     "objGuid": "",
     "rttiType": "Material",
     "version": "0.6.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
     "resourceFilePath": "/Applications/Effect House.app/Contents/Resources/BuiltinResource/InternalPlugins/Segmentation/PluginResource/materials/Default_Segmentation_Material.omtl",
-    "skinObjGuid": "Guid(17673013115915445564, 10745628505174932868)",
+    "skinObjGuid": "Guid(16015466351280032895, 16070135574254959781)",
     "references": [
       {
         "propertyName": "_SegTex",

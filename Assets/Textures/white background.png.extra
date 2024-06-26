@@ -1,0 +1,28 @@
+[
+  {
+    "guid": {
+      "a": "f5ca0b4c-e4cf-700f-8244-c01ece1c1c9f",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "white background",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Texture2D",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false,
+    "compressionType": 0,
+    "quality": 0,
+    "maxResolution": 512,
+    "resourceFilePath": "/Users/abdullah/Pictures/white background.png"
+  }
+]

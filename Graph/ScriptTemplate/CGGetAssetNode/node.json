@@ -1,0 +1,40 @@
+{
+	"name": "Get Asset",
+	"id": "424e2913-b263-26fe-f8c6-bdcdff93f460",
+	"inputs": [
+		{
+			"name": "Source",
+			"type": "Resource",
+			"visible": false,
+			"description": "Asset source",
+			"displayType": "Any",
+			"nameKey": "graph_get_asset_input_source",
+			"descriptionKey": "graph_get_asset_input_source_description",
+			"displayTypeKey": "graph_type_any"
+		}
+	],
+	"outputs": [
+		{
+			"name": "Asset",
+			"type": "Resource",
+			"description": "Asset reference output",
+			"displayType": "Any",
+			"nameKey": "graph_get_asset_output_asset",
+			"descriptionKey": "graph_get_asset_output_asset_description",
+			"displayTypeKey": "graph_type_any"
+		}
+	],
+	"js": "CGGetAssetNode.js",
+	"version": "1.0.0",
+	"builtinClass": "ResourceNode",
+	"category": "Asset",
+	"description": "Get asset",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"nameKey": "graph_get_asset_name",
+	"categoryKey": "graph_category_asset",
+	"descriptionKey": "graph_get_asset_description"
+}

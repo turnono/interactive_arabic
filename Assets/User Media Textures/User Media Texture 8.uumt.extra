@@ -1,0 +1,16 @@
+[
+  {
+    "guid": {
+      "a": "c7458ad3-429b-e622-3f72-67f1ee7e4372",
+      "b": ""
+    },
+    "extraType": "JSAssetUserUploadedMedia",
+    "name": "User Media Texture 8",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "RenderTexture",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false
+  }
+]

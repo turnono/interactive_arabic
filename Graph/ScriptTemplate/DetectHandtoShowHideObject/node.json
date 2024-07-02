@@ -1,0 +1,50 @@
+{
+	"name": "Detect Hand to Hide/Show Object",
+	"id": "4cb3d201-5eb3-954f-3225-15c40a0f53a9",
+	"category": "Interaction",
+	"description": "Shows or hides the target object when a single hand appears",
+	"groupTemplate": true,
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"foldable": true,
+	"expandable": true,
+	"inputs": [
+		{
+			"name": "Target",
+			"type": "Entity",
+			"displayType": "Scene Object",
+			"description": "The object to be shown or hidden",
+			"nameKey": "graph_detect_hand_to_hideshow_object_input_target",
+			"descriptionKey": "graph_detect_hand_to_hideshow_object_input_target_description",
+			"displayTypeKey": "graph_type_sceneobject"
+		},
+		{
+			"name": "Type",
+			"type": "String",
+			"displayType": "String",
+			"description": "The detection type, Single hand or Both hands",
+			"nameKey": "graph_detect_hand_to_hideshow_object_input_type",
+			"descriptionKey": "graph_detect_hand_to_hideshow_object_input_type_description",
+			"displayTypeKey": "graph_type_string"
+		},
+		{
+			"name": "Show/Hide",
+			"type": "Bool",
+			"displayType": "Boolean",
+			"description": "Check to make the object appear, uncheck to make it disappear",
+			"nameKey": "graph_detect_hand_to_hideshow_object_input_showhide",
+			"descriptionKey": "graph_detect_hand_to_hideshow_object_input_showhide_description",
+			"displayTypeKey": "graph_type_boolean"
+		}
+	],
+	"outputs": [],
+	"subgraphPath": "DetectHandtoShowHideObject.ssubgraph",
+	"version": "1.0.0",
+	"TTEHVer": "",
+	"nameKey": "graph_detect_hand_to_hideshow_object_name",
+	"categoryKey": "graph_category_interaction",
+	"descriptionKey": "graph_detect_hand_to_hideshow_object_description"
+}

@@ -1,0 +1,15 @@
+[
+  {
+    "guid": {
+      "a": "12aa950e-2f7d-1b8f-24b4-a416f76da549",
+      "b": ""
+    },
+    "extraType": "ResItemFolder",
+    "name": "Tap Screen Prompt",
+    "expandInPanel": false,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": ""
+  }
+]

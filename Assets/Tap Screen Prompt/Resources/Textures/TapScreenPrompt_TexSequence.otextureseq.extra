@@ -1,0 +1,22 @@
+[
+  {
+    "guid": {
+      "a": "a7d54ed1-6dd3-bfb7-30c0-6158524e3918",
+      "b": ""
+    },
+    "extraType": "ResItemTextureSequence",
+    "name": "TapScreenPrompt_TexSequence",
+    "expandInPanel": true,
+    "objGuid": "",
+    "rttiType": "TextureSequence",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "premultiplyAlpha": false,
+    "compressionType": 0,
+    "quality": 0,
+    "maxResolution": 512,
+    "assetPackageID": "7299257512400928769",
+    "resourceFilePath": "/Users/abdullah/Library/Application Support/EffectHouse/package/7299257512400928769/Resources/Textures/TapScreenPrompt_TexSequence.otextureseq"
+  }
+]

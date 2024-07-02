@@ -1,0 +1,18 @@
+[
+  {
+    "guid": {
+      "a": "6c6fa553-c863-7927-d5f6-6efb90c52b5c",
+      "b": ""
+    },
+    "extraType": "JSAssetAnimSequence",
+    "name": "TapScreenPrompt_AnimTex",
+    "expandInPanel": true,
+    "objGuid": "",
+    "rttiType": "Texture2D",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "assetPackageID": "7299257512400928769",
+    "resourceFilePath": "/Users/abdullah/Library/Application Support/EffectHouse/package/7299257512400928769/Resources/Animated Textures/TapScreenPrompt_AnimTex.OseqJSA"
+  }
+]

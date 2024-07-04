@@ -13,7 +13,7 @@
     "isVisibleInInspector": true,
     "hideInPanel": false,
     "resourceFilePath": "/Applications/Effect House.app/Contents/Resources/BuiltinResource/assets/material/Unlit.omtl",
-    "skinObjGuid": "Guid(11117077923314965376, 15894531531369136826)",
+    "skinObjGuid": "Guid(17025336064202345115, 1873992415591582110)",
     "references": [
       {
         "propertyName": "_AlbedoTexture",

@@ -1686,7 +1686,7 @@ entities:
     name: !<str> Tap Screen Prompt
     guid: {a: 11694341112873505700, b: 5338944120023039667}
     scene: {localId: 1}
-    selfvisible: true
+    selfvisible: false
     components:
       - {localId: 893}
       - __class: Camera
@@ -1712,7 +1712,7 @@ entities:
         isRootCamera: false
         sortMethod:
           __class: CameraSortMethod
-          value: SORT_ORDER_AND_RENDERQUEUES
+          value: STRICT_SORT_ORDER
         rtBackupMode:
           __class: CameraRTBackupMode
           value: NEVER

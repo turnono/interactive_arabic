@@ -1,6 +1,6 @@
 {
   "name": "Untitled",
-  "lastModified": "Fri, 05 Jul 2024 20:26:25 GMT",
+  "lastModified": "Tue, 09 Jul 2024 12:37:12 GMT",
   "version": "4.2.6",
   "internalVersion": "3.7.0",
   "toolName": "Effect House",
@@ -13,7 +13,7 @@
   },
   "renderNames": {
     "0": "Default Layer",
-    "1": "Layer 1",
+    "1": "effect user",
     "2": "Layer 2",
     "3": "Layer 3",
     "4": "Layer 4",
@@ -77,12 +77,12 @@
     "62": "Layer 62",
     "63": "Layer 63"
   },
-  "durationToCreate": 5107798564,
-  "durationCreation": 3198939481,
-  "durationBackground": 2829038454,
+  "durationToCreate": 5425245292,
+  "durationCreation": 3339174773,
+  "durationBackground": 2962667360,
   "autoResetEffect": false,
   "selectedIdList": [
-    "amz:Guid(11839590367544982558, 7366079129369900705)"
+    "amz:Guid(2255670202689735543, 5214334564109827207)"
   ],
   "effectHint": "",
   "templateID": "templateID_none",
@@ -92,12 +92,12 @@
   "activityEnterFrom": "homepage",
   "activityType": "normal",
   "perfTested": true,
-  "lastSceneView": 1,
+  "lastSceneView": 0,
   "LastVideoInput": {
     "type": "preview_face",
-    "name": "preview_face_idle||1",
-    "index": 0,
-    "resourceUrl": "./BuiltinResource/preview/video/preview_face/idle/1person_faceidle_1.mp4"
+    "name": "preview_face_nodding||2",
+    "index": 5,
+    "resourceUrl": "./BuiltinResource/preview/video/preview_face/nodding/1person_facenodding_2.mp4"
   },
   "soundStartTime": 0,
   "soundSelectedDuration": 0,

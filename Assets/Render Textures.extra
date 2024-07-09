@@ -1,11 +1,11 @@
 [
   {
     "guid": {
-      "a": "d5ff80c6-0cd9-b26f-b561-bb2b8026e193",
+      "a": "3a5f82fd-bbb9-e0e1-943b-65aee4b17f1a",
       "b": ""
     },
     "extraType": "ResItemFolder",
-    "name": "Textures",
+    "name": "Render Textures",
     "expandInPanel": true,
     "version": "0.1.0",
     "isVisibleInInspector": true,

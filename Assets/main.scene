@@ -41,7 +41,7 @@ entities:
           value: CAMERA_CHANGED
     layer: 0
   - __class: Entity
-    name: !<str> General
+    name: !<str> "3d "
     guid: {a: 8235238043598186243, b: 16840308208679013795}
     scene: {localId: 1}
     selfvisible: true
@@ -468,45 +468,6 @@ entities:
     selfvisible: false
     components:
       - {localId: 901}
-    layer: 0
-  - __class: Entity
-    name: !<str> Subject Segmentation
-    guid: {a: 883351937271814208, b: 11042562991813460383}
-    scene: {localId: 1}
-    selfvisible: true
-    components:
-      - {localId: 929}
-      - __class: ImageRenderer
-        name: !<str> ""
-        guid: {a: 5567720698959711067, b: 8094932142492106937}
-        enabled: true
-        sharedMaterials:
-          - {localId: 1, path: 1dc727aa-8d5d-8b7a-bac3-c57664acd8bd--1dc727aa-8d5d-8b7a-bac3-c57664acd8bd.material}
-        sortingOrder: 31
-        autoSortingOrder: true
-        useFrustumCulling: true
-        receiveShadow: true
-        lightProbeBlendMode:
-          __class: LightProbeBlendMode
-          value: OFF
-        entirePingPong: false
-        texture: {localId: 1, path: share://input.texture}
-        opacity: 1
-        color: {r: 1, g: 1, b: 1, a: 1}
-        size: {x: 10, y: 10}
-        pivot: {x: 0.5, y: 0.5}
-        flipX: false
-        flipY: false
-        stretchMode:
-          __class: ImageStretchMode
-          value: Fill
-        imageMaterialProperties:
-          __class: Map
-          _ellipseX: 1
-          _ellipseY: 1
-          _filledRange: 1
-          _filledType: 0
-          _startPoint: 0
     layer: 0
   - __class: Entity
     name: !<str> 3d container UI
@@ -1730,7 +1691,7 @@ entities:
         enabled: true
         sharedMaterials:
           - {localId: 0}
-        sortingOrder: 32
+        sortingOrder: 31
         autoSortingOrder: true
         useFrustumCulling: true
         receiveShadow: true
@@ -1769,7 +1730,7 @@ entities:
         enabled: true
         sharedMaterials:
           - {localId: 0}
-        sortingOrder: 33
+        sortingOrder: 32
         autoSortingOrder: true
         useFrustumCulling: true
         receiveShadow: true
@@ -1816,8 +1777,8 @@ entities:
           __class: LightProbeBlendMode
           value: OFF
         entirePingPong: false
-        texture: {localId: 1, path: 00000000-0000-0000-0000-000000001543--00000000-0000-0000-0000-000000001543.png}
-        opacity: 0.300000011920929
+        texture: {localId: 1, path: share://input.texture}
+        opacity: 1
         color: {r: 1, g: 1, b: 1, a: 1}
         size: {x: 10, y: 10}
         pivot: {x: 0.5, y: 0.5}
@@ -2792,37 +2753,19 @@ sizeDelta: {x: 500, y: 400}
 pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
---- !ScreenTransform &929
-name: !<str> ""
-guid: {a: 6505093537758933170, b: 7278613766594459560}
-enabled: true
-localPosition: {x: 0, y: 0.1792908, z: 0}
-localScale: {x: 1.2, y: 1.2, z: 1}
-localOrientation: {w: 1, x: 0, y: 0, z: 0}
-parent: {localId: 930}
-mobility:
-  __class: Mobility
-  value: Dynamic
-anchoredPosition: {x: 0, y: 5.737305}
-sizeDelta: {x: 200, y: 296.5403}
-pivot: {x: 0.5, y: 0.5}
-anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-pixelsPerUnit: 32
 --- !ScreenTransform &930
 name: !<str> ""
 guid: {a: 882734735982643164, b: 17542041077279247237}
 enabled: true
-localPosition: {x: 7.638901, y: -15.9878, z: 0}
+localPosition: {x: 7.96875, y: -15.625, z: 0}
 localScale: {x: 1, y: 1, z: 1}
 localOrientation: {w: 1, x: 0, y: 0, z: 0}
 parent: {localId: 901}
-children:
-  - {localId: 929}
 mobility:
   __class: Mobility
   value: Dynamic
-anchoredPosition: {x: 244.4448, y: -511.6098}
-sizeDelta: {x: 231.1104, y: 344.3737}
+anchoredPosition: {x: 255, y: -500}
+sizeDelta: {x: 250, y: 359.813}
 pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32

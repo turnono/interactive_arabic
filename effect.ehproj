@@ -1,8 +1,8 @@
 {
   "name": "Untitled",
-  "lastModified": "Tue, 09 Jul 2024 12:41:39 GMT",
-  "version": "4.2.6",
-  "internalVersion": "3.7.0",
+  "lastModified": "Tue, 16 Jul 2024 21:16:23 GMT",
+  "version": "4.3.0",
+  "internalVersion": "3.8.0",
   "toolName": "Effect House",
   "projectID": "99acdcf3-f032-74cc-73a9-02b856b5a479",
   "created": {
@@ -77,12 +77,12 @@
     "62": "Layer 62",
     "63": "Layer 63"
   },
-  "durationToCreate": 5425512043,
-  "durationCreation": 3339441524,
-  "durationBackground": 2962899789,
+  "durationToCreate": 6061196109,
+  "durationCreation": 3777403867,
+  "durationBackground": 3329172959,
   "autoResetEffect": false,
   "selectedIdList": [
-    "amz:Guid(2255670202689735543, 5214334564109827207)"
+    "editor:024f587b-e245-d37b-1328-bda7586ad406"
   ],
   "effectHint": "",
   "templateID": "templateID_none",
@@ -92,7 +92,7 @@
   "activityEnterFrom": "homepage",
   "activityType": "normal",
   "perfTested": true,
-  "lastSceneView": 0,
+  "lastSceneView": 1,
   "LastVideoInput": {
     "type": "preview_face",
     "name": "preview_face_nodding||2",
@@ -100,6 +100,5 @@
     "resourceUrl": "./BuiltinResource/preview/video/preview_face/nodding/1person_facenodding_2.mp4"
   },
   "soundStartTime": 0,
-  "soundSelectedDuration": 0,
-  "isCreateWithAIProject": false
+  "soundSelectedDuration": 0
 }

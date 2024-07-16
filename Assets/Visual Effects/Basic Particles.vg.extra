@@ -7,11 +7,10 @@
     "extraType": "ResItemVFXGraph",
     "name": "Basic Particles",
     "expandInPanel": false,
-    "objGuid": "",
-    "rttiType": "VFXProfile",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
+    "objGuid": "",
     "resourceFilePath": "/Applications/Effect House 2.app/Contents/Resources/BuiltinResource/VFXGraph/BuiltinAsset/Basic Particles.vg"
   }
 ]

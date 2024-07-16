@@ -13,7 +13,7 @@
     "isVisibleInInspector": true,
     "hideInPanel": false,
     "resourceFilePath": "/Applications/Effect House.app/Contents/Resources/BuiltinResource/assets/material/Standard PBR.omtl",
-    "skinObjGuid": "Guid(11403121909636646344, 6576222126692359086)",
+    "skinObjGuid": "Guid(7801362477292505342, 7045724640610786446)",
     "references": [
       {
         "propertyName": "_AlbedoTexture",
@@ -45,9 +45,9 @@
       },
       {
         "propertyName": "_RadianceTexture",
-        "guid": "00000000-0000-0000-0000-000000000800"
+        "guid": "00000000-0000-0000-0000-000000000805"
       }
     ],
-    "currAuslVersion": "1.0.0"
+    "currAuslVersion": "2.0.2"
   }
 ]

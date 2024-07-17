@@ -1744,139 +1744,6 @@
   },
   {
     "guid": {
-      "a": "0ad3945c-71c7-4897-1f02-ab6a426f10dc",
-      "b": ""
-    },
-    "objGuid": "Guid(11117658581527566349, 5411076719500835975)",
-    "extraType": "Entity",
-    "name": "Bloom",
-    "rttiType": "Entity",
-    "version": "0.1.0",
-    "isVisibleInInspector": true,
-    "hideInPanel": false,
-    "expanded": true,
-    "type": "none",
-    "isAnimatorBound": false,
-    "modelGUID": "",
-    "createdEffectNodeKey": "effect_node_post_effect",
-    "isHeadBindingRenderRoot": false
-  },
-  {
-    "guid": {
-      "a": "ffbb2274-e25b-bd1d-a78d-5f3c1ac712ae",
-      "b": ""
-    },
-    "objGuid": "Guid(12847165389972279773, 6107043832590898610)",
-    "extraType": "Transform",
-    "name": "Transform",
-    "rttiType": "Transform",
-    "version": "0.1.0",
-    "isVisibleInInspector": true,
-    "hideInPanel": false,
-    "expanded": false,
-    "editable": true,
-    "eulerAngle": [
-      0,
-      0,
-      0
-    ],
-    "linkage": 0
-  },
-  {
-    "guid": {
-      "a": "a0ca1873-e339-d0a1-0875-e25c21eb0724",
-      "b": ""
-    },
-    "objGuid": "Guid(16593412100444547839, 3690320511737904526)",
-    "extraType": "Transform",
-    "name": "Transform",
-    "rttiType": "Transform",
-    "version": "0.1.0",
-    "isVisibleInInspector": true,
-    "hideInPanel": false,
-    "expanded": true,
-    "editable": true,
-    "eulerAngle": [
-      0,
-      0,
-      0
-    ],
-    "linkage": 0
-  },
-  {
-    "guid": {
-      "a": "f9174cad-6f8c-f253-1d76-651bf285d112",
-      "b": ""
-    },
-    "objGuid": "Guid(10973356659132783588, 5525413802208544164)",
-    "extraType": "Camera",
-    "name": "Camera",
-    "rttiType": "Camera",
-    "version": "0.2.0",
-    "isVisibleInInspector": true,
-    "hideInPanel": false,
-    "expanded": false,
-    "editable": true,
-    "enableMask": false,
-    "maskTexture": "00000000-0000-0000-0000-000000000802",
-    "isAnimatorBound": false
-  },
-  {
-    "guid": {
-      "a": "94631f80-728e-0e75-5695-15633157a455",
-      "b": ""
-    },
-    "objGuid": "Guid(15150410296870631508, 13274102857415895180)",
-    "extraType": "PostProcess",
-    "name": "PostProcess",
-    "rttiType": "JSScriptComponent",
-    "version": "0.1.0",
-    "isVisibleInInspector": true,
-    "hideInPanel": false,
-    "expanded": true,
-    "editable": true,
-    "postProcessList": [
-      2
-    ]
-  },
-  {
-    "guid": {
-      "a": "a0c54b8e-c710-bbbd-e390-2d0fac75ed68",
-      "b": ""
-    },
-    "objGuid": "Guid(12919940683194905472, 9494132724413934004)",
-    "extraType": "Entity",
-    "name": "Post Effect",
-    "rttiType": "Entity",
-    "version": "0.1.0",
-    "isVisibleInInspector": true,
-    "hideInPanel": false,
-    "expanded": true,
-    "type": "none",
-    "isAnimatorBound": false,
-    "modelGUID": "",
-    "createdEffectNodeKey": "",
-    "isHeadBindingRenderRoot": false
-  },
-  {
-    "guid": {
-      "a": "caba22fb-a7ac-9e2b-7920-cff9161221b1",
-      "b": ""
-    },
-    "objGuid": "Guid(15440661136338297068, 1671735498234796724)",
-    "extraType": "EffectNode",
-    "name": "EffectNode",
-    "rttiType": "EffectNode",
-    "version": "0.1.0",
-    "isVisibleInInspector": true,
-    "hideInPanel": false,
-    "expanded": true,
-    "editable": true,
-    "type": 7,
-    "sortMethod": 1
-  },
-  {
-    "guid": {
       "a": "64b13a16-2d96-1802-5320-68ccec7c6af2",
       "b": ""
     },
@@ -1887,7 +1754,7 @@
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
-    "expanded": false,
+    "expanded": true,
     "type": "none",
     "isAnimatorBound": false,
     "modelGUID": "",
@@ -2249,7 +2116,7 @@
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
-    "expanded": false,
+    "expanded": true,
     "type": "none",
     "isAnimatorBound": false,
     "modelGUID": "",
@@ -3822,7 +3689,7 @@
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
-    "expanded": false,
+    "expanded": true,
     "type": "none",
     "isAnimatorBound": false,
     "modelGUID": "",
@@ -3933,7 +3800,7 @@
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
-    "expanded": false,
+    "expanded": true,
     "type": "none",
     "isAnimatorBound": false,
     "modelGUID": "",

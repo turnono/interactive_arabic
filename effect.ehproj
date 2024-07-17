@@ -1,6 +1,6 @@
 {
   "name": "Untitled",
-  "lastModified": "Tue, 16 Jul 2024 21:16:23 GMT",
+  "lastModified": "Wed, 17 Jul 2024 07:16:41 GMT",
   "version": "4.3.0",
   "internalVersion": "3.8.0",
   "toolName": "Effect House",
@@ -77,12 +77,12 @@
     "62": "Layer 62",
     "63": "Layer 63"
   },
-  "durationToCreate": 6061196109,
-  "durationCreation": 3777403867,
-  "durationBackground": 3329172959,
+  "durationToCreate": 6097214534,
+  "durationCreation": 3813422292,
+  "durationBackground": 3364696236,
   "autoResetEffect": false,
   "selectedIdList": [
-    "editor:024f587b-e245-d37b-1328-bda7586ad406"
+    "folder:/Users/abdullah/Documents/Github/interactive_arabic/Assets/Textures"
   ],
   "effectHint": "",
   "templateID": "templateID_none",

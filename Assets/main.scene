@@ -185,113 +185,6 @@ entities:
           value: OpenGLES30
     layer: 0
   - __class: Entity
-    name: !<str> Bloom
-    guid: {a: 11117658581527566349, b: 5411076719500835975}
-    scene: {localId: 1}
-    selfvisible: false
-    components:
-      - {localId: 172}
-      - __class: Camera
-        name: !<str> ""
-        guid: {a: 10973356659132783588, b: 5525413802208544164}
-        enabled: true
-        layerVisibleMask: {__class: DynamicBitset, numBits: 64, values: [1, 0]}
-        renderOrder: 0
-        type:
-          __class: CameraType
-          value: PERSPECTIVE
-        clearColor: {r: 0, g: 0, b: 0, a: 1}
-        clearType:
-          __class: CameraClearType
-          value: DEPTH
-        alwaysClear: true
-        viewport: {x: 0, y: 0, w: 1, h: 1}
-        fovy: 60
-        orthoScale: 1
-        zNear: 0.1000000014901161
-        zFar: 1000
-        renderTexture: {localId: 1, path: 00000000-0000-0000-0000-000000000009}
-        isRootCamera: false
-        sortMethod:
-          __class: CameraSortMethod
-          value: STRICT_SORT_ORDER
-        rtBackupMode:
-          __class: CameraRTBackupMode
-          value: CAMERA_CHANGED
-      - __class: JSScriptComponent
-        name: !<str> ""
-        guid: {a: 15150410296870631508, b: 13274102857415895180}
-        enabled: true
-        path: !<str> js/PostProcessing/Runtime/PostProcessLayer.js
-        properties:
-          __class: Map
-          pBloomAnamorphicRatio: 0
-          pBloomClamp: 9999
-          pBloomColor: {r: 0.1154095, g: 0.1375, b: 0.08078125, a: 0.06315789}
-          pBloomDiffuse: 3.3
-          pBloomEnable: true
-          pBloomFastMode: true
-          pBloomIntensity: 12.5
-          pBloomSoftknee: 0.641
-          pBloomThreshold: 0
-          pBokehBlurDownSample: 2
-          pBokehBlurEnable: false
-          pBokehBlurFastCircle: false
-          pBokehBlurIteration: 2
-          pBokehBlurShape: !<str> Hexagon
-          pBokehBlurSize: 4
-          pChromaticAberrationEnable: false
-          pChromaticAberrationIntensity: 1
-          pCustomEnable: false
-          pCustomMaterial: {localId: 1, path: 00000000-0000-0000-0000-000000000093--00000000-0000-0000-0000-000000000093.material}
-          pCustomMesh: {localId: 1, path: 00000000-0000-0000-0000-0000001234ff}
-          pDistortAmplitude: {x: -0.1, y: 0}
-          pDistortBarrelPower: -0.2
-          pDistortEnable: false
-          pDistortFrequency: {x: 9, y: 0}
-          pDistortOffset: {x: 0, y: 0}
-          pDistortRotation: 0
-          pDistortSpeed: {x: 0.8, y: 0}
-          pDistortZoom: 0.2
-          pFastChromaticAberration: false
-          pFxaaEnable: false
-          pGrainColor: 0.5
-          pGrainEnable: false
-          pGrainSpeed: 5
-          pGrainStrength: 0.5
-          pLensFlareEnable: false
-          pLensFlareIntensity: 0.5
-          pLensFlarePosition: {x: 0.7, y: 0.3}
-          pMotionBlurEnable: false
-          pStrength: 0.9
-          pVignetteContrast: 1.5
-          pVignetteEnable: false
-          pVignettePower: 1
-    layer: 0
-  - __class: Entity
-    name: !<str> Post Effect
-    guid: {a: 12919940683194905472, b: 9494132724413934004}
-    scene: {localId: 1}
-    selfvisible: true
-    components:
-      - {localId: 173}
-      - __class: EffectNode
-        name: !<str> ""
-        guid: {a: 15440661136338297068, b: 1671735498234796724}
-        enabled: true
-        outputTextures:
-          - {localId: 1, path: 00000000-0000-0000-0000-000000000009}
-        renderOrder: 10001
-        minorOrder: 0
-        type:
-          __class: EffectNodeTag
-          value: Other
-        version: 2
-        rendererType:
-          __class: RendererType
-          value: OpenGLES30
-    layer: 0
-  - __class: Entity
     name: !<str> start UI
     guid: {a: 8522020978920838775, b: 9440815874707234453}
     scene: {localId: 1}
@@ -1009,7 +902,7 @@ entities:
           __class: LightProbeBlendMode
           value: OFF
         entirePingPong: false
-        texture: {localId: 1, path: be7eefb8-da42-8194-0b1a-cf6c81e10996--be7eefb8-da42-8194-0b1a-cf6c81e10996.png}
+        texture: {localId: 1, path: 00000000-0000-0000-0000-00000000006b--00000000-0000-0000-0000-00000000006b.png}
         opacity: 1
         color: {r: 0.07575054, g: 0.9708334, b: 0.03640625, a: 1}
         size: {x: 10, y: 10}
@@ -1134,7 +1027,7 @@ entities:
           __class: LightProbeBlendMode
           value: OFF
         entirePingPong: false
-        texture: {localId: 1, path: 9ee1c002-0027-68b9-9db5-ce13e51fd3ba--9ee1c002-0027-68b9-9db5-ce13e51fd3ba.png}
+        texture: {localId: 1, path: 00000000-0000-0000-0000-00000000006b--00000000-0000-0000-0000-00000000006b.png}
         opacity: 1
         color: {r: 0.7170486, g: 0.8530669, b: 0.8916667, a: 1}
         size: {x: 10, y: 10}
@@ -2544,7 +2437,7 @@ config:
   __class: Map
 msaa:
   __class: MSAAMode
-  value: NONE
+  value: _4X
 jsScriptSystems:
   - !<str> js/GraphSystem.js
   - !<str> js/Main.js
@@ -2556,29 +2449,6 @@ pixelLightCount: 4
 resourceRendererType:
   __class: RendererType
   value: Auto
---- !Transform &172
-name: !<str> ""
-guid: {a: 12847165389972279773, b: 6107043832590898610}
-enabled: true
-localPosition: {x: -0.02401198, y: 11.05029, z: 9.506605}
-localScale: {x: 1, y: 1, z: 1}
-localOrientation: {w: 1, x: 0, y: 0, z: 0}
-parent: {localId: 173}
-mobility:
-  __class: Mobility
-  value: Dynamic
---- !Transform &173
-name: !<str> ""
-guid: {a: 16593412100444547839, b: 3690320511737904526}
-enabled: true
-localPosition: {x: 0, y: 0, z: 0}
-localScale: {x: 1, y: 1, z: 1}
-localOrientation: {w: 1, x: 0, y: 0, z: 0}
-children:
-  - {localId: 172}
-mobility:
-  __class: Mobility
-  value: Dynamic
 --- !Transform &564
 name: !<str> ""
 guid: {a: 14145000689903744101, b: 6111037265461598351}

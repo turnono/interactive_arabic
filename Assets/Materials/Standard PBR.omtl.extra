@@ -13,7 +13,7 @@
     "isVisibleInInspector": true,
     "hideInPanel": false,
     "resourceFilePath": "/Applications/Effect House.app/Contents/Resources/BuiltinResource/assets/material/Standard PBR.omtl",
-    "skinObjGuid": "Guid(2975010692934299281, 5326917735779026111)",
+    "skinObjGuid": "Guid(10612853995505978200, 9005315142332730000)",
     "references": [
       {
         "propertyName": "_AlbedoTexture",

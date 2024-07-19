@@ -6,7 +6,7 @@
     },
     "extraType": "JSAssetSegmentation",
     "name": "Subject Segmentation Texture",
-    "expandInPanel": false,
+    "expandInPanel": true,
     "objGuid": "",
     "rttiType": "ScreenRenderTexture",
     "version": "0.1.0",

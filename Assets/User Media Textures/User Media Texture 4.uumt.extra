@@ -6,7 +6,7 @@
     },
     "extraType": "JSAssetUserUploadedMedia",
     "name": "User Media Texture 4",
-    "expandInPanel": false,
+    "expandInPanel": true,
     "objGuid": "",
     "rttiType": "RenderTexture",
     "version": "0.1.0",

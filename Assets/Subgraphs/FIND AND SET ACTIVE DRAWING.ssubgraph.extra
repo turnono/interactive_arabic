@@ -1,0 +1,16 @@
+[
+  {
+    "guid": {
+      "a": "9883e85b-027b-a2d3-0e6f-9ba6e7bcbff7",
+      "b": ""
+    },
+    "extraType": "ResItemVSSubgraph",
+    "name": "FIND AND SET ACTIVE DRAWING",
+    "expandInPanel": true,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": "",
+    "combinedWithNodeLibary": false
+  }
+]

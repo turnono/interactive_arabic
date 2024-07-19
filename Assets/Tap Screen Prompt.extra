@@ -6,7 +6,7 @@
     },
     "extraType": "ResItemFolder",
     "name": "Tap Screen Prompt",
-    "expandInPanel": false,
+    "expandInPanel": true,
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,

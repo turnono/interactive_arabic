@@ -1,0 +1,16 @@
+[
+  {
+    "guid": {
+      "a": "3f4c9dd5-946a-5f44-7c20-4442b4d04e4d",
+      "b": ""
+    },
+    "extraType": "ResItemVSSubgraph",
+    "name": "Draw on Touch",
+    "expandInPanel": true,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": "",
+    "combinedWithNodeLibary": false
+  }
+]

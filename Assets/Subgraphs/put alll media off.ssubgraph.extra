@@ -1,0 +1,16 @@
+[
+  {
+    "guid": {
+      "a": "934d5a4c-6d3a-c77b-d87b-f82d1dc86cce",
+      "b": ""
+    },
+    "extraType": "ResItemVSSubgraph",
+    "name": "put alll media off",
+    "expandInPanel": true,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": "",
+    "combinedWithNodeLibary": false
+  }
+]

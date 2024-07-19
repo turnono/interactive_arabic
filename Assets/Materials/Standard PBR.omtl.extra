@@ -6,14 +6,14 @@
     },
     "extraType": "ResItemMaterialOmtl",
     "name": "Standard PBR",
-    "expandInPanel": false,
+    "expandInPanel": true,
     "objGuid": "",
     "rttiType": "Material",
     "version": "0.6.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
     "resourceFilePath": "/Applications/Effect House.app/Contents/Resources/BuiltinResource/assets/material/Standard PBR.omtl",
-    "skinObjGuid": "Guid(7801362477292505342, 7045724640610786446)",
+    "skinObjGuid": "Guid(2975010692934299281, 5326917735779026111)",
     "references": [
       {
         "propertyName": "_AlbedoTexture",

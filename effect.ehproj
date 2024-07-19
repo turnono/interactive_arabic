@@ -1,6 +1,6 @@
 {
   "name": "Untitled",
-  "lastModified": "Wed, 17 Jul 2024 07:16:41 GMT",
+  "lastModified": "Fri, 19 Jul 2024 12:34:44 GMT",
   "version": "4.3.0",
   "internalVersion": "3.8.0",
   "toolName": "Effect House",
@@ -77,12 +77,12 @@
     "62": "Layer 62",
     "63": "Layer 63"
   },
-  "durationToCreate": 6097214534,
-  "durationCreation": 3813422292,
-  "durationBackground": 3364696236,
+  "durationToCreate": 6289097680,
+  "durationCreation": 3981424855,
+  "durationBackground": 3478951333,
   "autoResetEffect": false,
   "selectedIdList": [
-    "folder:/Users/abdullah/Documents/Github/interactive_arabic/Assets/Textures"
+    "editor:a8ff5850-2254-81dc-af93-52768feccdce"
   ],
   "effectHint": "",
   "templateID": "templateID_none",
@@ -95,9 +95,9 @@
   "lastSceneView": 1,
   "LastVideoInput": {
     "type": "preview_face",
-    "name": "preview_face_nodding||2",
-    "index": 5,
-    "resourceUrl": "./BuiltinResource/preview/video/preview_face/nodding/1person_facenodding_2.mp4"
+    "name": "preview_face_idle||2",
+    "index": 1,
+    "resourceUrl": "./BuiltinResource/preview/video/preview_face/idle/1person_faceidle_2.mp4"
   },
   "soundStartTime": 0,
   "soundSelectedDuration": 0

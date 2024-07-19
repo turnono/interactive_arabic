@@ -1,0 +1,16 @@
+[
+  {
+    "guid": {
+      "a": "9c3ec009-4948-09ea-5641-42e69feef758",
+      "b": ""
+    },
+    "extraType": "ResItemVSSubgraph",
+    "name": "CHECK IF USER MEDIA 3 EXISTS AND SET MEDIA 3 VISIBLE ELSE RETURN",
+    "expandInPanel": true,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": "",
+    "combinedWithNodeLibary": false
+  }
+]

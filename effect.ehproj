@@ -1,6 +1,6 @@
 {
   "name": "Untitled",
-  "lastModified": "Fri, 19 Jul 2024 18:57:19 GMT",
+  "lastModified": "Wed, 24 Jul 2024 10:23:57 GMT",
   "version": "4.3.0",
   "internalVersion": "3.8.0",
   "toolName": "Effect House",
@@ -13,7 +13,7 @@
   },
   "renderNames": {
     "0": "Default Layer",
-    "1": "effect user",
+    "1": "Recording Only",
     "2": "Layer 2",
     "3": "Layer 3",
     "4": "Layer 4",
@@ -77,12 +77,12 @@
     "62": "Layer 62",
     "63": "Layer 63"
   },
-  "durationToCreate": 6312052763,
-  "durationCreation": 4004350477,
-  "durationBackground": 3499531410,
+  "durationToCreate": 6713250637,
+  "durationCreation": 4262994259,
+  "durationBackground": 3753025448,
   "autoResetEffect": false,
   "selectedIdList": [
-    "amz:Guid(308556741836963895, 7940223508147166651)"
+    "amz:Guid(3838945155709982642, 18171229638946183553)"
   ],
   "effectHint": "",
   "templateID": "templateID_none",
@@ -92,7 +92,7 @@
   "activityEnterFrom": "homepage",
   "activityType": "normal",
   "perfTested": true,
-  "lastSceneView": 0,
+  "lastSceneView": 1,
   "LastVideoInput": {
     "type": "preview_face",
     "name": "preview_face_idle||2",

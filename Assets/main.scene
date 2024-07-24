@@ -127,7 +127,7 @@ entities:
         rotation: 0
     layer: 0
   - __class: Entity
-    name: !<str> 2D Camera
+    name: !<str> RECORDING Camera
     guid: {a: 3838945155709982642, b: 18171229638946183553}
     scene: {localId: 1}
     selfvisible: true
@@ -137,7 +137,7 @@ entities:
         name: !<str> ""
         guid: {a: 15082202674567890196, b: 3745481573781897621}
         enabled: true
-        layerVisibleMask: {__class: DynamicBitset, numBits: 64, values: [1, 0]}
+        layerVisibleMask: {__class: DynamicBitset, numBits: 64, values: [2, 0]}
         renderOrder: 0
         type:
           __class: CameraType
@@ -472,7 +472,7 @@ entities:
         enabled: true
         sharedMaterials:
           - {localId: 0}
-        sortingOrder: 18
+        sortingOrder: 19
         autoSortingOrder: true
         useFrustumCulling: true
         receiveShadow: true
@@ -511,7 +511,7 @@ entities:
         enabled: true
         sharedMaterials:
           - {localId: 0}
-        sortingOrder: 19
+        sortingOrder: 20
         autoSortingOrder: true
         useFrustumCulling: true
         receiveShadow: true
@@ -558,7 +558,7 @@ entities:
         enabled: true
         sharedMaterials:
           - {localId: 0}
-        sortingOrder: 20
+        sortingOrder: 21
         autoSortingOrder: true
         useFrustumCulling: true
         receiveShadow: true
@@ -597,7 +597,7 @@ entities:
         enabled: true
         sharedMaterials:
           - {localId: 0}
-        sortingOrder: 22
+        sortingOrder: 23
         autoSortingOrder: true
         useFrustumCulling: true
         receiveShadow: true
@@ -636,7 +636,7 @@ entities:
         enabled: true
         sharedMaterials:
           - {localId: 0}
-        sortingOrder: 21
+        sortingOrder: 22
         autoSortingOrder: true
         useFrustumCulling: true
         receiveShadow: true
@@ -683,7 +683,7 @@ entities:
         enabled: true
         sharedMaterials:
           - {localId: 0}
-        sortingOrder: 24
+        sortingOrder: 25
         autoSortingOrder: true
         useFrustumCulling: true
         receiveShadow: true
@@ -722,7 +722,7 @@ entities:
         enabled: true
         sharedMaterials:
           - {localId: 0}
-        sortingOrder: 23
+        sortingOrder: 24
         autoSortingOrder: true
         useFrustumCulling: true
         receiveShadow: true
@@ -761,7 +761,7 @@ entities:
         enabled: true
         sharedMaterials:
           - {localId: 0}
-        sortingOrder: 25
+        sortingOrder: 26
         autoSortingOrder: true
         useFrustumCulling: true
         receiveShadow: true
@@ -816,7 +816,7 @@ entities:
         enabled: true
         sharedMaterials:
           - {localId: 0}
-        sortingOrder: 26
+        sortingOrder: 27
         autoSortingOrder: true
         useFrustumCulling: true
         receiveShadow: true
@@ -855,7 +855,7 @@ entities:
         enabled: true
         sharedMaterials:
           - {localId: 0}
-        sortingOrder: 27
+        sortingOrder: 28
         autoSortingOrder: true
         useFrustumCulling: true
         receiveShadow: true
@@ -894,7 +894,7 @@ entities:
         enabled: true
         sharedMaterials:
           - {localId: 0}
-        sortingOrder: 28
+        sortingOrder: 29
         autoSortingOrder: true
         useFrustumCulling: true
         receiveShadow: true
@@ -941,7 +941,7 @@ entities:
         enabled: true
         sharedMaterials:
           - {localId: 0}
-        sortingOrder: 29
+        sortingOrder: 30
         autoSortingOrder: true
         useFrustumCulling: true
         receiveShadow: true
@@ -980,7 +980,7 @@ entities:
         enabled: true
         sharedMaterials:
           - {localId: 0}
-        sortingOrder: 30
+        sortingOrder: 31
         autoSortingOrder: true
         useFrustumCulling: true
         receiveShadow: true
@@ -1019,7 +1019,7 @@ entities:
         enabled: true
         sharedMaterials:
           - {localId: 0}
-        sortingOrder: 31
+        sortingOrder: 32
         autoSortingOrder: true
         useFrustumCulling: true
         receiveShadow: true
@@ -1207,7 +1207,7 @@ entities:
         enabled: true
         sharedMaterials:
           - {localId: 0}
-        sortingOrder: 32
+        sortingOrder: 33
         autoSortingOrder: true
         useFrustumCulling: true
         receiveShadow: true
@@ -1246,7 +1246,7 @@ entities:
         enabled: true
         sharedMaterials:
           - {localId: 0}
-        sortingOrder: 33
+        sortingOrder: 34
         autoSortingOrder: true
         useFrustumCulling: true
         receiveShadow: true
@@ -1285,7 +1285,7 @@ entities:
         enabled: true
         sharedMaterials:
           - {localId: 0}
-        sortingOrder: 34
+        sortingOrder: 35
         autoSortingOrder: true
         useFrustumCulling: true
         receiveShadow: true
@@ -1625,7 +1625,7 @@ entities:
         enabled: true
         sharedMaterials:
           - {localId: 1, path: 1dc727aa-8d5d-8b7a-bac3-c57664acd8bd--1dc727aa-8d5d-8b7a-bac3-c57664acd8bd.material}
-        sortingOrder: 41
+        sortingOrder: 13
         autoSortingOrder: true
         useFrustumCulling: true
         receiveShadow: true
@@ -1672,7 +1672,7 @@ entities:
         enabled: true
         sharedMaterials:
           - {localId: 0}
-        sortingOrder: 16
+        sortingOrder: 17
         autoSortingOrder: true
         useFrustumCulling: true
         receiveShadow: true
@@ -1697,7 +1697,7 @@ entities:
           _filledRange: 1
           _filledType: 0
           _startPoint: 0
-    layer: 0
+    layer: 1
   - __class: Entity
     name: !<str> expand camera Button
     guid: {a: 7876121777427389836, b: 386608646136740499}
@@ -1711,7 +1711,7 @@ entities:
         enabled: true
         sharedMaterials:
           - {localId: 0}
-        sortingOrder: 17
+        sortingOrder: 18
         autoSortingOrder: true
         useFrustumCulling: true
         receiveShadow: true
@@ -1736,7 +1736,7 @@ entities:
           _filledRange: 1
           _filledType: 0
           _startPoint: 0
-    layer: 0
+    layer: 1
   - __class: Entity
     name: !<str> expand actions
     guid: {a: 3192537369421871850, b: 2763112608049403271}
@@ -1758,7 +1758,7 @@ entities:
         enabled: true
         sharedMaterials:
           - {localId: 0}
-        sortingOrder: 13
+        sortingOrder: 14
         autoSortingOrder: true
         useFrustumCulling: true
         receiveShadow: true
@@ -1797,7 +1797,7 @@ entities:
         enabled: true
         sharedMaterials:
           - {localId: 0}
-        sortingOrder: 14
+        sortingOrder: 15
         autoSortingOrder: true
         useFrustumCulling: true
         receiveShadow: true
@@ -1836,7 +1836,7 @@ entities:
         enabled: true
         sharedMaterials:
           - {localId: 0}
-        sortingOrder: 15
+        sortingOrder: 16
         autoSortingOrder: true
         useFrustumCulling: true
         receiveShadow: true
@@ -1866,7 +1866,7 @@ entities:
     name: !<str> drawing (1)
     guid: {a: 308556741836963895, b: 7940223508147166651}
     scene: {localId: 1}
-    selfvisible: true
+    selfvisible: false
     components:
       - {localId: 939}
       - __class: ImageRenderer
@@ -1922,7 +1922,7 @@ entities:
         enabled: true
         sharedMaterials:
           - {localId: 0}
-        sortingOrder: 35
+        sortingOrder: 36
         autoSortingOrder: true
         useFrustumCulling: true
         receiveShadow: true
@@ -1961,7 +1961,7 @@ entities:
         enabled: true
         sharedMaterials:
           - {localId: 0}
-        sortingOrder: 36
+        sortingOrder: 37
         autoSortingOrder: true
         useFrustumCulling: true
         receiveShadow: true
@@ -2008,7 +2008,7 @@ entities:
         enabled: true
         sharedMaterials:
           - {localId: 0}
-        sortingOrder: 37
+        sortingOrder: 38
         autoSortingOrder: true
         useFrustumCulling: true
         receiveShadow: true
@@ -2047,7 +2047,7 @@ entities:
         enabled: true
         sharedMaterials:
           - {localId: 0}
-        sortingOrder: 38
+        sortingOrder: 39
         autoSortingOrder: true
         useFrustumCulling: true
         receiveShadow: true
@@ -2094,7 +2094,7 @@ entities:
         enabled: true
         sharedMaterials:
           - {localId: 0}
-        sortingOrder: 39
+        sortingOrder: 40
         autoSortingOrder: true
         useFrustumCulling: true
         receiveShadow: true
@@ -2133,7 +2133,7 @@ entities:
         enabled: true
         sharedMaterials:
           - {localId: 0}
-        sortingOrder: 40
+        sortingOrder: 41
         autoSortingOrder: true
         useFrustumCulling: true
         receiveShadow: true
@@ -2159,12 +2159,55 @@ entities:
           _filledType: 0
           _startPoint: 0
     layer: 0
+  - __class: Entity
+    name: !<str> OUTPUT Camera
+    guid: {a: 2037916203254485122, b: 1929542727221319612}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 966}
+      - __class: Camera
+        name: !<str> ""
+        guid: {a: 3624532843565584813, b: 11403769357800863658}
+        enabled: true
+        layerVisibleMask: {__class: DynamicBitset, numBits: 64, values: [29, 0]}
+        renderOrder: 0
+        type:
+          __class: CameraType
+          value: ORTHO
+        clearColor: {r: 0, g: 0, b: 0, a: 1}
+        clearType:
+          __class: CameraClearType
+          value: DEPTH
+        alwaysClear: true
+        viewport: {x: 0, y: 0, w: 1, h: 1}
+        fovy: 60
+        orthoScale: 20
+        zNear: 0.1000000014901161
+        zFar: 1000
+        renderTexture: {localId: 1, path: 00000000-0000-0000-0000-000000000009}
+        isRootCamera: false
+        sortMethod:
+          __class: CameraSortMethod
+          value: STRICT_SORT_ORDER
+        rtBackupMode:
+          __class: CameraRTBackupMode
+          value: CAMERA_CHANGED
+    layer: 0
+  - __class: Entity
+    name: !<str> container UI
+    guid: {a: 17240920933497199719, b: 11206227626145364359}
+    scene: {localId: 1}
+    selfvisible: false
+    components:
+      - {localId: 967}
+    layer: 0
 visible: true
 config:
   __class: Map
 msaa:
   __class: MSAAMode
-  value: NONE
+  value: _4X
 jsScriptSystems:
   - !<str> js/GraphSystem.js
   - !<str> js/Main.js
@@ -2458,7 +2501,6 @@ localScale: {x: 1, y: 1, z: 1}
 localOrientation: {w: 1, x: 0, y: 0, z: 0}
 parent: {localId: 889}
 children:
-  - {localId: 896}
   - {localId: 901}
 mobility:
   __class: Mobility
@@ -2471,6 +2513,7 @@ localPosition: {x: 0, y: 0, z: 0}
 localScale: {x: 1, y: 1, z: 1}
 localOrientation: {w: 1, x: 0, y: 0, z: 0}
 children:
+  - {localId: 966}
   - {localId: 888}
   - {localId: 893}
 mobility:
@@ -2529,7 +2572,7 @@ enabled: true
 localPosition: {x: -8.4375, y: 13.27315, z: -40}
 localScale: {x: 0.12, y: 0.12, z: 1}
 localOrientation: {w: 1, x: 0, y: 0, z: 0}
-parent: {localId: 888}
+parent: {localId: 966}
 children:
   - {localId: 897}
 mobility:
@@ -2617,11 +2660,9 @@ localScale: {x: 1, y: 1, z: 1}
 localOrientation: {w: 1, x: 0, y: 0, z: 0}
 parent: {localId: 888}
 children:
-  - {localId: 939}
   - {localId: 935}
   - {localId: 931}
   - {localId: 903}
-  - {localId: 930}
 mobility:
   __class: Mobility
   value: Dynamic
@@ -3090,7 +3131,7 @@ enabled: true
 localPosition: {x: 7.96875, y: -15.625, z: 0}
 localScale: {x: 1, y: 1, z: 1}
 localOrientation: {w: 1, x: 0, y: 0, z: 0}
-parent: {localId: 901}
+parent: {localId: 967}
 mobility:
   __class: Mobility
   value: Dynamic
@@ -3222,14 +3263,14 @@ pixelsPerUnit: 32
 name: !<str> ""
 guid: {a: 12340152982902132917, b: 6178434202293088927}
 enabled: true
-localPosition: {x: 0, y: -0.6250019, z: 0}
+localPosition: {x: 0, y: -0.625, z: 0}
 localScale: {x: 0.9999999, y: 1, z: 1}
 localOrientation: {w: 1, x: 0, y: 0, z: 0}
-parent: {localId: 901}
+parent: {localId: 967}
 mobility:
   __class: Mobility
   value: Dynamic
-anchoredPosition: {x: 0, y: -20.00008}
+anchoredPosition: {x: 0, y: -20.00003}
 sizeDelta: {x: 728.0355, y: 1250}
 pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
@@ -3384,6 +3425,39 @@ mobility:
   value: Dynamic
 anchoredPosition: {x: 0, y: -0.0003967285}
 sizeDelta: {x: 720, y: 1280}
+pivot: {x: 0.5, y: 0.5}
+anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+pixelsPerUnit: 32
+--- !Transform &966
+name: !<str> ""
+guid: {a: 16233561431965373841, b: 12082666600734039472}
+enabled: true
+localPosition: {x: 0, y: 0, z: 40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 889}
+children:
+  - {localId: 896}
+  - {localId: 967}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !ScreenTransform &967
+name: !<str> ""
+guid: {a: 6362550830413001695, b: 9211370435298005933}
+enabled: true
+localPosition: {x: 0, y: 1.368646, z: -40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 966}
+children:
+  - {localId: 939}
+  - {localId: 930}
+mobility:
+  __class: Mobility
+  value: Dynamic
+anchoredPosition: {x: 0, y: 43.79666}
+sizeDelta: {x: 530, y: 950}
 pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32

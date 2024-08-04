@@ -2207,7 +2207,7 @@ config:
   __class: Map
 msaa:
   __class: MSAAMode
-  value: NONE
+  value: _4X
 jsScriptSystems:
   - !<str> js/GraphSystem.js
   - !<str> js/Main.js

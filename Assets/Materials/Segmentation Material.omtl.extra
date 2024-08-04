@@ -13,7 +13,7 @@
     "isVisibleInInspector": true,
     "hideInPanel": false,
     "resourceFilePath": "/Applications/Effect House.app/Contents/Resources/BuiltinResource/InternalPlugins/Segmentation/PluginResource/materials/Default_Segmentation_Material.omtl",
-    "skinObjGuid": "Guid(1246664197822809490, 11849769135712038295)",
+    "skinObjGuid": "Guid(14720145888323772065, 16751755993185761948)",
     "references": [
       {
         "propertyName": "_SegTex",

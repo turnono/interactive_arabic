@@ -1,6 +1,6 @@
 {
   "name": "Untitled",
-  "lastModified": "Thu, 25 Jul 2024 12:26:52 GMT",
+  "lastModified": "Sun, 28 Jul 2024 12:20:52 GMT",
   "version": "4.3.0",
   "internalVersion": "3.8.0",
   "toolName": "Effect House",
@@ -77,9 +77,9 @@
     "62": "Layer 62",
     "63": "Layer 63"
   },
-  "durationToCreate": 6807025570,
-  "durationCreation": 4356769192,
-  "durationBackground": 3846470205,
+  "durationToCreate": 6808427166,
+  "durationCreation": 4358170788,
+  "durationBackground": 3847851075,
   "autoResetEffect": false,
   "selectedIdList": [
     "amz:Guid(3838945155709982642, 18171229638946183553)"

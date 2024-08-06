@@ -8,7 +8,7 @@
     "name": "Subject Segmentation Texture",
     "expandInPanel": true,
     "objGuid": "",
-    "rttiType": "ScreenRenderTexture",
+    "rttiType": "Texture",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false

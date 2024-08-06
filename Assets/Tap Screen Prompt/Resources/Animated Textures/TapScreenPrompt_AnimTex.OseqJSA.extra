@@ -8,7 +8,7 @@
     "name": "TapScreenPrompt_AnimTex",
     "expandInPanel": true,
     "objGuid": "",
-    "rttiType": "Texture2D",
+    "rttiType": "Texture",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,

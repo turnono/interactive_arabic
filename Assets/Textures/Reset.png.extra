@@ -8,7 +8,7 @@
     "name": "Reset",
     "expandInPanel": false,
     "objGuid": "",
-    "rttiType": "Texture2D",
+    "rttiType": "Texture",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,

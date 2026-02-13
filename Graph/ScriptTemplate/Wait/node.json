@@ -37,6 +37,7 @@
 		}
 	],
 	"lua": "CGWait.lua",
+	"scriptAPIVersion": "1.0.0",
 	"js": "CGWait.js",
 	"version": "1.0.1",
 	"amazingVersion": "10.40.0",

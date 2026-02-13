@@ -1,6 +1,6 @@
 
 "use strict";
-const Amaz = effect.Amaz;
+const APJS = require('./amazingpro');
 const { BaseNode } = require('./BaseNode');
 class CGSceneObjectInfo extends BaseNode {
     constructor(){
@@ -21,7 +21,7 @@ class CGSceneObjectInfo extends BaseNode {
             case 1:
                 return this.sys.layerNameMap[sceneObject.layer];
             case 2:
-                return sceneObject.visible;
+                return sceneObject.isEnabledInHierarchy();
         }
     }
 }

@@ -27,6 +27,7 @@
 			"displayTypeKey": "graph_type_vec2"
 		}
 	],
+	"scriptAPIVersion": "1.0.0",
 	"js": "CGNormalizeVector.js",
 	"version": "1.0.0",
 	"amazingVersion": "10.40.0",

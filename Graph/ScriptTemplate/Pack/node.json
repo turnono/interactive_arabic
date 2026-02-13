@@ -94,6 +94,7 @@
 		}
 	],
 	"lua": "CGPackNode.lua",
+	"scriptAPIVersion": "1.0.0",
 	"js": "CGPackNode.js",
 	"luaFuncName": "CGPackNode",
 	"category": "Utility",

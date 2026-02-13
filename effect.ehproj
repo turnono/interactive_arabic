@@ -1,6 +1,6 @@
 {
   "name": "Untitled",
-  "lastModified": "Tue, 06 Aug 2024 18:08:03 GMT",
+  "lastModified": "Thu, 08 Aug 2024 20:17:24 GMT",
   "version": "4.4.0",
   "internalVersion": "3.9.0",
   "toolName": "Effect House",
@@ -77,12 +77,12 @@
     "62": "Layer 62",
     "63": "Layer 63"
   },
-  "durationToCreate": 6808427166,
-  "durationCreation": 4358170788,
-  "durationBackground": 3847851075,
+  "durationToCreate": 7953183964,
+  "durationCreation": 4436895390,
+  "durationBackground": 3918973969,
   "autoResetEffect": false,
   "selectedIdList": [
-    "amz:Guid(3838945155709982642, 18171229638946183553)"
+    "amz:Guid(2255670202689735543, 5214334564109827207)"
   ],
   "effectHint": "",
   "templateID": "templateID_none",
@@ -92,12 +92,12 @@
   "activityEnterFrom": "homepage",
   "activityType": "normal",
   "perfTested": true,
-  "lastSceneView": 1,
+  "lastSceneView": 0,
   "LastVideoInput": {
     "type": "preview_face",
-    "name": "preview_face_idle||2",
-    "index": 1,
-    "resourceUrl": "./BuiltinResource/preview/video/preview_face/idle/1person_faceidle_2.mp4"
+    "name": "preview_face_nodding||2",
+    "index": 5,
+    "resourceUrl": "./BuiltinResource/preview/video/preview_face/nodding/1person_facenodding_2.mp4"
   },
   "soundStartTime": 0,
   "soundSelectedDuration": 0

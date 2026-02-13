@@ -1,5 +1,6 @@
 const {BaseNode} = require('./BaseNode');
-const Amaz = effect.Amaz;
+const APJS = require('./amazingpro');
+
 
 class OnePointTouch extends BaseNode {
   constructor() {
@@ -7,44 +8,37 @@ class OnePointTouch extends BaseNode {
     this.moving = false;
     this.idle = true;
     this.frameSinceTouchBegin = 0;
-    this.lastTouchPosition = new Amaz.Vector2f(-1.0, -1.0);
-    this.currentTouchPosition = new Amaz.Vector2f(-1.0, -1.0);
-  }
-
-  _reset() {
-    this.idle = true;
-    this.moving = false;
-    this.currentTouchPosition.x = -1.0;
-    this.currentTouchPosition.y = -1.0;
+    this.lastTouchPosition = new APJS.Vector2f(-1.0, -1.0);
+    this.currentTouchPosition = new APJS.Vector2f(-1.0, -1.0);
   }
 
   beforeStart(sys) {
-    this._reset();
+    this.reset();
     this.lastTouchPosition.x = -1.0;
     this.lastTouchPosition.y = -1.0;
   }
 
   onEvent(sys, event) {
-    if (event.type === Amaz.EventType.TOUCH) {
+    if (event.type === APJS.EventType.TOUCH) {
       const touch = event.args.get(0);
-      this.currentTouchPosition = new Amaz.Vector2f(touch.x, 1.0 - touch.y);
+      this.currentTouchPosition = new APJS.Vector2f(touch.x, 1.0 - touch.y);
 
       // Update output while onEvent is triggered, before executing the next nodes
       this.outputs[4] = this.currentTouchPosition;
 
       this.moving = false;
-      if (touch.type === Amaz.TouchType.TOUCH_BEGAN) {
+      if (touch.type === APJS.TouchType.TOUCH_BEGAN) {
         this.frameSinceTouchBegin = 0;
         this.idle = false;
         if (this.nexts[1]) {
           this.nexts[1]();
         }
-      } else if (touch.type === Amaz.TouchType.TOUCH_ENDED || touch.type === Amaz.TouchType.TOUCH_CANCELED) {
+      } else if (touch.type === APJS.TouchType.TOUCH_ENDED || touch.type === APJS.TouchType.TOUCH_CANCELED) {
         if (this.nexts[3]) {
           this.nexts[3]();
         }
         // reset after executing the touch end pulse
-        this._reset();
+        this.reset();
       }
     }
   }
@@ -70,7 +64,14 @@ class OnePointTouch extends BaseNode {
     this.frameSinceTouchBegin = 0;
     this.lastTouchPosition.x = -1.0;
     this.lastTouchPosition.y = -1.0;
-    this._reset()    
+    this.reset()    
+  }
+
+  reset() {
+    this.idle = true;
+    this.moving = false;
+    this.currentTouchPosition.x = -1.0;
+    this.currentTouchPosition.y = -1.0;
   }
 }
 

@@ -1,5 +1,5 @@
 const {BaseNode} = require('./BaseNode');
-const Amaz = effect.Amaz;
+const APJS = require('./amazingpro');
 
 const PointerState = {
   UNINIT: 'UNINIT',
@@ -14,8 +14,8 @@ class Pointer {
     this.Stay = false;
     this.OnStop = false;
     this.id = undefined;
-    this.currentPos = new Amaz.Vector2f(-1.0, -1.0);
-    this.lastPos = new Amaz.Vector2f(-1.0, -1.0);
+    this.currentPos = new APJS.Vector2f(-1.0, -1.0);
+    this.lastPos = new APJS.Vector2f(-1.0, -1.0);
     this.state = PointerState.UNINIT;
   }
 }
@@ -34,7 +34,7 @@ class OnePointTouch extends BaseNode {
   }
 
   onEvent(sys, event) {
-    if (event.type === Amaz.EventType.TOUCH) {
+    if (event.type === APJS.EventType.TOUCH) {
       this._handleTouchEvent(event);
     }
   }
@@ -63,8 +63,8 @@ class OnePointTouch extends BaseNode {
         false,
         false,
         false,
-        new Amaz.Vector2f(-1.0,-1.0),
-        new Amaz.Vector2f(this.selectedPointer.currentPos.x, this.selectedPointer.currentPos.y)
+        new APJS.Vector2f(-1.0,-1.0),
+        new APJS.Vector2f(this.selectedPointer.currentPos.x, this.selectedPointer.currentPos.y)
       );
     }
   }
@@ -73,7 +73,7 @@ class OnePointTouch extends BaseNode {
     const pointer = event.args.get(0);
     if (pointer !== undefined) {
       const type = pointer.type;
-      if (type === Amaz.TouchType.TOUCH_BEGAN) {
+      if (type === APJS.TouchType.TOUCH_BEGAN) {
         if (this.Pointer0.state === PointerState.UNINIT || this.Pointer0.state === PointerState.FINISH) {
           this._setPointer(
             this.Pointer0,
@@ -83,8 +83,8 @@ class OnePointTouch extends BaseNode {
             true,
             false,
             false,
-            new Amaz.Vector2f(pointer.x, 1.0 - pointer.y),
-            new Amaz.Vector2f(-1.0,-1.0),
+            new APJS.Vector2f(pointer.x, 1.0 - pointer.y),
+            new APJS.Vector2f(-1.0,-1.0),
           );
         } else if (this.Pointer1.state === PointerState.UNINIT || this.Pointer1.state === PointerState.UNINIT) {
           if(pointer.pointerId !== this.Pointer0.id){
@@ -96,12 +96,12 @@ class OnePointTouch extends BaseNode {
               true,
               false,
               false,
-              new Amaz.Vector2f(pointer.x, 1.0 - pointer.y),
-              new Amaz.Vector2f(-1.0,-1.0)
+              new APJS.Vector2f(pointer.x, 1.0 - pointer.y),
+              new APJS.Vector2f(-1.0,-1.0)
             );
           }
         }
-      } else if (type === Amaz.TouchType.TOUCH_MOVED) {
+      } else if (type === APJS.TouchType.TOUCH_MOVED) {
         if (this.Pointer0.state === PointerState.RIGHT && pointer.pointerId === this.Pointer0.id) {
           this._setPointer(
             this.Pointer0,
@@ -111,8 +111,8 @@ class OnePointTouch extends BaseNode {
             false,
             true,
             false,
-            new Amaz.Vector2f(pointer.x, 1.0 - pointer.y),
-            new Amaz.Vector2f(this.Pointer0.currentPos.x, this.Pointer0.currentPos.y)
+            new APJS.Vector2f(pointer.x, 1.0 - pointer.y),
+            new APJS.Vector2f(this.Pointer0.currentPos.x, this.Pointer0.currentPos.y)
           );
         } else if (this.Pointer1.state === PointerState.RIGHT && pointer.pointerId === this.Pointer1.id) {
           this._setPointer(
@@ -123,11 +123,11 @@ class OnePointTouch extends BaseNode {
             false,
             true,
             false,
-            new Amaz.Vector2f(pointer.x, 1.0 - pointer.y),
-            new Amaz.Vector2f(this.Pointer1.currentPos.x, this.Pointer1.currentPos.y)
+            new APJS.Vector2f(pointer.x, 1.0 - pointer.y),
+            new APJS.Vector2f(this.Pointer1.currentPos.x, this.Pointer1.currentPos.y)
           );
         }
-      } else if (type === Amaz.TouchType.TOUCH_ENDED) {
+      } else if (type === APJS.TouchType.TOUCH_ENDED) {
         if (this.Pointer0.state === PointerState.RIGHT && pointer.pointerId === this.Pointer0.id) {
           this._setPointer(
             this.Pointer0,
@@ -137,8 +137,8 @@ class OnePointTouch extends BaseNode {
             false,
             false,
             true,
-            new Amaz.Vector2f(pointer.x, 1.0 - pointer.y),
-            new Amaz.Vector2f(this.Pointer0.currentPos.x, this.Pointer0.currentPos.y)
+            new APJS.Vector2f(pointer.x, 1.0 - pointer.y),
+            new APJS.Vector2f(this.Pointer0.currentPos.x, this.Pointer0.currentPos.y)
           );
         } else if (this.Pointer1.state === PointerState.RIGHT && pointer.pointerId === this.Pointer1.id) {
           this._setPointer(
@@ -149,8 +149,8 @@ class OnePointTouch extends BaseNode {
             false,
             false,
             true,
-            new Amaz.Vector2f(pointer.x, 1.0 - pointer.y),
-            new Amaz.Vector2f(this.Pointer1.currentPos.x, this.Pointer1.currentPos.y)
+            new APJS.Vector2f(pointer.x, 1.0 - pointer.y),
+            new APJS.Vector2f(this.Pointer1.currentPos.x, this.Pointer1.currentPos.y)
           );
         }
       }
@@ -187,10 +187,10 @@ class OnePointTouch extends BaseNode {
 
   _reset() {
     for(let pointer of this.pointers){
-      this._setPointer(pointer, undefined, PointerState.UNINIT, true, false, false, false, new Amaz.Vector2f(-1.0, -1.0), new Amaz.Vector2f(-1.0, -1.0));
+      this._setPointer(pointer, undefined, PointerState.UNINIT, true, false, false, false, new APJS.Vector2f(-1.0, -1.0), new APJS.Vector2f(-1.0, -1.0));
     }
-    this.outputs[4] = new Amaz.Vector2f(-1.0, -1.0);
-    this.outputs[5] = new Amaz.Vector2f(-1.0, -1.0);
+    this.outputs[4] = new APJS.Vector2f(-1.0, -1.0);
+    this.outputs[5] = new APJS.Vector2f(-1.0, -1.0);
   }
 
   beforeStart(sys) {

@@ -1,11 +1,12 @@
 'use strict';
-const Amaz = effect.Amaz;
+
+const APJS = require('./amazingpro');
 const {BaseNode} = require('./BaseNode');
 class CGSetMaterial extends BaseNode {
   constructor() {
     super();
     this.materialPropertySheetNameMap = {
-      Texture2D: 'texmap',
+      Texture: 'texmap',
       Double: 'floatmap',
       Vector2f: 'vec2map',
       Vector3f: 'vec3map',
@@ -14,7 +15,7 @@ class CGSetMaterial extends BaseNode {
       Matrix4x4f: 'mat4map',
     };
     this.materialSetterMap = {
-      Texture2D: 'setTex',
+      Texture: 'setTex',
       Double: 'setFloat',
       Vector2f: 'setVec2',
       Vector3f: 'setVec3',
@@ -23,7 +24,7 @@ class CGSetMaterial extends BaseNode {
       Matrix4x4f: 'setMat4',
     };
     this.materialGetterMap = {
-      Texture2D: 'getTex',
+      Texture: 'getTex',
       Double: 'getFloat',
       Vector2f: 'getVec2',
       Vector3f: 'getVec3',
@@ -38,8 +39,8 @@ class CGSetMaterial extends BaseNode {
   }
 
   transValueType(value) {
-    if (this.valueType === 'Color' && value instanceof Amaz.Color) {
-      return new Amaz.Vector4f(value.r, value.g, value.b, value.a);
+    if (this.valueType === 'Color' && value instanceof APJS.Color) {
+      return new APJS.Vector4f(value.r, value.g, value.b, value.a);
     } else {
       return value;
     }

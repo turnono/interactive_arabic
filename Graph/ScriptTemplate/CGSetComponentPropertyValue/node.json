@@ -44,6 +44,7 @@
 	"nodeEvent": [
 		"beforeStart"
 	],
+	"scriptAPIVersion": "1.0.0",
 	"js": "CGSetComponentPropertyValue.js",
 	"version": "1.0.0",
 	"builtinClass": "PropertyNode",

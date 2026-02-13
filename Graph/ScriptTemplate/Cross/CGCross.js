@@ -7,7 +7,7 @@
  */
 
 const {BaseNode} = require('./BaseNode');
-const Amaz = effect.Amaz;
+const APJS = require('./amazingpro');
 
 class CGCross extends BaseNode {
   constructor() {
@@ -20,14 +20,14 @@ class CGCross extends BaseNode {
     if (vecA == undefined || vecB == undefined) {
       return;
     } else if (this.valueType === 'Vector3f') {
-      let vectorA = new Amaz.Vector3f(vecA.x, vecA.y, vecA.z);
-      let vectorB = new Amaz.Vector3f(vecB.x, vecB.y, vecB.z);
+      let vectorA = new APJS.Vector3f(vecA.x, vecA.y, vecA.z);
+      let vectorB = new APJS.Vector3f(vecB.x, vecB.y, vecB.z);
       return vectorA.cross(vectorB);
     } else if (this.valueType === 'Vector4f') {
-      let vectorA = new Amaz.Vector3f(vecA.x, vecA.y, vecA.z);
-      let vectorB = new Amaz.Vector3f(vecB.x, vecB.y, vecB.z);
+      let vectorA = new APJS.Vector3f(vecA.x, vecA.y, vecA.z);
+      let vectorB = new APJS.Vector3f(vecB.x, vecB.y, vecB.z);
       let result = vectorA.cross(vectorB);
-      return new Amaz.Vector4f(result.x, result.y, result.z, 0.0);
+      return new APJS.Vector4f(result.x, result.y, result.z, 0.0);
     }
   }
 }

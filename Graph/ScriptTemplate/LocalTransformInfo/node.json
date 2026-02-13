@@ -68,6 +68,7 @@
 			"displayTypeKey": "graph_type_vec3"
 		}
 	],
+	"scriptAPIVersion": "1.0.0",
 	"js": "CGLocalPose.js",
 	"category": "Transform",
 	"description": "Get the local space position, rotation, and scale of a Transform component. If a Transform component is parented under another Transform component, it inherits the parent Transform component's local space coordinates.\n",

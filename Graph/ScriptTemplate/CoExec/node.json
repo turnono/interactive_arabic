@@ -79,6 +79,7 @@
 		"baseName": "",
 		"increaseStartIndex": "C"
 	},
+	"scriptAPIVersion": "1.0.0",
 	"js": "CGCoExec.js",
 	"version": "1.0.0",
 	"category": "Control",

@@ -1,4 +1,4 @@
-const Amaz = effect.Amaz;
+const APJS = require('./amazingpro');
 const {BaseNode} = require('./BaseNode');
 
 class CGGetAssetNode extends BaseNode {

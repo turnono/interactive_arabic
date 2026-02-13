@@ -7,7 +7,7 @@
  */
 
 const {BaseNode} = require('./BaseNode');
-const Amaz = effect.Amaz;
+const APJS = require('./amazingpro');
 
 class CGSetVisibility extends BaseNode {
   constructor() {
@@ -31,52 +31,55 @@ class CGSetVisibility extends BaseNode {
   }
 
   _updateScriptComponentRecursively(entity, enable) {
-    const jsComps = entity.getComponents('JSScriptComponent');
-    const luaComps = entity.getComponents('ScriptComponent');
-    if (jsComps && jsComps.size() > 0) {
-      for (let i = 0; i < jsComps.size(); i++) {
-        const comps = jsComps.get(i);
+    const components = entity.getComponents();
+    if (components && components.length > 0) {
+      for (let i = 0; i < components.length; i++) {
+        const comps = components[i];
+        if (comps instanceof APJS.JSScriptComponent) {
+          // Register Reset callback functions
+          this._registerResetCallback(
+            this.sys,
+            comps,
+            [(_comp, _enabled) => (_comp.enabled = _enabled)],
+            [[comps.enabled]]
+          );
 
-        // Register Reset callback functions
-        this._registerResetCallback(
-          this.sys,
-          comps,
-          [(_comp, _enabled) => (_comp.enabled = _enabled)],
-          [[comps.enabled]]
-        );
-
-        const compsEnable = CGSetVisibility.compsEnableMap.get(comps.guid.toString());
-        if (compsEnable === undefined) {
-          CGSetVisibility.compsEnableMap.set(comps.guid.toString(), comps.enabled);
+          const compsEnable = CGSetVisibility.compsEnableMap.get(comps.guid.toString());
+          if (compsEnable === undefined) {
+            CGSetVisibility.compsEnableMap.set(comps.guid.toString(), comps.enabled);
+          }
+          comps.enabled = enable && CGSetVisibility.compsEnableMap.get(comps.guid.toString());
         }
-        comps.enabled = enable && CGSetVisibility.compsEnableMap.get(comps.guid.toString());
       }
     }
-    if (luaComps && luaComps.size() > 0) {
-      for (let i = 0; i < luaComps.size(); i++) {
-        const comps = luaComps.get(i);
+    if (components && components.length > 0) {
+      for (let i = 0; i < components.length; i++) {
+        const comps = components[i];
 
-        // Register Reset callback functions
-        this._registerResetCallback(
-          this.sys,
-          comps,
-          [(_comp, _enabled) => (_comp.enabled = _enabled)],
-          [[comps.enabled]]
-        );
+        if (comps instanceof APJS.ScriptComponent) {
+          // Register Reset callback functions
+          this._registerResetCallback(
+            this.sys,
+            comps,
+            [(_comp, _enabled) => (_comp.enabled = _enabled)],
+            [[comps.enabled]]
+          );
 
-        const compsEnable = CGSetVisibility.compsEnableMap.get(comps.guid.toString());
-        if (compsEnable === undefined) {
-          CGSetVisibility.compsEnableMap.set(comps.guid.toString(), comps.enabled);
+          const compsEnable = CGSetVisibility.compsEnableMap.get(comps.guid.toString());
+          if (compsEnable === undefined) {
+            CGSetVisibility.compsEnableMap.set(comps.guid.toString(), comps.enabled);
+          }
+          comps.enabled = enable && CGSetVisibility.compsEnableMap.get(comps.guid.toString());
         }
-        comps.enabled = enable && CGSetVisibility.compsEnableMap.get(comps.guid.toString());
+
       }
     }
     const transform = entity.getComponent('Transform');
     if (transform && transform.isInstanceOf('Transform')) {
-      const childrens = transform.children;
-      for (let i = 0; i < childrens.size(); i++) {
-        if (childrens.get(i).entity.isInstanceOf('Entity')) {
-          this._updateScriptComponentRecursively(childrens.get(i).entity, enable);
+      const children = transform.getSceneObject().getChildren();
+      for (let i = 0; i < children.length; i++) {
+        if (children[i] instanceof APJS.SceneObject) {
+          this._updateScriptComponentRecursively(children[i], enable);
         }
       }
     }
@@ -95,15 +98,15 @@ class CGSetVisibility extends BaseNode {
         this._registerResetCallback(
           this.sys,
           object,
-          [(_object, _visible) => (_object.visible = _visible)],
-          [[object.visible]]
+          [(_object, _visible) => (_object.setEnabledInHierarchy(_visible))],
+          [[object.isEnabledInHierarchy()]]
         );
         if (true === visible) {
-          object.visible = visible;
+          object.setEnabledInHierarchy(visible);
           this._updateScriptComponentRecursively(object, visible);
         } else {
           this._updateScriptComponentRecursively(object, visible);
-          object.visible = visible;
+          object.setEnabledInHierarchy(visible);
         }
         this.isVisible = visible;
       } else {

@@ -1,5 +1,5 @@
 const {BaseNode} = require('./BaseNode');
-const Amaz = effect.Amaz;
+const APJS = require('./amazingpro');
 
 class CGPackNode extends BaseNode {
   constructor() {
@@ -9,17 +9,17 @@ class CGPackNode extends BaseNode {
 
   getOutput(index) {
     if (this.valueType === 'Vector2f') {
-      return new Amaz.Vector2f(this.inputs[0](), this.inputs[1]());
+      return new APJS.Vector2f(this.inputs[0](), this.inputs[1]());
     } else if (this.valueType === 'Vector3f') {
-      return new Amaz.Vector3f(this.inputs[0](), this.inputs[1](), this.inputs[2]());
+      return new APJS.Vector3f(this.inputs[0](), this.inputs[1](), this.inputs[2]());
     } else if (this.valueType === 'Vector4f') {
-      return new Amaz.Vector4f(this.inputs[0](), this.inputs[1](), this.inputs[2](), this.inputs[3]());
+      return new APJS.Vector4f(this.inputs[0](), this.inputs[1](), this.inputs[2](), this.inputs[3]());
     } else if (this.valueType === 'Quaternionf') {
-      return new Amaz.Quaternionf(this.inputs[0](), this.inputs[1](), this.inputs[2](), this.inputs[3]());
+      return new APJS.Quaternionf(this.inputs[0](), this.inputs[1](), this.inputs[2](), this.inputs[3]());
     } else if (this.valueType === 'Rect') {
-      return new Amaz.Rect(this.inputs[0](), this.inputs[1](), this.inputs[2](), this.inputs[3]());
+      return new APJS.Rect(this.inputs[0](), this.inputs[1](), this.inputs[2](), this.inputs[3]());
     } else if (this.valueType === 'Color') {
-      return new Amaz.Color(this.inputs[0](), this.inputs[1](), this.inputs[2](), this.inputs[3]());
+      return new APJS.Color(this.inputs[0](), this.inputs[1](), this.inputs[2](), this.inputs[3]());
     }
   }
 }

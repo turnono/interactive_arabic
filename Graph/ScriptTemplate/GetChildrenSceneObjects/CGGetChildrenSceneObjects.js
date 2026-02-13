@@ -1,5 +1,5 @@
 'use strict';
-const Amaz = effect.Amaz;
+const APJS = require('./amazingpro');
 const {BaseNode} = require('./BaseNode');
 class CGGetChildrenSceneObjects extends BaseNode {
   constructor() {
@@ -13,22 +13,21 @@ class CGGetChildrenSceneObjects extends BaseNode {
       return;
     }
 
-    const transform = entity.getComponent('Transform');
     let i = childrenLayerCount;
-    let levelSet = new Amaz.Vector();
-    levelSet.pushBack(transform);
+    let levelSet = [];
+    levelSet.push(entity);
     let childrenList = [];
     while (i > 0) {
-      const levelSetCount = levelSet.size();
+      const levelSetCount = levelSet.length;
       for (let k = 0; k < levelSetCount; ++k) {
-        let currentChildren = levelSet.get(0).children;
+        let currentChildren = levelSet[0].getChildren();
 
-        for (let j = 0; j < currentChildren.size(); ++j) {
-          childrenList.push(currentChildren.get(j).entity);
-          levelSet.pushBack(currentChildren.get(j));
+        for (let j = 0; j < currentChildren.length; ++j) {
+          childrenList.push(currentChildren[j]);
+          levelSet.push(currentChildren[j]);
         }
 
-        levelSet.popFront();
+        levelSet.shift();
       }
       i--;
     }

@@ -7,7 +7,7 @@
  */
 
 const {BaseNode} = require('./BaseNode');
-const Amaz = effect.Amaz;
+const APJS = require('./amazingpro');
 
 class CGEntityGetVisible extends BaseNode {
   constructor() {
@@ -17,7 +17,7 @@ class CGEntityGetVisible extends BaseNode {
   getOutput(index) {
     let v1 = this.inputs[0]();
     if (v1 && v1.isInstanceOf('Entity')) {
-      this.outputs[0] = v1.visible;
+      this.outputs[0] = v1.isEnabledInHierarchy();
       return this.outputs[0];
     } else {
       this.outputs[0] = null;

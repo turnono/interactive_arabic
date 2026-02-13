@@ -6,7 +6,7 @@
  * @copyright Copyright (c) 2022, ByteDance Inc, All Rights Reserved
  */
 
-const Amaz = effect.Amaz;
+const APJS = require('./amazingpro');
 const {BaseNode} = require('./BaseNode');
 
 class CGEqualsExactly extends BaseNode {

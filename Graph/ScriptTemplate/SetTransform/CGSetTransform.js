@@ -1,5 +1,5 @@
 const {BaseNode} = require('./BaseNode');
-const Amaz = effect.Amaz;
+const APJS = require('./amazingpro');
 
 class CGSetTransform extends BaseNode {
   constructor() {
@@ -30,18 +30,18 @@ class CGSetTransform extends BaseNode {
       const callBackFuncMap = new Map();
       if (this.isLocal) {
         callBackFuncMap.set(
-          (_transformComp, _localPosition, _localScale, _localEulerAngle) => {
+          (_transformComp, _localPosition, _localScale, _localEulerAngles) => {
             _transformComp.localPosition = _localPosition;
             _transformComp.localScale = _localScale;
-            _transformComp.localEulerAngle = _localEulerAngle;
+            _transformComp.localEulerAngles = _localEulerAngles;
           },
-          [selfTransform.localPosition, selfTransform.localScale, selfTransform.localEulerAngle]
+          [selfTransform.localPosition, selfTransform.localScale, selfTransform.localEulerAngles]
         );
       } else {
         callBackFuncMap.set(
           (_transformComp, _worldPosition, _worldScale, _worldOrientation) =>
             _transformComp.setWorldTransform(_worldPosition, _worldScale, _worldOrientation),
-          [selfTransform.worldPosition, selfTransform.worldScale, selfTransform.worldOrientation]
+          [selfTransform.getWorldPosition(), selfTransform.getWorldScale(), selfTransform.getWorldRotation()]
         );
       }
       this.sys.setterNodeGuidMap.add(selfTransform.guid.toString());
@@ -56,14 +56,14 @@ class CGSetTransform extends BaseNode {
       setT = true;
     }
 
-    const quat = new Amaz.Quaternionf();
+    const quat = new APJS.Quaternionf();
     const newRot = this.inputs[3]();
-    const orientation = quat.eulerToQuaternion(newRot);
+    //const orientation = APJS.Quaternionf.makeFromEulerAngles(newRot);
 
     if (this.isLocal) {
-      selfTransform.localEulerAngle = newRot;
+      selfTransform.localEulerAngles = newRot;
     } else {
-      selfTransform.worldEulerAngle = newRot;
+      selfTransform.setWorldEulerAngles(newRot);
       setR = true;
     }
 

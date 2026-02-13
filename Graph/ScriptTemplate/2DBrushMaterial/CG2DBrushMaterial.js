@@ -1,4 +1,4 @@
-const Amaz = effect.Amaz;
+const APJS = require('./amazingpro');
 const {BaseNode} = require('./BaseNode');
 const {addShaderToMap} = require('./GraphHelper');
 
@@ -110,42 +110,42 @@ class CG2DBrushMaterial extends BaseNode{
   }
 
   _createMaterialWithShaderMap(shaders) {
-    const material = new Amaz.Material();
-    const xShader = new Amaz.XShader();
-    const pass = new Amaz.Pass();
+    const material = new APJS.Material();
+    const xShader = new APJS.XShader();
+    const pass = new APJS.Pass();
 
     pass.shaders = shaders;
-    const sematicsMap = new Amaz.Map();
-    sematicsMap.insert('attPosition', Amaz.VertexAttribType.POSITION);
-    sematicsMap.insert('attTexcoord0', Amaz.VertexAttribType.TEXCOORD0);
+    const sematicsMap = new APJS.Map();
+    sematicsMap.insert('attPosition', APJS.VertexAttribType.POSITION);
+    sematicsMap.insert('attTexcoord0', APJS.VertexAttribType.TEXCOORD0);
 
     pass.semantics = sematicsMap;
 
     //render state
-    const renderState = new Amaz.RenderState();
+    const renderState = new APJS.RenderState();
 
     //depth state
-    const depthStencilState = new Amaz.DepthStencilState();
+    const depthStencilState = new APJS.DepthStencilState();
     depthStencilState.depthTestEnable = false;
     renderState.depthstencil = depthStencilState;
 
     // Rect
-    renderState.viewport = new Amaz.ViewportState();
-    renderState.viewport.rect = new Amaz.Rect(0, 0, 1, 1) // value int percentage by default
+    renderState.viewport = new APJS.ViewportState();
+    renderState.viewport.rect = new APJS.Rect(0, 0, 1, 1) // value int percentage by default
     renderState.viewport.minDepth = 0
     renderState.viewport.maxDepth = 1
 
     // add color blend
-    let colorBlendState = new Amaz.ColorBlendState()
-    const attVec = new Amaz.Vector()
-    const attState = new Amaz.ColorBlendAttachmentState()
+    let colorBlendState = new APJS.ColorBlendState()
+    const attVec = new APJS.Vector()
+    const attState = new APJS.ColorBlendAttachmentState()
     attState.blendEnable = true;
-    attState.srcColorBlendFactor = Amaz.BlendFactor.ONE
-    attState.dstColorBlendFactor = Amaz.BlendFactor.ZERO
-    attState.srcAlphaBlendFactor = Amaz.BlendFactor.ONE
-    attState.dstAlphaBlendFactor = Amaz.BlendFactor.ZERO
-    attState.ColorBlendOp = Amaz.BlendOp.ADD
-    attState.AlphaBlendOp = Amaz.BlendOp.ADD
+    attState.srcColorBlendFactor = APJS.BlendFactor.ONE
+    attState.dstColorBlendFactor = APJS.BlendFactor.ZERO
+    attState.srcAlphaBlendFactor = APJS.BlendFactor.ONE
+    attState.dstAlphaBlendFactor = APJS.BlendFactor.ZERO
+    attState.ColorBlendOp = APJS.BlendOp.ADD
+    attState.AlphaBlendOp = APJS.BlendOp.ADD
     attVec.pushBack(attState)
     colorBlendState.attachments = attVec;
 
@@ -155,23 +155,25 @@ class CG2DBrushMaterial extends BaseNode{
     xShader.passes.pushBack(pass);
     material.xshader = xShader;
 
-    const texPlaceholder = new Amaz.Texture2D();
-    texPlaceholder.filterMin = Amaz.FilterMode.NEAREST;
-    texPlaceholder.filterMag = Amaz.FilterMode.NEAREST;
+    const texPlaceholderDesc = new APJS.Texture2DCreateDesc();
+    texPlaceholderDesc.filterMin = APJS.FilterMode.NEAREST;
+    texPlaceholderDesc.filterMag = APJS.FilterMode.NEAREST;
+    const texPlaceholder = APJS.TextureUtils.createPlaceHolderTexture(texPlaceholderDesc);
+    
 
 
-    const props = new effect.Amaz.PropertySheet();
+    const props = new APJS.PropertySheet();
 
     props.setInt('Using_PlaceholderMaterial', 1);
     props.setInt('USE_TEXTURE', 0);
     props.setInt('USE_FEATHERING', 1);
     props.setFloat('Custom_Float_1', 0.0)
-    props.setVec4('Custom_Color_1', new Amaz.Vector4f(0.41, 0.41, 0.41 ,1.0));
+    props.setVec4('Custom_Color_1', new APJS.Vector4f(0.41, 0.41, 0.41 ,1.0));
     props.setTex('Custom_Texture_1', texPlaceholder);
     
     material.properties = props;
     material.setFloat('Custom_Float_1', 0.0)
-    material.setVec4('Custom_Color_1', new Amaz.Vector4f(0.41, 0.41, 0.41 ,1.0));
+    material.setVec4('Custom_Color_1', new APJS.Vector4f(0.41, 0.41, 0.41 ,1.0));
     material.setTex('Custom_Texture_1', texPlaceholder);
     material.setInt('USE_TEXTURE', 0);
     material.setInt('USE_FEATHERING', 1);
@@ -181,7 +183,7 @@ class CG2DBrushMaterial extends BaseNode{
 
 
   _initMaterials(){
-    const brushShaders = new Amaz.Map();
+    const brushShaders = new APJS.Map();
     addShaderToMap(brushShaders, 'gles2', CUS_BRUSH_OPENGLES_VS, CUS_BRUSH_OPENGLES_FS);
     addShaderToMap(brushShaders, 'metal', CUS_BRUSH_METAL_VS, CUS_BRUSH_METAL_FS);
     this.brushMaterial = this._createMaterialWithShaderMap(brushShaders);

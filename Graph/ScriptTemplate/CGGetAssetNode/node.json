@@ -24,6 +24,7 @@
 			"displayTypeKey": "graph_type_any"
 		}
 	],
+	"scriptAPIVersion": "1.0.0",
 	"js": "CGGetAssetNode.js",
 	"version": "1.0.0",
 	"builtinClass": "ResourceNode",

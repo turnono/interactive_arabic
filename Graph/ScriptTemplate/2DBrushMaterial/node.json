@@ -17,6 +17,7 @@
 		"beforeStart"
 	],
 	"scriptSupport": "js",
+	"scriptAPIVersion": "1.0.0",
 	"js": "CG2DBrushMaterial.js",
 	"version": "1.0.0",
 	"category": "Utility",

@@ -1,31 +1,31 @@
 const {BaseNode} = require('./BaseNode');
-const Amaz = effect.Amaz;
+const APJS = require('./amazingpro');
 
 class CGScreenImageTap extends BaseNode {
   constructor() {
     super();
-    this._min = new Amaz.Vector3f();
-    this._max = new Amaz.Vector3f();
-    this._fixedTapPos = new Amaz.Vector2f();
-    this._tapPos = new Amaz.Vector2f();
+    this._min = new APJS.Vector3f();
+    this._max = new APJS.Vector3f();
+    this._fixedTapPos = new APJS.Vector2f();
+    this._tapPos = new APJS.Vector2f();
     this._clamp01 = num => Math.min(Math.max(num, 0), 1);
     this._imgTrans = null;
     this._img = null;
     this._isScreenTapped = false;
     this.outputs[1] = false;
-    this._imgCenter = new Amaz.Vector3f();
-    this._xVec = new Amaz.Vector3f();
-    this._yVec = new Amaz.Vector3f();
-    this._planeNormal = new Amaz.Vector3f();
-    this._camRay = new Amaz.Vector3f();
+    this._imgCenter = new APJS.Vector3f();
+    this._xVec = new APJS.Vector3f();
+    this._yVec = new APJS.Vector3f();
+    this._planeNormal = new APJS.Vector3f();
+    this._camRay = null;
   }
 
   _getEffectNodeGUID(ent){
-    let parentTransform = ent.getComponent('Transform');
-    let effectNodeGUID = new Amaz.Guid();
-    while(parentTransform != null){
-      effectNodeGUID = parentTransform.entity.guid;
-      parentTransform = parentTransform.parent;
+    let parentSceneObject = ent;
+    let effectNodeGUID = parentSceneObject.guid;
+    while(parentSceneObject != null){
+      effectNodeGUID = parentSceneObject.guid;
+      parentSceneObject = parentSceneObject.parent;
     }
 
     return effectNodeGUID;
@@ -33,22 +33,22 @@ class CGScreenImageTap extends BaseNode {
 
   _checkIsValidImageCameraPair(img, cam){
     // Check whether belongs to same render chain
-    const imageEffectNodeRoot = this._getEffectNodeGUID(img.entity);
-    const screenEffectNodeRoot = this._getEffectNodeGUID(cam.entity);
+    const imageEffectNodeRoot = this._getEffectNodeGUID(img.getSceneObject());
+    const screenEffectNodeRoot = this._getEffectNodeGUID(cam.getSceneObject());
 
     // ignore if not in same rendering chain
     if(!imageEffectNodeRoot.equals(screenEffectNodeRoot)){
       return false;
     }
 
-    const screenTrans = img.entity.getComponent('ScreenTransform');
+    const screenTrans = img.getSceneObject().getComponent('ScreenTransform');
 
     // // 3D Image + Perspective Camera
-    // if(screenTrans == null && cam.type === Amaz.CameraType.PERSPECTIVE){
+    // if(screenTrans == null && cam.type === APJS.CameraType.PERSPECTIVE){
     //   return true;
     // }
     // Valid 2D Image + Othographic Camera
-    if(screenTrans.isValidScreenHierarchy() && cam.type === Amaz.CameraType.ORTHO){
+    if(screenTrans.isValidScreenHierarchy() && cam.cameraType === APJS.CameraType.ORTHO){
       return true;
     }
     // Invalid 2D Image
@@ -58,43 +58,45 @@ class CGScreenImageTap extends BaseNode {
   _runImageTapNode(sys) {
     const img = this.inputs[0]();
 
-    if (img == null || !img.entity.visible) {
+    if (img == null || !img.getSceneObject().isEnabledInHierarchy()) {
       return;
     }
 
     if (this._imgTrans == null || this._img !== img) {
-      this._imgTrans = img.entity.getComponent('ScreenTransform');
+      this._imgTrans = img.getSceneObject().getComponent('ScreenTransform');
       this._img = img;
     }
 
-    const layer = img.entity.layer;
-    const entities = sys.scene.entities;
-    for (let i = 0; i < entities.size(); i++) {
-      const cams = entities.get(i).getComponents('Camera');
-      for (let j = 0; j < cams.size(); ++j) {
-        const cam = cams.get(j);
-        if (!cam.isLayerVisible(layer) || !cam.entity.visible) {
-          continue;
-        }
-
-        if (!this._checkIsValidImageCameraPair(this._img, cam)){
-          continue;
-        }
-
-        const isValidTap = this._setupData(this._imgTrans, cam);
-
-        if (!isValidTap) {
-          continue;
-        }
-
-        const isImgTapped = this._isImgTapped(cam);
-
-        if (isImgTapped) {
-          this.outputs[1] = true;
-          if (this.nexts[0] != null) {
-            this.nexts[0](); //on tapped event
+    const layer = img.getSceneObject().layer;
+    const entities = sys.APJScene.getAllSceneObjects();
+    for (let i = 0; i < entities.length; i++) {
+      const cams = entities[i].getComponents();
+      for (let j = 0; j < cams.length; ++j) {
+        const cam = cams[j];
+        if (cam instanceof APJS.Camera) {
+          if (!cam.isLayerVisible(layer) || !cam.getSceneObject().isEnabledInHierarchy()) {
+            continue;
           }
-          return; //early out if we get a tap
+  
+          if (!this._checkIsValidImageCameraPair(this._img, cam)){
+            continue;
+          }
+  
+          const isValidTap = this._setupData(this._imgTrans, cam);
+  
+          if (!isValidTap) {
+            continue;
+          }
+  
+          const isImgTapped = this._isImgTapped(cam);
+  
+          if (isImgTapped) {
+            this.outputs[1] = true;
+            if (this.nexts[0] != null) {
+              this.nexts[0](); //on tapped event
+            }
+            return; //early out if we get a tap
+          }
         }
       }
     }
@@ -107,12 +109,12 @@ class CGScreenImageTap extends BaseNode {
     const c = this._imgCenter;
     const l = this._camRay.direction;
     const t = (n.x*(c.x - p.x) + n.y * (c.y - p.y) + n.z * (c.z - p.z))/(n.x * l.x + n.y * l.y + n.z * l.z);
-    const intersectionPT = (l.mul(t)).add(p);
+    const intersectionPT = (l.multiply(t)).add(p);
 
     const OI = this._vectorFromToPoint(c, intersectionPT);
 
-    const Ix = OI.dot(this._xVec.normalize())/(this._xVec.magnitude());
-    const Iy = OI.dot(this._yVec.normalize())/(this._yVec.magnitude());
+    const Ix = OI.dot(this._xVec.clone().normalize())/(this._xVec.magnitude());
+    const Iy = OI.dot(this._yVec.clone().normalize())/(this._yVec.magnitude());
 
     // Whether interesection point lies in quad
     const isInQuad = !(Math.abs(Ix) > 1.0 || Math.abs(Iy) > 1.0);
@@ -129,7 +131,7 @@ class CGScreenImageTap extends BaseNode {
 
     // Very weird but our camera viewport is clamped at 0 -> 1 for both x and y
     // although it ranges spans from -1 to 2
-    const adjustedViewPort = new Amaz.Rect(this._clamp01(viewport.x, 0.0, 1.0), 
+    const adjustedViewPort = new APJS.Rect(this._clamp01(viewport.x, 0.0, 1.0), 
                                           this._clamp01(viewport.y, 0.0, 1.0),
                                        viewport.x < 0? viewport.x + viewport.width: (viewport.x + viewport.width > 1.0? 1.0 - viewport.x :viewport.width),
                                        viewport.y < 0? viewport.y + viewport.height: (viewport.y + viewport.height > 1.0? 1.0 - viewport.y :viewport.height))
@@ -153,7 +155,7 @@ class CGScreenImageTap extends BaseNode {
     const ptD = imgCornersWorldPos.get(3);
 
     //this._camRay = cam.getLookAt().normalize();
-    this._camRay = cam.ViewportPointToRay(this._fixedTapPos);
+    this._camRay = cam.viewportPointToRay(this._fixedTapPos);
 
     this._imgCenter = this._getCenter(ptA, ptD);
     const ABCenter = this._getCenter(ptA, ptB);
@@ -161,7 +163,7 @@ class CGScreenImageTap extends BaseNode {
     this._xVec = this._vectorFromToPoint(ABCenter, this._imgCenter);
     this._yVec = this._vectorFromToPoint(ACCenter, this._imgCenter);
 
-    this._planeNormal = this._xVec.cross(this._yVec);
+    this._planeNormal = this._xVec.clone().cross(this._yVec);
 
     if(this._planeNormal.dot(this._camRay.direction) === 0){
       return false;
@@ -171,11 +173,11 @@ class CGScreenImageTap extends BaseNode {
   }
 
   _getCenter(ptA, ptB){
-    return new Amaz.Vector3f((ptA.x + ptB.x)/2.0, (ptA.y + ptB.y)/2.0, (ptA.z + ptB.z)/2.0)
+    return new APJS.Vector3f((ptA.x + ptB.x)/2.0, (ptA.y + ptB.y)/2.0, (ptA.z + ptB.z)/2.0)
   }
 
   _vectorFromToPoint(ptA, ptB){
-    return new Amaz.Vector3f(ptB.x - ptA.x, ptB.y - ptA.y, ptB.z - ptA.z);
+    return new APJS.Vector3f(ptB.x - ptA.x, ptB.y - ptA.y, ptB.z - ptA.z);
   }
 
   _isInAABB(point, min, max) {
@@ -183,13 +185,13 @@ class CGScreenImageTap extends BaseNode {
   }
 
   _mulv3(a, b) {
-    return new Amaz.Vector3f(a.x * b.x, a.y * b.y, a.z * b.z);
+    return new APJS.Vector3f(a.x * b.x, a.y * b.y, a.z * b.z);
   }
 
   //only need to check if you are in between the near and far plane
   //and let inAABB take care of the other bounds
   _inFrustum(cam, d) {
-    return d >= cam.zNear && d < cam.zFar;
+    return d >= cam.near && d < cam.far;
   }
 
   _isInRect(point, rect) {
@@ -217,9 +219,9 @@ class CGScreenImageTap extends BaseNode {
       return;
     }
 
-    if (event.type === Amaz.EventType.TOUCH) {
+    if (event.type === APJS.EventType.TOUCH) {
       const touch = event.args.get(0);
-      if (touch.type === Amaz.TouchType.TOUCH_BEGAN) {
+      if (touch.type === APJS.TouchType.TOUCH_BEGAN) {
         this._tapPos.set(touch.x, 1 - touch.y);
         this._isScreenTapped = true;
       }

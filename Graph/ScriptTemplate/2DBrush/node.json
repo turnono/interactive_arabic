@@ -88,16 +88,18 @@
 	"outputs": [
 		{
 			"name": "Canvas Output",
-			"type": "Texture2D",
+			"type": "Texture",
+			"providerType": "Texture2DProvider",
 			"item_type": "",
 			"description": "The result of the finger drawing as a 2D texture",
-			"displayType": "Texture 2D",
+			"displayType": "Texture",
 			"nameKey": "graph_2d_brush_output_canvasoutput",
 			"descriptionKey": "graph_2d_brush_output_canvasoutput_description",
-			"displayTypeKey": "graph_type_texture2d"
+			"displayTypeKey": "graph_type_texture"
 		}
 	],
 	"scriptSupport": "js",
+	"scriptAPIVersion": "1.0.0",
 	"js": "CGBrush.js",
 	"version": "1.0.0",
 	"category": "Utility",

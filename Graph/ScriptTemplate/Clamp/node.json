@@ -52,6 +52,7 @@
 			"displayTypeKey": "graph_type_number"
 		}
 	],
+	"scriptAPIVersion": "1.0.0",
 	"js": "CGClamp.js",
 	"version": "1.0.2",
 	"category": "Math",

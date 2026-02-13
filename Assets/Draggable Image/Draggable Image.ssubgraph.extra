@@ -1,0 +1,19 @@
+[
+  {
+    "guid": {
+      "a": "0a810872-6c05-f8a9-58a4-45dcd8ab743e",
+      "b": ""
+    },
+    "extraType": "ResItemVSSubgraph",
+    "name": "Draggable Image",
+    "expandInPanel": true,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": "",
+    "assetPackageID": "7255444182825811969",
+    "resourceFilePath": "/Users/abdullah/Library/Application Support/EffectHouse/package/7255444182825811969/Draggable Image.ssubgraph",
+    "combinedWithNodeLibary": true,
+    "assetID": "7255444182825811969"
+  }
+]

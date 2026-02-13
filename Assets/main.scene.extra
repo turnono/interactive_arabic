@@ -1,13 +1,13 @@
 [
   {
     "guid": {
-      "a": "9811b071-3f97-e8f2-e267-76fc9e15d00d",
+      "a": "2d1d60da-1cff-1195-e7f0-f0b916c3f0e1",
       "b": ""
     },
     "objGuid": "Guid(10180214583793075010, 13085474825770890632)",
     "extraType": "Entity",
     "name": "Camera",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -20,7 +20,7 @@
   },
   {
     "guid": {
-      "a": "fd40ff9b-9f0e-20b6-ddb0-0ea277aa53b5",
+      "a": "25f2f8ca-f05f-4c6e-078a-5afa31aa331e",
       "b": ""
     },
     "objGuid": "Guid(14145000689903744101, 6111037265461598351)",
@@ -41,7 +41,7 @@
   },
   {
     "guid": {
-      "a": "ca6aad54-d338-83b4-1eab-d999fcda0188",
+      "a": "1ecbe488-c6a5-5046-ef2b-4e03ddd2cf39",
       "b": ""
     },
     "objGuid": "Guid(12629985132416961300, 14387677276955654788)",
@@ -62,7 +62,7 @@
   },
   {
     "guid": {
-      "a": "192dbf69-042f-132d-461f-36e51fea894c",
+      "a": "aeb41339-69b6-66da-ff0a-9f55e21e689d",
       "b": ""
     },
     "objGuid": "Guid(15367742060568528024, 10146237304508457363)",
@@ -83,7 +83,7 @@
   },
   {
     "guid": {
-      "a": "4e618bff-9ea6-dfe6-4f64-c44be60eb4d0",
+      "a": "92be6049-5ad7-196b-408e-0ecab61270b5",
       "b": ""
     },
     "objGuid": "Guid(2038139312557020282, 1886311758165782682)",
@@ -104,7 +104,7 @@
   },
   {
     "guid": {
-      "a": "e4ec9cda-61c2-84b7-2ed5-19052d99146a",
+      "a": "70e37146-cdaa-101a-0d55-ad0c826f1f03",
       "b": ""
     },
     "objGuid": "Guid(2325045009007071085, 18353032909451886726)",
@@ -125,7 +125,7 @@
   },
   {
     "guid": {
-      "a": "643321a4-8fe9-8f0f-5dc8-50918d5536e8",
+      "a": "bbc0b619-cfa6-a9a0-fe93-437579aa4f7c",
       "b": ""
     },
     "objGuid": "Guid(10829404434679500128, 7764523336237348027)",
@@ -146,7 +146,7 @@
   },
   {
     "guid": {
-      "a": "e54e9622-3ddf-e034-9545-5ceaf639a3ce",
+      "a": "aae48a5b-205b-0ba0-049b-2c6b604a7047",
       "b": ""
     },
     "objGuid": "Guid(1245656981284088038, 11379952083707492228)",
@@ -167,7 +167,7 @@
   },
   {
     "guid": {
-      "a": "49955151-6ec5-fa36-481b-3ce405f432ad",
+      "a": "62d9a98b-6130-f5db-e450-74c7f0c33c42",
       "b": ""
     },
     "objGuid": "Guid(15367752158712076977, 10841440534057066380)",
@@ -188,7 +188,7 @@
   },
   {
     "guid": {
-      "a": "8e292885-1e49-2ccb-1370-40d2e0b9f143",
+      "a": "f5197252-e56e-ddbf-60c7-0482a9b0d3dd",
       "b": ""
     },
     "objGuid": "Guid(8596579331966269276, 6684254512761495206)",
@@ -209,7 +209,7 @@
   },
   {
     "guid": {
-      "a": "73f5c3bd-9c0a-1127-ed6a-5bdca2693dbe",
+      "a": "1328142a-d7a7-f6d0-91bc-cbf737e06d12",
       "b": ""
     },
     "objGuid": "Guid(1462861134958626184, 5505683575632926592)",
@@ -230,7 +230,7 @@
   },
   {
     "guid": {
-      "a": "06e0f856-b342-d5b5-8dcb-c8767449eb3f",
+      "a": "f27b6cc5-a407-4ccd-c7c8-19df7f4afb0c",
       "b": ""
     },
     "objGuid": "Guid(8452249166335341836, 8458436658242795142)",
@@ -251,7 +251,7 @@
   },
   {
     "guid": {
-      "a": "8d3ba947-5a16-f64a-c757-c2f7a0677309",
+      "a": "2e424fed-ba2b-0f92-83b7-0bd4adc8110e",
       "b": ""
     },
     "objGuid": "Guid(5136175021234790243, 10368426550388733847)",
@@ -272,7 +272,7 @@
   },
   {
     "guid": {
-      "a": "2f845d17-dc95-df85-c413-a37dd35d4fcd",
+      "a": "74cc7bc0-6214-71fb-9b68-235170d3d241",
       "b": ""
     },
     "objGuid": "Guid(3984817152795993014, 10979178855589152169)",
@@ -293,7 +293,7 @@
   },
   {
     "guid": {
-      "a": "98ade850-2836-8851-7c70-472c06b60860",
+      "a": "de2d7fef-274b-1559-064a-8c7c7194a1e1",
       "b": ""
     },
     "objGuid": "Guid(10902278173956969203, 11855249783430737555)",
@@ -314,7 +314,7 @@
   },
   {
     "guid": {
-      "a": "45e87df1-2a86-07b8-562b-fab99e192c54",
+      "a": "05c40f69-4dc3-ec00-c7ee-e97a2b447175",
       "b": ""
     },
     "objGuid": "Guid(15513860198372782033, 6802160820858315136)",
@@ -335,7 +335,7 @@
   },
   {
     "guid": {
-      "a": "e1b29ece-0dc5-1a54-4a31-403a3fde3d26",
+      "a": "1ec7b3be-e481-a78c-1950-e5ed3908a0ad",
       "b": ""
     },
     "objGuid": "Guid(12776659138114215775, 16616793268993974684)",
@@ -356,7 +356,7 @@
   },
   {
     "guid": {
-      "a": "a0c89eb9-08b7-80a0-8fd8-6da0d4f57df8",
+      "a": "e5c25c6c-e4de-3176-d318-4cf6222748ac",
       "b": ""
     },
     "objGuid": "Guid(6863498903605139347, 9800194461054117012)",
@@ -377,7 +377,7 @@
   },
   {
     "guid": {
-      "a": "6f44e80d-889c-253a-e8a1-c9d1a9ee13b7",
+      "a": "243bcc9e-f3ea-f880-4985-fa4971ceb3d5",
       "b": ""
     },
     "objGuid": "Guid(12776180671062272325, 2739679674341835670)",
@@ -398,7 +398,7 @@
   },
   {
     "guid": {
-      "a": "0bdf1ad2-b774-08b4-6076-c525890102a3",
+      "a": "e42d03b4-4676-5388-dfc1-ec5186312397",
       "b": ""
     },
     "objGuid": "Guid(2039047309021830195, 13278445922112168621)",
@@ -419,7 +419,7 @@
   },
   {
     "guid": {
-      "a": "5914a3b3-69a4-f893-249d-4ff1fd7a6887",
+      "a": "7ab57784-0873-21ed-54c6-ae898e804124",
       "b": ""
     },
     "objGuid": "Guid(15586506792726463883, 16879011924291747257)",
@@ -440,7 +440,7 @@
   },
   {
     "guid": {
-      "a": "3592b012-1e2a-ef34-349f-ba1eb188663a",
+      "a": "b8f57806-19b4-b52f-1030-3c24cd398249",
       "b": ""
     },
     "objGuid": "Guid(15874549432948833938, 4352269433239284379)",
@@ -461,7 +461,7 @@
   },
   {
     "guid": {
-      "a": "bf2c0835-4f5c-b859-7d25-b20f6ccb9c2d",
+      "a": "b167630d-1f6a-17d7-188f-f5f578ce0700",
       "b": ""
     },
     "objGuid": "Guid(11045523139504798766, 1405647539696946846)",
@@ -482,7 +482,7 @@
   },
   {
     "guid": {
-      "a": "aab77a62-f8ea-ca35-d73c-d70e39d8a0da",
+      "a": "6dd5e98b-2ab7-5f68-9b73-4b44fe42ba77",
       "b": ""
     },
     "objGuid": "Guid(18393534764065644695, 16547619468206596491)",
@@ -500,13 +500,13 @@
   },
   {
     "guid": {
-      "a": "a165850a-926b-b3d0-533d-b7a337fed4d2",
+      "a": "7c7ce4a9-c725-6ba9-f4ad-f778dacad017",
       "b": ""
     },
     "objGuid": "Guid(8235238043598186243, 16840308208679013795)",
     "extraType": "Entity",
     "name": "3d ",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -519,7 +519,7 @@
   },
   {
     "guid": {
-      "a": "0bc83ca3-4647-5e85-8415-84c2916756dc",
+      "a": "522634b5-890e-3cba-76c7-cfbc1c23c486",
       "b": ""
     },
     "objGuid": "Guid(14792803682663561050, 6161520050080348315)",
@@ -536,13 +536,13 @@
   },
   {
     "guid": {
-      "a": "4360f082-645d-81c3-5da9-e76d25f034b8",
+      "a": "8231d3f7-1e0c-2ace-d3fa-7ee145b55baf",
       "b": ""
     },
     "objGuid": "Guid(815069582473778930, 3860102513852982437)",
     "extraType": "Entity",
     "name": "Directional Light",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -555,7 +555,7 @@
   },
   {
     "guid": {
-      "a": "8913b786-a226-bd07-c5e4-9239b6d0ea72",
+      "a": "083aa45d-160f-f96e-03bc-40292d126657",
       "b": ""
     },
     "objGuid": "Guid(8739102965005804130, 6461487404246441657)",
@@ -571,13 +571,13 @@
   },
   {
     "guid": {
-      "a": "9236483d-8fee-1289-caf0-0c6d299ac285",
+      "a": "e99c6e24-9767-57d0-99da-8893030dd37a",
       "b": ""
     },
     "objGuid": "Guid(11406181728386468509, 5972158861532600762)",
     "extraType": "Entity",
     "name": "Environment Light",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -590,7 +590,7 @@
   },
   {
     "guid": {
-      "a": "b77a7c54-49fd-e578-928e-8285e2257de2",
+      "a": "0107c48c-2a63-0db7-c921-39d63de3b1e2",
       "b": ""
     },
     "objGuid": "Guid(16737500510660696093, 7610174286501797273)",
@@ -605,13 +605,13 @@
   },
   {
     "guid": {
-      "a": "8e76e26b-220d-0fea-116a-ff0d576421d0",
+      "a": "973546ad-726b-d088-a7a8-c1ff34ba572b",
       "b": ""
     },
     "objGuid": "Guid(3838945155709982642, 18171229638946183553)",
     "extraType": "Entity",
     "name": "RECORDING Camera",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -624,7 +624,7 @@
   },
   {
     "guid": {
-      "a": "f7c75fd7-a46e-6a81-eeb0-f06d272bca33",
+      "a": "5aa52dad-ba4d-a057-85b9-1aa842e9b08f",
       "b": ""
     },
     "objGuid": "Guid(525120916265252484, 5985804820230447038)",
@@ -645,7 +645,7 @@
   },
   {
     "guid": {
-      "a": "a7d40b15-393d-2c41-4545-5bb14b450ea9",
+      "a": "ad7837ef-6526-7b3e-e382-f28db6d75d92",
       "b": ""
     },
     "objGuid": "Guid(11478125057759893792, 17473822732814818743)",
@@ -666,7 +666,7 @@
   },
   {
     "guid": {
-      "a": "3ea84876-2755-8344-fabf-22154b9b6da2",
+      "a": "85d9e5e1-8bc8-65d5-09d4-2660b96059cb",
       "b": ""
     },
     "objGuid": "Guid(16233561431965373841, 12082666600734039472)",
@@ -687,7 +687,7 @@
   },
   {
     "guid": {
-      "a": "d182c433-1a0e-8a3c-56e4-6534f20994bc",
+      "a": "04a1093d-29e5-baa1-a419-72f129bda586",
       "b": ""
     },
     "objGuid": "Guid(10036334820426205056, 2132099378702271893)",
@@ -704,7 +704,7 @@
   },
   {
     "guid": {
-      "a": "bd16af4c-5c3c-bae3-3ef9-7f50f74aac0f",
+      "a": "836bf809-9429-325d-bcd6-67d3af4d0798",
       "b": ""
     },
     "objGuid": "Guid(12988870300771674825, 14812391016476712887)",
@@ -721,7 +721,7 @@
   },
   {
     "guid": {
-      "a": "75ceb570-8c49-d8b7-9348-9c1ae0988281",
+      "a": "4ab44765-793e-bac8-062b-1c7b622691a4",
       "b": ""
     },
     "objGuid": "Guid(11763591892146160637, 10421984447729566088)",
@@ -738,7 +738,7 @@
   },
   {
     "guid": {
-      "a": "b4b14b61-e3d4-1429-b17e-c1f9d200adab",
+      "a": "9a98dd92-a9a6-8427-3f34-eedc3ba8a9e8",
       "b": ""
     },
     "objGuid": "Guid(1534853117407904691, 21960982648772019)",
@@ -755,7 +755,7 @@
   },
   {
     "guid": {
-      "a": "46cd3594-5110-3681-d36a-19ff253dba1e",
+      "a": "d5112082-abac-e3c2-3872-bb67ec7596de",
       "b": ""
     },
     "objGuid": "Guid(2468106981777135849, 2310657327868888990)",
@@ -772,7 +772,7 @@
   },
   {
     "guid": {
-      "a": "d0c5a2c5-1415-a16b-d99b-2d49bf13e523",
+      "a": "e9c5c50e-4ce6-7f8f-8dca-e7b6e0897c0f",
       "b": ""
     },
     "objGuid": "Guid(6362550830413001695, 9211370435298005933)",
@@ -789,7 +789,7 @@
   },
   {
     "guid": {
-      "a": "7df5821c-70be-fbe2-011c-ef736c5d3f31",
+      "a": "d70fab2b-0ecb-a780-a7ea-df7a555e5dbb",
       "b": ""
     },
     "objGuid": "Guid(12340152982902132917, 6178434202293088927)",
@@ -806,7 +806,7 @@
   },
   {
     "guid": {
-      "a": "f033af45-6b2c-e3a8-eb9c-becc9509c702",
+      "a": "f488dd4e-aace-ef5a-46cf-dcb57bcb1ba2",
       "b": ""
     },
     "objGuid": "Guid(882734735982643164, 17542041077279247237)",
@@ -823,7 +823,7 @@
   },
   {
     "guid": {
-      "a": "f21f912c-1f62-e183-39d3-de6fe69b69dd",
+      "a": "7067d57f-cb1b-5339-4da9-723a04049978",
       "b": ""
     },
     "objGuid": "Guid(11835856628556756387, 154903322502865542)",
@@ -844,7 +844,7 @@
   },
   {
     "guid": {
-      "a": "2b86a658-db8c-6783-b8b4-5ed24703e990",
+      "a": "ee08811f-60b9-a4d8-cc57-8ce27b4df7e9",
       "b": ""
     },
     "objGuid": "Guid(13781309079718748979, 13537205999348320956)",
@@ -861,7 +861,7 @@
   },
   {
     "guid": {
-      "a": "4f180df3-c78c-7715-597d-1c1e1dcae1b9",
+      "a": "0f338403-1066-13a6-42f5-5f42e74629eb",
       "b": ""
     },
     "objGuid": "Guid(4777233609834419670, 4089312940088945331)",
@@ -878,7 +878,7 @@
   },
   {
     "guid": {
-      "a": "773f3b78-c1d8-14fc-fed8-7840090ff0ad",
+      "a": "10a6dd41-52b0-2e94-ae2c-b83b265d9a8c",
       "b": ""
     },
     "objGuid": "Guid(12484517378513300332, 8315958999383336865)",
@@ -895,7 +895,7 @@
   },
   {
     "guid": {
-      "a": "4aff9a06-e77f-e42f-1002-b931f3be5f4a",
+      "a": "efb05313-37d9-beb4-a561-8758cb0eb5d1",
       "b": ""
     },
     "objGuid": "Guid(8449095719285621472, 12155782084385921190)",
@@ -912,7 +912,7 @@
   },
   {
     "guid": {
-      "a": "7bd40a8b-b440-3326-3da5-7cbfdc63b379",
+      "a": "abc812c1-f32b-827d-3c14-d4080f84006a",
       "b": ""
     },
     "objGuid": "Guid(16519290698465209414, 7854864384136886927)",
@@ -929,7 +929,7 @@
   },
   {
     "guid": {
-      "a": "164d5fdd-8137-6890-2440-38592221e598",
+      "a": "bd6a1958-2e28-f1d3-1d18-4e231e61ab16",
       "b": ""
     },
     "objGuid": "Guid(11190103476942093073, 11262146918631887796)",
@@ -946,7 +946,7 @@
   },
   {
     "guid": {
-      "a": "452b6f36-7cb4-9fce-cf89-8f130aab6a52",
+      "a": "dea8b26e-0164-5e2d-e8c1-b96e76a6789c",
       "b": ""
     },
     "objGuid": "Guid(7010353986641630977, 3350054106485345951)",
@@ -963,7 +963,7 @@
   },
   {
     "guid": {
-      "a": "b7dd91b4-b531-084f-db6a-c1d173a7da7f",
+      "a": "46e62c76-a4fa-4465-bd23-77fed22f85d0",
       "b": ""
     },
     "objGuid": "Guid(10901013986355419171, 2788328095395301782)",
@@ -980,7 +980,7 @@
   },
   {
     "guid": {
-      "a": "0c859884-c7cc-abcd-cb76-c999840f73cc",
+      "a": "6eddd0d5-38be-cb79-50fa-2ae0e74ff1f6",
       "b": ""
     },
     "objGuid": "Guid(6002437205201592518, 16450951024622232716)",
@@ -997,7 +997,7 @@
   },
   {
     "guid": {
-      "a": "505d215d-46f2-0ecc-cb26-ec5416539aae",
+      "a": "00b2c4b0-b83f-9833-df53-8c86d6e59d33",
       "b": ""
     },
     "objGuid": "Guid(5208894096600885761, 11382465348939208343)",
@@ -1014,7 +1014,7 @@
   },
   {
     "guid": {
-      "a": "45389bd8-0b79-9d6a-425d-ebc623ba21be",
+      "a": "43c8fd27-8a78-2147-8d87-916252fd8e07",
       "b": ""
     },
     "objGuid": "Guid(4345080648136531509, 5260187638762546863)",
@@ -1031,7 +1031,7 @@
   },
   {
     "guid": {
-      "a": "56bc1b37-34f5-c035-03d4-05a8808395da",
+      "a": "79398c04-73d0-3c91-02ba-d8db85110b58",
       "b": ""
     },
     "objGuid": "Guid(3982186914309335184, 5104568137464664475)",
@@ -1048,7 +1048,7 @@
   },
   {
     "guid": {
-      "a": "febd7cb2-6587-86ad-7873-f5935a82de85",
+      "a": "9bbd6f26-a197-8b98-d9f0-21609f0e35bd",
       "b": ""
     },
     "objGuid": "Guid(10683396211385959360, 6382160035672214678)",
@@ -1065,7 +1065,7 @@
   },
   {
     "guid": {
-      "a": "c696a917-52ff-463b-6652-6086289ba21b",
+      "a": "6e011c46-129b-79d8-6fc6-5d0980e21d82",
       "b": ""
     },
     "objGuid": "Guid(3117660139898637468, 11043921541530924461)",
@@ -1082,7 +1082,7 @@
   },
   {
     "guid": {
-      "a": "c5492ac6-bf3c-6be5-c784-3ec547a2bbb7",
+      "a": "56a12f33-c7c1-6d5b-c281-d10ed34c2a59",
       "b": ""
     },
     "objGuid": "Guid(15512166855407468141, 15210436413673279374)",
@@ -1099,7 +1099,7 @@
   },
   {
     "guid": {
-      "a": "f3a9c6be-c816-68f3-1ec5-ceb1ee42d10c",
+      "a": "9cb7ca2a-a85e-20ae-5de0-c835ad1db093",
       "b": ""
     },
     "objGuid": "Guid(3190951671401860723, 5315653706310454962)",
@@ -1116,7 +1116,7 @@
   },
   {
     "guid": {
-      "a": "3acf2394-7ec1-2b0e-ff8f-7fb1583f688d",
+      "a": "5ba90544-c4ea-72ff-866a-652d680fe42d",
       "b": ""
     },
     "objGuid": "Guid(6290694797674296949, 2981931640148691380)",
@@ -1133,7 +1133,7 @@
   },
   {
     "guid": {
-      "a": "dd70f090-7c3a-eb52-acaa-f7ac6ff8545f",
+      "a": "88a52012-b447-9eef-70c0-ccca75b8384c",
       "b": ""
     },
     "objGuid": "Guid(16304881660995744925, 13545821874602773428)",
@@ -1150,7 +1150,7 @@
   },
   {
     "guid": {
-      "a": "7d58273a-495f-c64a-11dd-972f9040550e",
+      "a": "c959f0f8-3fff-e7a2-28b3-442bf8f7964f",
       "b": ""
     },
     "objGuid": "Guid(12628305207098882856, 15542774419959236001)",
@@ -1167,7 +1167,7 @@
   },
   {
     "guid": {
-      "a": "f1c3d631-8508-bb80-c9c9-94f618d08d24",
+      "a": "9efd3e50-b167-37e6-ff27-41f0226048e2",
       "b": ""
     },
     "objGuid": "Guid(15871726861733713045, 5381658793079094203)",
@@ -1184,7 +1184,7 @@
   },
   {
     "guid": {
-      "a": "86f5c269-18ab-2f42-4430-e4b1f5e921e3",
+      "a": "f2631c47-2f19-035f-483b-4fae60547dc4",
       "b": ""
     },
     "objGuid": "Guid(13063091739319568927, 11992525356813175189)",
@@ -1201,7 +1201,7 @@
   },
   {
     "guid": {
-      "a": "41179dc5-58d4-d4e2-de32-12cb9f951f6e",
+      "a": "216c39c9-31e3-b1bc-8c83-998b54b3714a",
       "b": ""
     },
     "objGuid": "Guid(1243742985234694694, 274163973219127471)",
@@ -1218,7 +1218,7 @@
   },
   {
     "guid": {
-      "a": "2b2217ce-b038-280c-4c0b-0acdc38e67ce",
+      "a": "7bd4d9e0-462a-e03c-7b3a-07d3cbc6ccb9",
       "b": ""
     },
     "objGuid": "Guid(5567876733618911080, 5292051238364030900)",
@@ -1235,7 +1235,7 @@
   },
   {
     "guid": {
-      "a": "93b0db13-c794-d26e-4294-819f69417531",
+      "a": "e158c7ac-3f4a-3170-f5a1-5715b5d88898",
       "b": ""
     },
     "objGuid": "Guid(4631586498194387320, 8227108838882317489)",
@@ -1252,7 +1252,7 @@
   },
   {
     "guid": {
-      "a": "a4ce963f-9801-02ec-39c3-b9ba75479ff6",
+      "a": "b55c14d4-3f15-413b-44ca-eb1dae30a6c3",
       "b": ""
     },
     "objGuid": "Guid(12415302528077632291, 11602258334983482532)",
@@ -1269,7 +1269,7 @@
   },
   {
     "guid": {
-      "a": "7ce87bea-1e63-a6f9-8af4-a853dab3ce03",
+      "a": "45276789-0359-9ac7-fc03-5b7b5a89f925",
       "b": ""
     },
     "objGuid": "Guid(3261383920204716672, 8054764021370788512)",
@@ -1286,7 +1286,7 @@
   },
   {
     "guid": {
-      "a": "d76c3867-d056-58a5-e352-b011712cce1a",
+      "a": "07370638-441e-aab5-6ead-84478817e762",
       "b": ""
     },
     "objGuid": "Guid(8955379549150189606, 12342200202173181874)",
@@ -1303,7 +1303,7 @@
   },
   {
     "guid": {
-      "a": "15610524-9577-6dd5-9974-0007a34a246e",
+      "a": "510d6849-0483-fa86-5efd-bb92df623ecc",
       "b": ""
     },
     "objGuid": "Guid(10540655633242523036, 1118005252664386433)",
@@ -1320,7 +1320,7 @@
   },
   {
     "guid": {
-      "a": "a89bb790-189e-3fed-b020-2a401c04ecb9",
+      "a": "0443bd8f-1f26-949f-6ea2-12bf11b8477a",
       "b": ""
     },
     "objGuid": "Guid(12845631438338735255, 13234614397980430999)",
@@ -1337,7 +1337,7 @@
   },
   {
     "guid": {
-      "a": "9e991179-8f01-ad81-0bc5-89f2d606e1b6",
+      "a": "badc15ac-75b3-23bd-0c62-849999528c42",
       "b": ""
     },
     "objGuid": "Guid(2830679506081008751, 1322149489039582603)",
@@ -1354,7 +1354,7 @@
   },
   {
     "guid": {
-      "a": "90f6b00b-83fc-7afc-64c5-995745ff100b",
+      "a": "f53bb138-47b6-6ef0-4337-0c28b1655312",
       "b": ""
     },
     "objGuid": "Guid(13785498239878348443, 7819805502778906795)",
@@ -1371,7 +1371,7 @@
   },
   {
     "guid": {
-      "a": "38f360d5-bbdf-fc18-3ba1-4af1bf7e5d98",
+      "a": "ddef568c-0efb-17b2-b6d5-6351c013c09a",
       "b": ""
     },
     "objGuid": "Guid(10971353046612455009, 6616077349417187456)",
@@ -1388,7 +1388,7 @@
   },
   {
     "guid": {
-      "a": "fcdd83f8-0aad-ebdb-8347-f5ffc07f2958",
+      "a": "e5769509-f5d7-b10a-93d8-0ec611411be3",
       "b": ""
     },
     "objGuid": "Guid(3913392012180543433, 12609983325396489375)",
@@ -1405,7 +1405,7 @@
   },
   {
     "guid": {
-      "a": "82c53624-c155-6f89-da25-132082c74429",
+      "a": "d6aab61b-b152-a24a-1d4b-21016161163f",
       "b": ""
     },
     "objGuid": "Guid(8089722626301486493, 7156970304101898933)",
@@ -1422,7 +1422,7 @@
   },
   {
     "guid": {
-      "a": "ac962c9a-aa25-3d92-5c6a-7d64eface987",
+      "a": "f319ee11-a301-953b-afa7-32d63675c3bb",
       "b": ""
     },
     "objGuid": "Guid(2256157507395885113, 14808254549753812629)",
@@ -1439,7 +1439,7 @@
   },
   {
     "guid": {
-      "a": "04b92cc0-9371-3c23-ffae-f416ac2dd304",
+      "a": "29211308-3683-d83c-3a06-e5ddfd1afe61",
       "b": ""
     },
     "objGuid": "Guid(1463347399944285478, 11550743070886636697)",
@@ -1456,7 +1456,7 @@
   },
   {
     "guid": {
-      "a": "3209902f-2311-8163-4f26-a380158d94a9",
+      "a": "d054e2ba-d2b4-8f3b-d082-54357acf06f0",
       "b": ""
     },
     "objGuid": "Guid(3408445862401513146, 10736074484597155256)",
@@ -1473,7 +1473,7 @@
   },
   {
     "guid": {
-      "a": "0d734487-50b5-5487-6f39-8181d0aad1e7",
+      "a": "245b96af-aea9-043d-b0d7-aa0e3e63513f",
       "b": ""
     },
     "objGuid": "Guid(8954044056763394715, 5765862941737439910)",
@@ -1490,7 +1490,7 @@
   },
   {
     "guid": {
-      "a": "f832a81c-dbf7-8151-e77f-f8b14fddc3f4",
+      "a": "9e603072-248b-ee14-a7b9-02d5bcc54dc7",
       "b": ""
     },
     "objGuid": "Guid(1894538936290349169, 16416013883952087204)",
@@ -1507,7 +1507,7 @@
   },
   {
     "guid": {
-      "a": "f829e919-38c5-855d-b92b-5f246b289c86",
+      "a": "36b56ccb-0b4c-2829-2151-8fbba3460970",
       "b": ""
     },
     "objGuid": "Guid(5713952052779455562, 15853022151864730807)",
@@ -1524,7 +1524,7 @@
   },
   {
     "guid": {
-      "a": "e0876c93-4475-1c4b-40bb-0d7260f64674",
+      "a": "6afbf91e-8a22-72ee-37d3-ec9fa9e65664",
       "b": ""
     },
     "objGuid": "Guid(7800462218348052121, 10606649290949059512)",
@@ -1541,7 +1541,7 @@
   },
   {
     "guid": {
-      "a": "110d6da0-41b1-ba20-1589-ed67289bf018",
+      "a": "9a48980d-87fe-3cf9-bc4c-e22ea8f0c6a1",
       "b": ""
     },
     "objGuid": "Guid(5426732208034099689, 14004814952592297918)",
@@ -1558,7 +1558,7 @@
   },
   {
     "guid": {
-      "a": "97e2086a-967b-53e2-0b4d-c44ed7f8ba0f",
+      "a": "0a077af2-c223-e1ad-2ecc-7d4572b04ec2",
       "b": ""
     },
     "objGuid": "Guid(11623105531152340899, 15499091698123782806)",
@@ -1575,7 +1575,7 @@
   },
   {
     "guid": {
-      "a": "a6189ee7-cd16-0e29-bf2b-c56e4f736ade",
+      "a": "2a550090-02c7-f366-68e2-34c1b3a5489e",
       "b": ""
     },
     "objGuid": "Guid(16737635218196435312, 1624400190216113337)",
@@ -1592,7 +1592,7 @@
   },
   {
     "guid": {
-      "a": "72264882-efe0-7972-17af-9743af930679",
+      "a": "fbcad2bb-e7a9-88e6-666c-8b62b479d131",
       "b": ""
     },
     "objGuid": "Guid(12558719009826033910, 14087396980953802378)",
@@ -1609,7 +1609,7 @@
   },
   {
     "guid": {
-      "a": "e03af940-0a1c-a459-a1c2-b700bd27b337",
+      "a": "f08eecab-d05e-e5ee-5638-7fdeb57ad867",
       "b": ""
     },
     "objGuid": "Guid(15082202674567890196, 3745481573781897621)",
@@ -1627,13 +1627,13 @@
   },
   {
     "guid": {
-      "a": "511d837d-5ac8-4dda-29be-13b1291ee77b",
+      "a": "6640e52f-4197-858b-64a5-779c1963cc6e",
       "b": ""
     },
     "objGuid": "Guid(1678911654557209898, 14479869250322883751)",
     "extraType": "Entity",
     "name": "2D Foreground",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -1646,7 +1646,7 @@
   },
   {
     "guid": {
-      "a": "15c2c146-bc43-279d-8a05-ff04734b0dad",
+      "a": "2ba1c8e0-f8f7-85a7-c12e-5070d59c2b96",
       "b": ""
     },
     "objGuid": "Guid(8738614920945599973, 11191675741199957651)",
@@ -1663,32 +1663,13 @@
   },
   {
     "guid": {
-      "a": "b3ddef8e-15eb-906f-c107-2fe620e76114",
+      "a": "7d11f231-7a3a-8f8d-e274-2e0f4f6c248f",
       "b": ""
     },
     "objGuid": "Guid(8522020978920838775, 9440815874707234453)",
     "extraType": "Entity",
     "name": "start UI",
-    "rttiType": "Entity",
-    "version": "0.1.0",
-    "isVisibleInInspector": true,
-    "hideInPanel": false,
-    "expanded": true,
-    "type": "none",
-    "isAnimatorBound": false,
-    "modelGUID": "",
-    "createdEffectNodeKey": "effect_node_2D_foreground",
-    "isHeadBindingRenderRoot": false
-  },
-  {
-    "guid": {
-      "a": "dd9f4fc5-1955-1853-1fae-c1b95c499fce",
-      "b": ""
-    },
-    "objGuid": "Guid(2396653813794690466, 4245478140400333236)",
-    "extraType": "Entity",
-    "name": "main expand button",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -1701,13 +1682,13 @@
   },
   {
     "guid": {
-      "a": "a9191ff7-0b52-6ed2-71ae-12698e891e07",
+      "a": "743a2059-6b53-5414-48ae-399c51229df9",
       "b": ""
     },
-    "objGuid": "Guid(4990193539790543637, 11419246374792448702)",
+    "objGuid": "Guid(2396653813794690466, 4245478140400333236)",
     "extraType": "Entity",
-    "name": "main expand toggle background",
-    "rttiType": "Entity",
+    "name": "main expand button",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -1720,7 +1701,26 @@
   },
   {
     "guid": {
-      "a": "2a7553d8-91d9-b40c-bdb0-062f6def384c",
+      "a": "40bb1e35-dfaa-3ab3-cb92-9581eb4247fe",
+      "b": ""
+    },
+    "objGuid": "Guid(4990193539790543637, 11419246374792448702)",
+    "extraType": "Entity",
+    "name": "main expand toggle background",
+    "rttiType": "SceneObject",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "expanded": true,
+    "type": "none",
+    "isAnimatorBound": false,
+    "modelGUID": "",
+    "createdEffectNodeKey": "effect_node_2D_foreground",
+    "isHeadBindingRenderRoot": false
+  },
+  {
+    "guid": {
+      "a": "86ff1fcf-2115-14d9-7562-74f210e8595b",
       "b": ""
     },
     "objGuid": "Guid(3768588520920825283, 11978487960752785292)",
@@ -1747,13 +1747,13 @@
   },
   {
     "guid": {
-      "a": "893e25c9-2b59-6a52-04e8-a0d88b1a19f6",
+      "a": "e886e7f6-7347-4935-597f-873f56d1e581",
       "b": ""
     },
     "objGuid": "Guid(17674901870053893442, 3045652512370564225)",
     "extraType": "Entity",
     "name": "main expand toggle Indicator",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -1766,7 +1766,7 @@
   },
   {
     "guid": {
-      "a": "6b45ad26-cefb-dea3-9e81-4a76548c4094",
+      "a": "636235b6-cabd-9acf-0e12-6b01240086fc",
       "b": ""
     },
     "objGuid": "Guid(17818463805995360596, 17570106463490844036)",
@@ -1793,13 +1793,13 @@
   },
   {
     "guid": {
-      "a": "f95ed3b1-1f30-1b55-6508-eab0c8f9b972",
+      "a": "0a2f12de-7c72-8931-5150-c7c7172c4d5a",
       "b": ""
     },
     "objGuid": "Guid(3334579167426964082, 15320658556000019339)",
     "extraType": "Entity",
     "name": "main expand toggle button",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -1812,7 +1812,7 @@
   },
   {
     "guid": {
-      "a": "e6803da6-ca19-58df-bc30-dc1ed27c6db7",
+      "a": "7a1cb8b8-ad34-e177-5920-e31a5fb0081c",
       "b": ""
     },
     "objGuid": "Guid(9169990702524361408, 17369948695431905953)",
@@ -1839,17 +1839,17 @@
   },
   {
     "guid": {
-      "a": "b94d51cc-496f-cd7f-d62a-90e1324e2a69",
+      "a": "122b80da-cc06-90bd-f495-af4aa28e0c1e",
       "b": ""
     },
     "objGuid": "Guid(15150694542734493604, 5930857188271298485)",
     "extraType": "Entity",
     "name": "main container UI",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
-    "expanded": false,
+    "expanded": true,
     "type": "none",
     "isAnimatorBound": false,
     "modelGUID": "",
@@ -1858,13 +1858,13 @@
   },
   {
     "guid": {
-      "a": "5193367d-fd96-68bb-1ac2-ef27aa7d6404",
+      "a": "1e43b71d-c887-c7a2-c61f-c86f875bebbb",
       "b": ""
     },
     "objGuid": "Guid(17458272084410546459, 14406392819939750024)",
     "extraType": "Entity",
     "name": "3d container UI",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -1877,7 +1877,7 @@
   },
   {
     "guid": {
-      "a": "bf06cb91-4f56-8f82-44a9-70c90e740e33",
+      "a": "b7bcaa09-d2f5-05b6-43d0-113c6b26af80",
       "b": ""
     },
     "objGuid": "Guid(12342362630992925361, 16690373387210167969)",
@@ -1904,13 +1904,13 @@
   },
   {
     "guid": {
-      "a": "37a9a276-b08e-bb0a-32f1-3f9f284a9c1d",
+      "a": "09d485eb-5f4b-c820-ad3e-bada69370f07",
       "b": ""
     },
     "objGuid": "Guid(6289024910229486902, 6571116455777647491)",
     "extraType": "Entity",
     "name": "3d media container",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -1923,7 +1923,7 @@
   },
   {
     "guid": {
-      "a": "a5dfcee2-1d3a-0730-a26c-bf3605b549c9",
+      "a": "d46af41f-d18d-9e4b-6003-2959ded45c08",
       "b": ""
     },
     "objGuid": "Guid(15151449702543670745, 6099882713233841568)",
@@ -1940,13 +1940,13 @@
   },
   {
     "guid": {
-      "a": "f8520d85-aff8-3b7b-8b55-99c554d60f17",
+      "a": "fcd273d6-524d-36d0-6cee-d2d07cd213d9",
       "b": ""
     },
     "objGuid": "Guid(8740309175532682210, 17618118567635246009)",
     "extraType": "Entity",
     "name": "media 1",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -1959,13 +1959,13 @@
   },
   {
     "guid": {
-      "a": "4cfacb23-cff7-7a8f-3f7d-082c845d60b4",
+      "a": "ac44ff1e-5a18-25cc-e2a0-48ec034248de",
       "b": ""
     },
     "objGuid": "Guid(11839590367544982558, 7366079129369900705)",
     "extraType": "Entity",
     "name": "user media 1",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -1978,7 +1978,7 @@
   },
   {
     "guid": {
-      "a": "3da65d14-1fa0-066a-db3b-068d56add509",
+      "a": "243f95e2-2c71-51fe-5c20-445c00377b7f",
       "b": ""
     },
     "objGuid": "Guid(9602424753912116243, 17133248022767066543)",
@@ -2006,13 +2006,13 @@
   },
   {
     "guid": {
-      "a": "dc4f2cd9-56b1-6fa0-229c-4016f00a6b2a",
+      "a": "16287af2-291a-c142-a3bc-3e41b40cffb3",
       "b": ""
     },
     "objGuid": "Guid(15514350923269122243, 5574531351647279768)",
     "extraType": "Entity",
     "name": "main actions",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -2025,13 +2025,13 @@
   },
   {
     "guid": {
-      "a": "db478c1c-b3ff-8631-5503-11865f266c73",
+      "a": "00bc0532-b0c4-3e3e-1760-91140ea30e06",
       "b": ""
     },
     "objGuid": "Guid(4201849186479156479, 3963166424052845496)",
     "extraType": "Entity",
     "name": "bottom actions",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -2044,13 +2044,13 @@
   },
   {
     "guid": {
-      "a": "b7b84ada-0ec0-c5ee-93b6-85e1aaa6722f",
+      "a": "601d62ec-977c-7eaf-9980-fbe0326ae196",
       "b": ""
     },
     "objGuid": "Guid(3478697091791727390, 11947549161201246132)",
     "extraType": "Entity",
     "name": "reset",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -2063,13 +2063,13 @@
   },
   {
     "guid": {
-      "a": "34f69dfa-a2dd-e31d-7cdf-c77069c3b596",
+      "a": "cda4be02-e5e9-e040-abfa-636ac092bd3b",
       "b": ""
     },
     "objGuid": "Guid(6504438378892712094, 15964342130835196854)",
     "extraType": "Entity",
     "name": "Reset Indicator",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -2082,7 +2082,7 @@
   },
   {
     "guid": {
-      "a": "4cdf88dd-cab0-88a3-f327-4ef6a78e8102",
+      "a": "67cecdf9-7d70-3f4b-0d3c-3f6fa81119f7",
       "b": ""
     },
     "objGuid": "Guid(8233925660972900014, 16519689409666875018)",
@@ -2109,13 +2109,13 @@
   },
   {
     "guid": {
-      "a": "b4a5a212-c10f-0f18-78f9-adcc2b586dba",
+      "a": "364b12ae-4b17-26e2-7540-36567b433d91",
       "b": ""
     },
     "objGuid": "Guid(9821976118276522357, 17684540201431997577)",
     "extraType": "Entity",
     "name": "Reset Button",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -2128,7 +2128,7 @@
   },
   {
     "guid": {
-      "a": "f7ce099c-2b49-edcd-f6e7-254ff8e98706",
+      "a": "5dab8da1-fd08-5133-38cb-12ffa9736cba",
       "b": ""
     },
     "objGuid": "Guid(1532779670836792819, 1747308691479804059)",
@@ -2155,13 +2155,13 @@
   },
   {
     "guid": {
-      "a": "799b9b92-6199-c6a8-93c0-81e3707335e5",
+      "a": "5b78d8df-38fc-8a84-ed4e-24b7b21ba469",
       "b": ""
     },
     "objGuid": "Guid(5999663805263567539, 9622291772564895423)",
     "extraType": "Entity",
     "name": "next",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -2174,13 +2174,13 @@
   },
   {
     "guid": {
-      "a": "95fd5ce3-3545-8798-a315-38b59e51058e",
+      "a": "dabd94bc-00c2-b203-f701-ae29e457a965",
       "b": ""
     },
     "objGuid": "Guid(1387478959404645805, 6954894408456201362)",
     "extraType": "Entity",
     "name": "Next Indicator",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -2193,7 +2193,7 @@
   },
   {
     "guid": {
-      "a": "9327f93b-df5b-3b6c-d78d-3f8b5b2664b9",
+      "a": "3b2e07ea-5859-945d-56b5-a9a0f860704e",
       "b": ""
     },
     "objGuid": "Guid(13494503620444372599, 12571944467269995671)",
@@ -2220,13 +2220,13 @@
   },
   {
     "guid": {
-      "a": "f2522c33-44eb-f18c-469e-f872f9d9429f",
+      "a": "0bacb068-4e66-28e9-1a9d-02f85119ee9c",
       "b": ""
     },
     "objGuid": "Guid(4197907286766298773, 6837811225151135893)",
     "extraType": "Entity",
     "name": "Next Button",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -2239,7 +2239,7 @@
   },
   {
     "guid": {
-      "a": "2c9d9df4-9237-72dc-8076-cd684a323af8",
+      "a": "bd2adabd-0cd2-f8eb-9de7-f5a2157904f9",
       "b": ""
     },
     "objGuid": "Guid(15152035727686855599, 809052527673164456)",
@@ -2266,13 +2266,13 @@
   },
   {
     "guid": {
-      "a": "3652bcb6-077d-2f75-8b3e-3f7df572d5a5",
+      "a": "98e6948c-7cca-19d9-c76d-df0ac71c3d08",
       "b": ""
     },
     "objGuid": "Guid(1173915890557568720, 1215320990469415310)",
     "extraType": "Entity",
     "name": "Next background",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -2285,7 +2285,7 @@
   },
   {
     "guid": {
-      "a": "2541a171-cb8b-6f0e-fd50-ac0f7386813f",
+      "a": "9ac2de68-4cf3-55f0-31b9-00993f6eb54b",
       "b": ""
     },
     "objGuid": "Guid(14790415263953379996, 3455524486648409752)",
@@ -2312,13 +2312,13 @@
   },
   {
     "guid": {
-      "a": "c4c72081-05ff-da84-e52f-d73e2f66b804",
+      "a": "a5271411-9360-0981-f35f-8436ca235ad3",
       "b": ""
     },
     "objGuid": "Guid(1535656784312932594, 13081679327274059926)",
     "extraType": "Entity",
     "name": "previous",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -2331,13 +2331,13 @@
   },
   {
     "guid": {
-      "a": "4e2fc5b5-be53-a773-a75f-ac1656b1e2d5",
+      "a": "83a9873f-4be7-a7dc-41b7-60352b547aa5",
       "b": ""
     },
     "objGuid": "Guid(10325915726223210551, 14696644946076674434)",
     "extraType": "Entity",
     "name": "Previous background",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -2350,7 +2350,7 @@
   },
   {
     "guid": {
-      "a": "a409a17b-1b9c-1128-dd0b-c09c6975d1a1",
+      "a": "373c8e3c-bc7b-13c8-7d86-c8fcc3625293",
       "b": ""
     },
     "objGuid": "Guid(14142642086907656389, 13079719840384421777)",
@@ -2377,13 +2377,13 @@
   },
   {
     "guid": {
-      "a": "aaa1465b-6c1a-bf1c-7ba7-c8bffd9c7a9f",
+      "a": "2212ed12-df36-37be-f917-59469b6dfb09",
       "b": ""
     },
     "objGuid": "Guid(7081703556520065087, 5135671405383918210)",
     "extraType": "Entity",
     "name": "Previous Indicator",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -2396,7 +2396,7 @@
   },
   {
     "guid": {
-      "a": "93b1bdea-c507-3f23-0066-4e6ac86b6d20",
+      "a": "7ba3935f-7816-3438-36d0-b421f6179b73",
       "b": ""
     },
     "objGuid": "Guid(18248930245572217036, 41173228183494557)",
@@ -2423,13 +2423,13 @@
   },
   {
     "guid": {
-      "a": "ff62e083-4bef-4959-9a81-44e85699ce44",
+      "a": "b0ef0df8-f446-4845-3399-940af548bb3d",
       "b": ""
     },
     "objGuid": "Guid(957903450114568305, 16291470792666896316)",
     "extraType": "Entity",
     "name": "Previous Button",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -2442,7 +2442,7 @@
   },
   {
     "guid": {
-      "a": "81528d54-89d5-d837-d197-5d84945b544d",
+      "a": "75fcd28e-b2e1-a5a7-f4cf-5bd4dab5c60b",
       "b": ""
     },
     "objGuid": "Guid(16303116135834270385, 16182382154977730462)",
@@ -2469,13 +2469,13 @@
   },
   {
     "guid": {
-      "a": "ad637d9c-a8d9-59bd-6b21-f1673a16056d",
+      "a": "b16dc8b4-f05e-09eb-f26b-71e0b4cb4a90",
       "b": ""
     },
     "objGuid": "Guid(10829719840313898756, 14910232054238292630)",
     "extraType": "Entity",
     "name": "left actions",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -2488,13 +2488,13 @@
   },
   {
     "guid": {
-      "a": "1dc08464-f76a-89ea-dd50-f28fee420c62",
+      "a": "ef231972-69b1-d905-f7cd-c841e4729aea",
       "b": ""
     },
     "objGuid": "Guid(14577201927045112722, 8160699945210717354)",
     "extraType": "Entity",
     "name": "sound",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -2507,13 +2507,13 @@
   },
   {
     "guid": {
-      "a": "be0f5036-7a81-a011-3bf4-af8b0d76aaf3",
+      "a": "5717cf49-194a-f4dd-c3c9-56a2d245c791",
       "b": ""
     },
     "objGuid": "Guid(2107792217080400681, 16920812077833752989)",
     "extraType": "Entity",
     "name": "Sound background",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -2526,7 +2526,7 @@
   },
   {
     "guid": {
-      "a": "2ddfff8c-fd62-04dc-4d15-6ff27ee8c0b1",
+      "a": "16037f9b-f17d-c063-bf58-8008c1c10cf1",
       "b": ""
     },
     "objGuid": "Guid(885138023317316209, 3265787489019678624)",
@@ -2553,13 +2553,13 @@
   },
   {
     "guid": {
-      "a": "a2f09ab0-7135-bbf1-edd9-43a24941773e",
+      "a": "6f6584a3-339b-bf38-c652-998c5aadf0bc",
       "b": ""
     },
     "objGuid": "Guid(16162018714056964661, 15042575924064239241)",
     "extraType": "Entity",
     "name": "Sound Indicator",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -2572,7 +2572,7 @@
   },
   {
     "guid": {
-      "a": "4483f17e-159a-9317-1abd-f491f3c75075",
+      "a": "809bbafc-5de3-ab24-bda2-a159e2ea7b9a",
       "b": ""
     },
     "objGuid": "Guid(13569089068670754782, 755435319893632910)",
@@ -2599,13 +2599,13 @@
   },
   {
     "guid": {
-      "a": "58b9cc1c-2c17-6374-a812-0e7b3930a09b",
+      "a": "e0ab2e53-ff03-8532-e180-9347f082f37f",
       "b": ""
     },
     "objGuid": "Guid(18107117989154384550, 16367570707041205133)",
     "extraType": "Entity",
     "name": "Sound Button",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -2618,7 +2618,7 @@
   },
   {
     "guid": {
-      "a": "d67bce5d-e1c3-f68e-b2dd-8d252377a777",
+      "a": "ec80d978-0811-92fc-4467-637ec8594f7a",
       "b": ""
     },
     "objGuid": "Guid(14144222396130896929, 5048485222212599218)",
@@ -2645,13 +2645,13 @@
   },
   {
     "guid": {
-      "a": "a296c406-96c8-b19c-1029-64c84eb25acc",
+      "a": "5e16088a-6acb-7c75-1f22-f9dcd24feddb",
       "b": ""
     },
     "objGuid": "Guid(9602606219195603638, 17638848099682413503)",
     "extraType": "Entity",
     "name": "t_toggle",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -2664,13 +2664,13 @@
   },
   {
     "guid": {
-      "a": "b0734a78-f2c6-a392-63c4-bed01e738355",
+      "a": "ab13ca40-977f-bcaa-d8a6-682e148a5cf8",
       "b": ""
     },
     "objGuid": "Guid(14071595448359884067, 5203524471361174676)",
     "extraType": "Entity",
     "name": "Text Toggle background",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -2683,7 +2683,7 @@
   },
   {
     "guid": {
-      "a": "63f17805-35c3-af61-39e0-b1a9f6339157",
+      "a": "f4bc62b6-9520-7675-80cf-4d3fc655845b",
       "b": ""
     },
     "objGuid": "Guid(14145250480983529067, 12554889065939421598)",
@@ -2710,13 +2710,13 @@
   },
   {
     "guid": {
-      "a": "294ed9b4-bda8-8b51-91a2-4d250684d17f",
+      "a": "106ad2a9-3152-00e5-2274-5eb571db1a3a",
       "b": ""
     },
     "objGuid": "Guid(17458546363598472206, 15293381049299997369)",
     "extraType": "Entity",
     "name": "Text Toggle Indicator",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -2729,7 +2729,7 @@
   },
   {
     "guid": {
-      "a": "db6d7ca8-8aba-3773-9c36-00ca3bcce930",
+      "a": "ff81e063-5743-e2fd-dc39-e970e71786a6",
       "b": ""
     },
     "objGuid": "Guid(16522133202129448240, 17516176571418510519)",
@@ -2756,13 +2756,13 @@
   },
   {
     "guid": {
-      "a": "aa14ab04-7eed-8271-2b77-8061679c16ba",
+      "a": "a1a958ea-cb76-5a19-c417-38c1d77205f9",
       "b": ""
     },
     "objGuid": "Guid(14792299342835519451, 7354008207567581097)",
     "extraType": "Entity",
     "name": "Text Toggle Button",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -2775,7 +2775,7 @@
   },
   {
     "guid": {
-      "a": "50e881a0-c238-9c1a-fecd-199d7a5e6857",
+      "a": "259ae880-f08c-955f-a990-d1e17351de3a",
       "b": ""
     },
     "objGuid": "Guid(17456304773528684377, 2893451262125734566)",
@@ -2802,13 +2802,13 @@
   },
   {
     "guid": {
-      "a": "9f3232fe-d4c8-e882-44b7-bdb3f09ceef9",
+      "a": "71a5d210-4448-ce4c-a7ff-c6deec8096d1",
       "b": ""
     },
     "objGuid": "Guid(10251937737919496346, 15322660889813143950)",
     "extraType": "Entity",
     "name": "media 2",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -2821,13 +2821,13 @@
   },
   {
     "guid": {
-      "a": "00be6810-644a-609f-0cc6-e8e0ab198ac3",
+      "a": "09ec016e-b8b5-0954-c3e8-3fde8a7594e5",
       "b": ""
     },
     "objGuid": "Guid(15943077738940632282, 6899208860359274406)",
     "extraType": "Entity",
     "name": "user media 2",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -2840,7 +2840,7 @@
   },
   {
     "guid": {
-      "a": "336c5a90-6f62-1148-f450-d02776daff81",
+      "a": "a966512b-fd9c-3aaf-31df-cd3e52b72b40",
       "b": ""
     },
     "objGuid": "Guid(16594243196605581408, 13441309308095735698)",
@@ -2868,13 +2868,13 @@
   },
   {
     "guid": {
-      "a": "b7887d8d-d2a8-5ce5-8c4d-dab824c5d5a5",
+      "a": "ed983059-e88d-26b0-df42-527720110390",
       "b": ""
     },
     "objGuid": "Guid(2759832550564880086, 7129738867655736497)",
     "extraType": "Entity",
     "name": "media 3",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -2887,13 +2887,13 @@
   },
   {
     "guid": {
-      "a": "7da1d1ab-1ad1-443e-32e9-9c695265bb35",
+      "a": "3ce9566c-9568-cbbd-9cfc-5ddaf9dd335d",
       "b": ""
     },
     "objGuid": "Guid(10755336313892755224, 13372785098829327751)",
     "extraType": "Entity",
     "name": "user media 3",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -2906,7 +2906,7 @@
   },
   {
     "guid": {
-      "a": "68993a66-20b1-f60b-eca2-0c9d70fdcf1f",
+      "a": "e034cdf1-8c32-b559-bc27-61946a437a9c",
       "b": ""
     },
     "objGuid": "Guid(22178141621659240, 7696007911838423954)",
@@ -2934,13 +2934,13 @@
   },
   {
     "guid": {
-      "a": "382334e9-70c7-695b-8ccf-aa188a8611ce",
+      "a": "a7c0157d-906e-5c6e-d571-765bc8e0c094",
       "b": ""
     },
     "objGuid": "Guid(7227068835868981943, 13999810116697444737)",
     "extraType": "Entity",
     "name": "media 4",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -2953,13 +2953,13 @@
   },
   {
     "guid": {
-      "a": "37cab6ab-7b80-9698-2363-8ff47926b9cc",
+      "a": "321f9f99-84e9-2ced-b8bc-805ffe4af9f6",
       "b": ""
     },
     "objGuid": "Guid(12989264434640118209, 706292729463133336)",
     "extraType": "Entity",
     "name": "user media 4",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -2972,7 +2972,7 @@
   },
   {
     "guid": {
-      "a": "0bb405b2-d32d-b43e-618e-dc9b9aa6e53e",
+      "a": "eb28035f-e9c6-ac56-3444-d55a54fb9cdf",
       "b": ""
     },
     "objGuid": "Guid(4774715056448729501, 956962081795453357)",
@@ -3000,13 +3000,13 @@
   },
   {
     "guid": {
-      "a": "e6fc9b84-0ebb-0b03-4daf-1f508f33fdbc",
+      "a": "1760412a-af50-07a0-9148-35693241548f",
       "b": ""
     },
     "objGuid": "Guid(6649226552415531365, 623068231643997617)",
     "extraType": "Entity",
     "name": "draw",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -3019,13 +3019,13 @@
   },
   {
     "guid": {
-      "a": "8732190c-e356-2ec1-38a3-91d36621d2de",
+      "a": "aea21e6d-5f4f-df38-2dae-2eda7c0bea51",
       "b": ""
     },
     "objGuid": "Guid(13208824662909729221, 360472940573555625)",
     "extraType": "Entity",
     "name": "draw background",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -3038,7 +3038,7 @@
   },
   {
     "guid": {
-      "a": "57444cb8-c577-5a04-9ab9-cd4cf2a2d92d",
+      "a": "700ef9ef-e18f-b9c5-ff4d-6067b3a1e801",
       "b": ""
     },
     "objGuid": "Guid(4489287415653740034, 4681064940600207267)",
@@ -3065,13 +3065,13 @@
   },
   {
     "guid": {
-      "a": "d0d7d0be-a1d9-d63c-4df9-60d79a8a0fe2",
+      "a": "c351d55d-b352-edfa-b195-36ca41f638de",
       "b": ""
     },
     "objGuid": "Guid(7876203613105301373, 8680462032419009207)",
     "extraType": "Entity",
     "name": "draw indicator",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -3084,7 +3084,7 @@
   },
   {
     "guid": {
-      "a": "31ac4f4a-7e5f-71b8-2b8f-8991613ce51e",
+      "a": "3a0cb6f5-6676-dcc7-45b8-461dbf5449d4",
       "b": ""
     },
     "objGuid": "Guid(17529384659768788244, 18017603079442359477)",
@@ -3111,13 +3111,13 @@
   },
   {
     "guid": {
-      "a": "562b4018-12b1-da45-cb3f-15951ae15499",
+      "a": "f75e32f1-0f23-91ab-2a73-16e930a41206",
       "b": ""
     },
     "objGuid": "Guid(14432658486479840137, 3262512902411499671)",
     "extraType": "Entity",
     "name": "draw button",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -3130,7 +3130,7 @@
   },
   {
     "guid": {
-      "a": "6a90921a-7d2b-9589-5f30-545c1907588f",
+      "a": "5968d115-a293-f05d-88f6-7bd9a42d325d",
       "b": ""
     },
     "objGuid": "Guid(12485117874708221299, 9944373729694553277)",
@@ -3157,13 +3157,13 @@
   },
   {
     "guid": {
-      "a": "64d31f75-a2fc-99cd-bd88-b1d83d2041a2",
+      "a": "05c307d9-68b4-48db-bd76-4a9fc0c5b2a1",
       "b": ""
     },
     "objGuid": "Guid(13207331951750754860, 10684638792469611677)",
     "extraType": "Entity",
     "name": "media 5",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -3176,13 +3176,13 @@
   },
   {
     "guid": {
-      "a": "eb1ad486-3ec3-7e49-0cf2-a4aa04ac0486",
+      "a": "e48faf61-c9af-45e9-1571-eb56460ca129",
       "b": ""
     },
     "objGuid": "Guid(12342742827218440191, 2305347918971891604)",
     "extraType": "Entity",
     "name": "user media 5",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -3195,7 +3195,7 @@
   },
   {
     "guid": {
-      "a": "c3023a56-d79b-6ceb-3ba0-34ee4fa3df47",
+      "a": "fe0fe3b8-b6b9-721e-681a-84940fc5dc15",
       "b": ""
     },
     "objGuid": "Guid(4776638087782904490, 9441082572597789828)",
@@ -3223,13 +3223,13 @@
   },
   {
     "guid": {
-      "a": "2cb00138-2d4b-2cc2-9b90-79d2f64cdb1d",
+      "a": "ca5e50cb-2a1c-d2a5-57cc-007adcf1c2ac",
       "b": ""
     },
     "objGuid": "Guid(6434562398309775804, 17400748850215896230)",
     "extraType": "Entity",
     "name": "media 6",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -3242,13 +3242,13 @@
   },
   {
     "guid": {
-      "a": "0a2e456f-2397-04a1-4e13-8ab3d3647f50",
+      "a": "4fbda100-8d5f-76d1-63d7-fb74c7409a1c",
       "b": ""
     },
     "objGuid": "Guid(18178629959310795661, 12163052712627327371)",
     "extraType": "Entity",
     "name": "user media 6",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -3261,7 +3261,7 @@
   },
   {
     "guid": {
-      "a": "1a47821c-9e4a-3e53-67de-782c52a1e89a",
+      "a": "01698292-a50f-9961-9034-b3ef83f6538d",
       "b": ""
     },
     "objGuid": "Guid(10540366449393828720, 9298961170800201355)",
@@ -3289,13 +3289,13 @@
   },
   {
     "guid": {
-      "a": "662c7c31-bc96-3326-9d05-60fb62f0f16f",
+      "a": "8b41097c-3ce3-de63-d9d5-831504ca9181",
       "b": ""
     },
     "objGuid": "Guid(17892664579246168212, 9637934068387932582)",
     "extraType": "Entity",
     "name": "media 7",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -3308,13 +3308,13 @@
   },
   {
     "guid": {
-      "a": "6a7fb89b-3938-e11a-f73d-e109d2d1f75d",
+      "a": "dac85103-fd6b-edb1-dade-33733739525a",
       "b": ""
     },
     "objGuid": "Guid(12629022387075547570, 17773337354437093522)",
     "extraType": "Entity",
     "name": "user media 7",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -3327,7 +3327,7 @@
   },
   {
     "guid": {
-      "a": "894dc779-1603-5e84-ac32-f76e92c7afc8",
+      "a": "ad5092c7-2368-a0e0-7969-02178f0977be",
       "b": ""
     },
     "objGuid": "Guid(9025432487165429744, 7839036928886436782)",
@@ -3355,13 +3355,13 @@
   },
   {
     "guid": {
-      "a": "ec1fbbe3-2178-8548-0224-328bc0c5bc94",
+      "a": "cdb1aca5-3737-2014-07d7-613299575946",
       "b": ""
     },
     "objGuid": "Guid(11548778161624913330, 17526552507747315866)",
     "extraType": "Entity",
     "name": "media 8",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -3374,13 +3374,13 @@
   },
   {
     "guid": {
-      "a": "fc249928-32b3-0d7d-8c4d-44d7e50e7bec",
+      "a": "e7be0171-1910-6277-71a1-5e458d230cfd",
       "b": ""
     },
     "objGuid": "Guid(16303920174421508873, 11999360855249096077)",
     "extraType": "Entity",
     "name": "user media 8",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -3393,7 +3393,7 @@
   },
   {
     "guid": {
-      "a": "b8cff7c7-101a-c493-fdff-0656ef9931a5",
+      "a": "45ba7a55-757e-a4b9-3ba5-92ec8198bf89",
       "b": ""
     },
     "objGuid": "Guid(18180697293265717423, 14365551554671082384)",
@@ -3421,13 +3421,13 @@
   },
   {
     "guid": {
-      "a": "3f461989-eecb-e1b5-d754-66deb45b44b4",
+      "a": "9d0926fc-e378-7127-b33b-c17cd856e100",
       "b": ""
     },
     "objGuid": "Guid(11694341112873505700, 5338944120023039667)",
     "extraType": "Entity",
     "name": "Tap Screen Prompt",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -3440,7 +3440,7 @@
   },
   {
     "guid": {
-      "a": "4cbcc34e-1896-ae45-659b-ff4078afd762",
+      "a": "7d44018c-4ace-fe29-2334-27345efceedc",
       "b": ""
     },
     "objGuid": "Guid(14285621946010967672, 12564400181928183699)",
@@ -3458,13 +3458,13 @@
   },
   {
     "guid": {
-      "a": "f0bdbc9b-304c-f111-705c-3ee83ee3ec0c",
+      "a": "67a4b2b7-b3db-ead4-e717-45458f7d3af9",
       "b": ""
     },
     "objGuid": "Guid(8594475809718260930, 3406751357190244277)",
     "extraType": "Entity",
     "name": "Backdrop",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -3477,7 +3477,7 @@
   },
   {
     "guid": {
-      "a": "7be21742-6e01-8beb-adeb-1da6298561b4",
+      "a": "04968f71-fa70-80ee-ec44-0caeae95b65d",
       "b": ""
     },
     "objGuid": "Guid(12557492219736878606, 2145615187739324339)",
@@ -3504,13 +3504,13 @@
   },
   {
     "guid": {
-      "a": "bd2318ef-6d78-ad8c-81c7-5022c3668023",
+      "a": "994f5fab-ea0d-c9b0-a01b-33c54bcbedf2",
       "b": ""
     },
     "objGuid": "Guid(10181650398881911355, 2607481149586402751)",
     "extraType": "Entity",
     "name": "Tap Screen Prompt",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -3523,7 +3523,7 @@
   },
   {
     "guid": {
-      "a": "f95ba6fc-8663-bb3f-560d-780e63ab9167",
+      "a": "8f56f8cb-975b-7197-2c3f-b2b96cfafdcf",
       "b": ""
     },
     "objGuid": "Guid(11478803467271039598, 14898832263282136463)",
@@ -3551,13 +3551,13 @@
   },
   {
     "guid": {
-      "a": "7c75c519-45a8-9974-3d88-712b20c172e6",
+      "a": "d9ce98a3-ff2e-14e4-fb68-88cb65820388",
       "b": ""
     },
     "objGuid": "Guid(2255670202689735543, 5214334564109827207)",
     "extraType": "Entity",
     "name": "Segmentation Image",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -3570,7 +3570,7 @@
   },
   {
     "guid": {
-      "a": "f7c1c5d9-b4bd-8a9b-4a08-c23dbbeee134",
+      "a": "e5d1a54c-3a81-3668-56b5-f57e17ea4828",
       "b": ""
     },
     "objGuid": "Guid(6503949691587792545, 11003204179158385573)",
@@ -3598,13 +3598,13 @@
   },
   {
     "guid": {
-      "a": "44d002d4-d5d8-30f3-ee0d-2ce13b4fb3cc",
+      "a": "8e1fe5b7-2eae-ab7b-6f61-834d843fc33d",
       "b": ""
     },
     "objGuid": "Guid(3334272057939336958, 12863195099221001364)",
     "extraType": "Entity",
     "name": "expand camera",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -3617,13 +3617,13 @@
   },
   {
     "guid": {
-      "a": "33152335-7bd2-bd9f-2d74-ef5891d86516",
+      "a": "c666981a-db16-8a2f-c75c-157131f9d0b2",
       "b": ""
     },
     "objGuid": "Guid(9605854325891458455, 13677934182849355953)",
     "extraType": "Entity",
     "name": "expand camera background",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -3636,7 +3636,7 @@
   },
   {
     "guid": {
-      "a": "ba67f4b1-0eec-d87b-4cd5-e05a82a88cf5",
+      "a": "f462062f-4b6e-dd60-4d33-5e483abae30d",
       "b": ""
     },
     "objGuid": "Guid(238309151250888329, 3750952788817718187)",
@@ -3663,13 +3663,13 @@
   },
   {
     "guid": {
-      "a": "4aec9408-97d7-037a-ab73-29b134164345",
+      "a": "2100b7bd-2366-322f-b391-d5fca14db956",
       "b": ""
     },
     "objGuid": "Guid(7876121777427389836, 386608646136740499)",
     "extraType": "Entity",
     "name": "expand camera Button",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -3682,7 +3682,7 @@
   },
   {
     "guid": {
-      "a": "fae83679-8516-b887-5cbd-f6b5d023fa95",
+      "a": "33dfd2b0-9701-5876-74cb-f2ca6ccfac4b",
       "b": ""
     },
     "objGuid": "Guid(4778275370241544953, 10551223594552476065)",
@@ -3709,32 +3709,13 @@
   },
   {
     "guid": {
-      "a": "24707755-e76c-9e79-7423-7491f3345fe8",
+      "a": "752e598b-b614-6873-99b8-772c24ede15b",
       "b": ""
     },
     "objGuid": "Guid(3192537369421871850, 2763112608049403271)",
     "extraType": "Entity",
     "name": "expand actions",
-    "rttiType": "Entity",
-    "version": "0.1.0",
-    "isVisibleInInspector": true,
-    "hideInPanel": false,
-    "expanded": false,
-    "type": "none",
-    "isAnimatorBound": false,
-    "modelGUID": "",
-    "createdEffectNodeKey": "effect_node_2D_foreground",
-    "isHeadBindingRenderRoot": false
-  },
-  {
-    "guid": {
-      "a": "17e4262e-c254-0114-488c-47dc870cb5f2",
-      "b": ""
-    },
-    "objGuid": "Guid(11476668411599637259, 18089069483929447814)",
-    "extraType": "Entity",
-    "name": "expand actions toggle background",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -3747,7 +3728,26 @@
   },
   {
     "guid": {
-      "a": "74cc7148-8fb1-9026-59a4-1015b20e3983",
+      "a": "47b787a7-0705-1ee9-b57a-5863d17ba87f",
+      "b": ""
+    },
+    "objGuid": "Guid(11476668411599637259, 18089069483929447814)",
+    "extraType": "Entity",
+    "name": "expand actions toggle background",
+    "rttiType": "SceneObject",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "expanded": true,
+    "type": "none",
+    "isAnimatorBound": false,
+    "modelGUID": "",
+    "createdEffectNodeKey": "effect_node_2D_foreground",
+    "isHeadBindingRenderRoot": false
+  },
+  {
+    "guid": {
+      "a": "e6db3724-97a5-9203-765d-9bdc3ae99808",
       "b": ""
     },
     "objGuid": "Guid(2613850762938019262, 16179700673353293709)",
@@ -3774,13 +3774,13 @@
   },
   {
     "guid": {
-      "a": "36357b66-e8e8-e7c2-166e-966a65508ae3",
+      "a": "6ef6aadb-986e-fb5c-0de0-c5c413047884",
       "b": ""
     },
     "objGuid": "Guid(4847364562437491985, 7022092260939320484)",
     "extraType": "Entity",
     "name": "expand actions toggle Indicator",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -3793,7 +3793,7 @@
   },
   {
     "guid": {
-      "a": "41fd3c5c-76dc-3d15-f7e7-30f3ff313343",
+      "a": "70f682cf-bbc5-82b4-b01e-d07e0a05e646",
       "b": ""
     },
     "objGuid": "Guid(8669246548699615428, 15520860866245444509)",
@@ -3820,13 +3820,13 @@
   },
   {
     "guid": {
-      "a": "8750a88b-d810-dd38-93bf-7d863ce87cf4",
+      "a": "d52c8006-7a3e-a5c4-e273-4163ad0c0401",
       "b": ""
     },
     "objGuid": "Guid(11692403937667803192, 2323438388702397093)",
     "extraType": "Entity",
     "name": "expand actions toggle button",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -3839,7 +3839,7 @@
   },
   {
     "guid": {
-      "a": "20332fad-16b6-3e4b-9543-847040399e98",
+      "a": "9c39cac5-5a70-0937-9b10-062b15088bb2",
       "b": ""
     },
     "objGuid": "Guid(3697409105387079892, 8430085338285936544)",
@@ -3866,13 +3866,13 @@
   },
   {
     "guid": {
-      "a": "0225483f-411d-ab26-093d-5a552453c65a",
+      "a": "f4b5019c-9e8e-9349-5f8a-7090fcb217e2",
       "b": ""
     },
     "objGuid": "Guid(308556741836963895, 7940223508147166651)",
     "extraType": "Entity",
     "name": "drawing (1)",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -3885,7 +3885,7 @@
   },
   {
     "guid": {
-      "a": "eca6c092-9d48-3f37-c289-da28e4e76c44",
+      "a": "d3a8e538-2e70-6516-0e1f-adedd89d7151",
       "b": ""
     },
     "objGuid": "Guid(2039857908509081565, 5218159379150738101)",
@@ -3912,13 +3912,13 @@
   },
   {
     "guid": {
-      "a": "d07b131a-f943-4771-85f5-0ce1cbfb189a",
+      "a": "a2c308d4-d031-b452-0ad6-d0e8e9a47bf4",
       "b": ""
     },
     "objGuid": "Guid(12271284437913607180, 105216362100596355)",
     "extraType": "Entity",
     "name": "blue",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -3931,13 +3931,13 @@
   },
   {
     "guid": {
-      "a": "3652aa1a-2740-3057-41ca-1b1fdfc3c86b",
+      "a": "28395e9d-e18f-67e3-f192-2b3573e85ba6",
       "b": ""
     },
     "objGuid": "Guid(11333546556613219374, 5970446055575410059)",
     "extraType": "Entity",
     "name": "blue background",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -3950,7 +3950,7 @@
   },
   {
     "guid": {
-      "a": "2c172cfd-1013-4fcf-f99c-24c5b09dde6d",
+      "a": "9473b416-8e17-607b-f798-d5c5e70b7dc8",
       "b": ""
     },
     "objGuid": "Guid(16303393835299229932, 8084005861585546391)",
@@ -3977,13 +3977,13 @@
   },
   {
     "guid": {
-      "a": "cf686723-8414-0555-d815-c7328b0aca04",
+      "a": "3019db69-b520-be4e-0afa-4a2c29015a38",
       "b": ""
     },
     "objGuid": "Guid(9461294204219718206, 12627942053110799243)",
     "extraType": "Entity",
     "name": "blue indicator",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -3996,7 +3996,7 @@
   },
   {
     "guid": {
-      "a": "cfb61617-47c9-c9ca-ea23-67712da8acd0",
+      "a": "8fdb8776-ec0e-b011-f5c6-008983165e75",
       "b": ""
     },
     "objGuid": "Guid(2901923000322500679, 17872264265123038102)",
@@ -4023,13 +4023,13 @@
   },
   {
     "guid": {
-      "a": "42eee2e7-4829-3e18-04a0-5c639b614030",
+      "a": "813cfebe-189e-0cbb-c16a-dd4e88df9839",
       "b": ""
     },
     "objGuid": "Guid(7441546013507258615, 18208329316419400125)",
     "extraType": "Entity",
     "name": "green",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -4042,13 +4042,13 @@
   },
   {
     "guid": {
-      "a": "f6296474-00bc-4aa6-4460-44467105cfac",
+      "a": "428ad4ea-35ee-a11c-cbb4-523e319d16b2",
       "b": ""
     },
     "objGuid": "Guid(7010694092723714805, 14308252240114345617)",
     "extraType": "Entity",
     "name": "green background",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -4061,7 +4061,7 @@
   },
   {
     "guid": {
-      "a": "c26808e5-d452-2707-e0c5-d45c4f928792",
+      "a": "b9f92284-6931-6088-a2fe-533eb82f2965",
       "b": ""
     },
     "objGuid": "Guid(13997720704394797156, 12674389295421683644)",
@@ -4088,13 +4088,13 @@
   },
   {
     "guid": {
-      "a": "88fe17b6-5833-28c0-0607-67ac1e2396fd",
+      "a": "3120de5c-317e-5bba-a314-7df7d52f5201",
       "b": ""
     },
     "objGuid": "Guid(4270707281341271795, 9968859240717108887)",
     "extraType": "Entity",
     "name": "green indicator",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -4107,7 +4107,7 @@
   },
   {
     "guid": {
-      "a": "3deeb220-c32e-a2a8-de5d-f66f21d03694",
+      "a": "97b549f4-ce22-e7d4-fc16-4bdcc1b0b737",
       "b": ""
     },
     "objGuid": "Guid(956791131105691153, 16018120500034893500)",
@@ -4134,13 +4134,13 @@
   },
   {
     "guid": {
-      "a": "68c2b86b-2ae4-fbd0-f8ea-005a32006e3d",
+      "a": "f3bb0710-1177-2ced-6407-af050e3c1303",
       "b": ""
     },
     "objGuid": "Guid(13064884678360065099, 8898637969212995207)",
     "extraType": "Entity",
     "name": "red",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -4153,13 +4153,13 @@
   },
   {
     "guid": {
-      "a": "bb50d3e0-5400-dc30-847c-f2c76614608d",
+      "a": "ea3462c3-5784-d62e-de12-38c2a1099fa4",
       "b": ""
     },
     "objGuid": "Guid(8162138708939892374, 5256241451318139061)",
     "extraType": "Entity",
     "name": "red background",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -4172,7 +4172,7 @@
   },
   {
     "guid": {
-      "a": "27ec6fe5-f2de-fcd1-80dc-2cc7498f56e1",
+      "a": "1eeaed27-2e2e-12f9-8cef-f340d93f0d6d",
       "b": ""
     },
     "objGuid": "Guid(454611837103298573, 13144784388328613301)",
@@ -4199,13 +4199,13 @@
   },
   {
     "guid": {
-      "a": "28d78cea-8725-a685-fb28-8262186f7b84",
+      "a": "966b3316-0b4e-25ce-d258-c4a6830fa914",
       "b": ""
     },
     "objGuid": "Guid(8163565376148781567, 1777303323987770544)",
     "extraType": "Entity",
     "name": "red indicator",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -4218,7 +4218,7 @@
   },
   {
     "guid": {
-      "a": "b27fcf1b-56dd-0668-eea3-2d3eec296feb",
+      "a": "15a651a9-fbcc-11f3-31e2-7527f01ef3ea",
       "b": ""
     },
     "objGuid": "Guid(2543058101155248437, 6169619784154951580)",
@@ -4245,13 +4245,13 @@
   },
   {
     "guid": {
-      "a": "485e8ecb-d2fd-931b-22d8-66a87b32ee9d",
+      "a": "d826af63-a529-988a-9041-e2620e6f1871",
       "b": ""
     },
     "objGuid": "Guid(2037916203254485122, 1929542727221319612)",
     "extraType": "Entity",
     "name": "OUTPUT Camera",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -4264,7 +4264,7 @@
   },
   {
     "guid": {
-      "a": "f973b166-166e-b707-ea90-a640a30cb69b",
+      "a": "eebb8674-9486-993c-0676-abba9f53573d",
       "b": ""
     },
     "objGuid": "Guid(3624532843565584813, 11403769357800863658)",
@@ -4282,13 +4282,13 @@
   },
   {
     "guid": {
-      "a": "1729b252-6377-7165-d8f2-24d340a03b9e",
+      "a": "fdb82f6c-2ec1-455e-d24b-9d4703b6d02e",
       "b": ""
     },
     "objGuid": "Guid(17240920933497199719, 11206227626145364359)",
     "extraType": "Entity",
     "name": "container UI",
-    "rttiType": "Entity",
+    "rttiType": "SceneObject",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,

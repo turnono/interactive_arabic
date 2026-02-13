@@ -9,7 +9,7 @@
  */
 
 const {BaseNode} = require('./BaseNode');
-const Amaz = effect.Amaz;
+const APJS = require('./amazingpro');
 
 class CGClamp extends BaseNode {
   constructor() {

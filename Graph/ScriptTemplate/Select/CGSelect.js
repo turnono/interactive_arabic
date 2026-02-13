@@ -6,7 +6,7 @@
  * @copyright Copyright (c) 2021, ByteDance Inc, All Rights Reserved
  */
 
-const Amaz = effect.Amaz;
+const APJS = require('./amazingpro');
 const {BaseNode} = require('./BaseNode');
 
 class CGSelect extends BaseNode {

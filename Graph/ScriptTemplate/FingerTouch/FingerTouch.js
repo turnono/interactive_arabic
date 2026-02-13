@@ -1,5 +1,5 @@
 const {BaseNode} = require('./BaseNode');
-const Amaz = effect.Amaz;
+const APJS = require('./amazingpro');
 
 const PointerState = {
   UNINIT: 'UNINIT',
@@ -14,8 +14,8 @@ class Pointer {
     this.Stay = false;
     this.OnStop = false;
     this.id = undefined;
-    this.currentPos = new Amaz.Vector2f(-1.0, -1.0);
-    this.lastPos = new Amaz.Vector2f(-1.0, -1.0);
+    this.currentPos = new APJS.Vector2f(-1.0, -1.0);
+    this.lastPos = new APJS.Vector2f(-1.0, -1.0);
     this.state = PointerState.UNINIT;
   }
 }
@@ -34,7 +34,7 @@ class FingerTouch extends BaseNode {
   }
 
   onEvent(sys, event) {
-    if (event.type === Amaz.EventType.TOUCH) {
+    if (event.type === APJS.EventType.TOUCH) {
       this._handleTouchEvent(event);
     }
   }
@@ -53,7 +53,7 @@ class FingerTouch extends BaseNode {
     const pointer = event.args.get(0);
     if (pointer !== undefined) {
       const type = pointer.type;
-      if (type === Amaz.TouchType.TOUCH_BEGAN) {
+      if (type === APJS.TouchType.TOUCH_BEGAN) {
         if (this.Pointer0.state === PointerState.UNINIT || this.Pointer0.state === PointerState.FINISH) {
           this._setPointer(
             this.Pointer0,
@@ -63,7 +63,7 @@ class FingerTouch extends BaseNode {
             true,
             false,
             false,
-            new Amaz.Vector2f(pointer.x, 1.0 - pointer.y),
+            new APJS.Vector2f(pointer.x, 1.0 - pointer.y),
             this.Pointer0.lastPos
           );
         } else if (this.Pointer1.state === PointerState.UNINIT || this.Pointer1.state === PointerState.UNINIT) {
@@ -76,13 +76,13 @@ class FingerTouch extends BaseNode {
               true,
               false,
               false,
-              new Amaz.Vector2f(pointer.x, 1.0 - pointer.y),
+              new APJS.Vector2f(pointer.x, 1.0 - pointer.y),
               this.Pointer1.lastPos
             );
           }
         }
         this._excuteTouchPoint(this.selectedIndex);
-      } else if (type === Amaz.TouchType.TOUCH_MOVED) {
+      } else if (type === APJS.TouchType.TOUCH_MOVED) {
         if (this.Pointer0.state === PointerState.RIGHT && pointer.pointerId === this.Pointer0.id) {
           this._setPointer(
             this.Pointer0,
@@ -92,7 +92,7 @@ class FingerTouch extends BaseNode {
             false,
             true,
             false,
-            new Amaz.Vector2f(pointer.x, 1.0 - pointer.y),
+            new APJS.Vector2f(pointer.x, 1.0 - pointer.y),
             this.Pointer0.currentPos
           );
         } else if (this.Pointer1.state === PointerState.RIGHT && pointer.pointerId === this.Pointer1.id) {
@@ -104,11 +104,11 @@ class FingerTouch extends BaseNode {
             false,
             true,
             false,
-            new Amaz.Vector2f(pointer.x, 1.0 - pointer.y),
+            new APJS.Vector2f(pointer.x, 1.0 - pointer.y),
             this.Pointer1.currentPos
           );
         }
-      } else if (type === Amaz.TouchType.TOUCH_ENDED || type === Amaz.TouchType.TOUCH_CANCELED) {
+      } else if (type === APJS.TouchType.TOUCH_ENDED || type === APJS.TouchType.TOUCH_CANCELED) {
         if (this.Pointer0.state === PointerState.RIGHT && pointer.pointerId === this.Pointer0.id) {
           this._setPointer(
             this.Pointer0,
@@ -118,7 +118,7 @@ class FingerTouch extends BaseNode {
             false,
             false,
             true,
-            new Amaz.Vector2f(pointer.x, 1.0 - pointer.y),
+            new APJS.Vector2f(pointer.x, 1.0 - pointer.y),
             this.Pointer0.currentPos
           );
         } else if (this.Pointer1.state === PointerState.RIGHT && pointer.pointerId === this.Pointer1.id) {
@@ -130,7 +130,7 @@ class FingerTouch extends BaseNode {
             false,
             false,
             true,
-            new Amaz.Vector2f(pointer.x, 1.0 - pointer.y),
+            new APJS.Vector2f(pointer.x, 1.0 - pointer.y),
             this.Pointer1.currentPos
           );
         }
@@ -187,7 +187,7 @@ class FingerTouch extends BaseNode {
         false,
         false,
         false,
-        new Amaz.Vector2f(-1.0, -1.0),
+        new APJS.Vector2f(-1.0, -1.0),
         this.selectedPointer.currentPos
       );
       if (this.nexts[3]) {
@@ -206,12 +206,12 @@ class FingerTouch extends BaseNode {
         false,
         false,
         false,
-        new Amaz.Vector2f(-1.0, -1.0),
-        new Amaz.Vector2f(-1.0, -1.0)
+        new APJS.Vector2f(-1.0, -1.0),
+        new APJS.Vector2f(-1.0, -1.0)
       );
     }
-    this.outputs[4] = new Amaz.Vector2f(-1.0, -1.0);
-    this.outputs[5] = new Amaz.Vector2f(-1.0, -1.0);
+    this.outputs[4] = new APJS.Vector2f(-1.0, -1.0);
+    this.outputs[5] = new APJS.Vector2f(-1.0, -1.0);
   }
 
   beforeStart(sys) {

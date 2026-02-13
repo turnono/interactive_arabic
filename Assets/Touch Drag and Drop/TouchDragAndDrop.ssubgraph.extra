@@ -1,0 +1,19 @@
+[
+  {
+    "guid": {
+      "a": "61298cd0-1840-17a2-6b68-d6c2334986ae",
+      "b": ""
+    },
+    "extraType": "ResItemVSSubgraph",
+    "name": "TouchDragAndDrop",
+    "expandInPanel": true,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": "",
+    "assetPackageID": "7293732841232482306",
+    "resourceFilePath": "/Users/abdullah/Library/Application Support/EffectHouse/package/7293732841232482306/TouchDragAndDrop.ssubgraph",
+    "combinedWithNodeLibary": true,
+    "assetID": "7293732841232482306"
+  }
+]

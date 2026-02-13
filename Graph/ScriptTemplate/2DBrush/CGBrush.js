@@ -1,4 +1,4 @@
-const Amaz = effect.Amaz;
+const APJS = require('./amazingpro');
 const {BaseNode} = require('./BaseNode');
 const {screenWidth, screenHeight, createRT, addShaderToMap, createQuadMesh, lookAt, lerp, clamp} = require('./GraphHelper');
 
@@ -102,7 +102,7 @@ class catmullRomCurve{
   }
 
   _getT(t, alpha, p0, p1){
-    const d = Amaz.Vector3f.sub(p1, p0);
+    const d = p1.clone().subtract(p0);
     const a = d.dot(d);
     const b = Math.pow(a, alpha * 0.5);
     return b + t;
@@ -130,12 +130,19 @@ class catmullRomCurve{
       return this.p2;
     }
 
-    const A1  = Amaz.Vector3f.add(Amaz.Vector3f.mul(this.p0, (t1 - t)/(t1 - t0)), Amaz.Vector3f.mul(this.p1, (t - t0)/(t1 - t0)));
-    const A2  = Amaz.Vector3f.add(Amaz.Vector3f.mul(this.p1, (t2 - t)/(t2 - t1)), Amaz.Vector3f.mul(this.p2, (t - t1)/(t2 - t1)));
-    const A3  = Amaz.Vector3f.add(Amaz.Vector3f.mul(this.p2, (t3 - t)/(t3 - t2)), Amaz.Vector3f.mul(this.p3, (t - t2)/(t3 - t2)));
-    const B1  = Amaz.Vector3f.add(Amaz.Vector3f.mul(A1, (t2 - t)/(t2 - t0)), Amaz.Vector3f.mul(A2, (t - t0)/(t2 - t0)));
-    const B2  = Amaz.Vector3f.add(Amaz.Vector3f.mul(A2, (t3 - t)/(t3 - t1)), Amaz.Vector3f.mul(A3, (t - t1)/(t3 - t1)));
-    const C  = Amaz.Vector3f.add(Amaz.Vector3f.mul(B1, (t2 - t)/(t2 - t1)), Amaz.Vector3f.mul(B2, (t - t1)/(t2 - t1)));
+    // const A1  = APJS.Vector3f.add(APJS.Vector3f.mul(this.p0, (t1 - t)/(t1 - t0)), APJS.Vector3f.mul(this.p1, (t - t0)/(t1 - t0)));
+    // const A2  = APJS.Vector3f.add(APJS.Vector3f.mul(this.p1, (t2 - t)/(t2 - t1)), APJS.Vector3f.mul(this.p2, (t - t1)/(t2 - t1)));
+    // const A3  = APJS.Vector3f.add(APJS.Vector3f.mul(this.p2, (t3 - t)/(t3 - t2)), APJS.Vector3f.mul(this.p3, (t - t2)/(t3 - t2)));
+    // const B1  = APJS.Vector3f.add(APJS.Vector3f.mul(A1, (t2 - t)/(t2 - t0)), APJS.Vector3f.mul(A2, (t - t0)/(t2 - t0)));
+    // const B2  = APJS.Vector3f.add(APJS.Vector3f.mul(A2, (t3 - t)/(t3 - t1)), APJS.Vector3f.mul(A3, (t - t1)/(t3 - t1)));
+    // const C  = APJS.Vector3f.add(APJS.Vector3f.mul(B1, (t2 - t)/(t2 - t1)), APJS.Vector3f.mul(B2, (t - t1)/(t2 - t1)));
+
+    const A1  = this.p0.clone().multiply((t1 - t)/(t1 - t0)).add(this.p1.clone().multiply((t - t0)/(t1 - t0)));
+    const A2  = this.p1.clone().multiply((t2 - t)/(t2 - t1)).add(this.p2.clone().multiply((t - t1)/(t2 - t1)));
+    const A3  = this.p2.clone().multiply((t3 - t)/(t3 - t2)).add(this.p3.clone().multiply((t - t2)/(t3 - t2)));
+    const B1  = A1.clone().multiply((t2 - t)/(t2 - t0)).add(A2.clone().multiply((t - t0)/(t2 - t0)));
+    const B2  = A2.clone().multiply((t3 - t)/(t3 - t1)).add(A3.clone().multiply((t - t1)/(t3 - t1)));
+    const C  = B1.clone().multiply((t2 - t)/(t2 - t1)).add(B2.clone().multiply((t - t1)/(t2 - t1)));
 
     return C;
   }
@@ -149,34 +156,47 @@ class catmullRomCurve{
     const t = lerp(t1, t2, paramT);
 
 
-    const A1  = Amaz.Vector3f.add(Amaz.Vector3f.mul(this.p0, (t1 - t)/(t1 - t0)), Amaz.Vector3f.mul(this.p1, (t - t0)/(t1 - t0)));
-    const A2  = Amaz.Vector3f.add(Amaz.Vector3f.mul(this.p1, (t2 - t)/(t2 - t1)), Amaz.Vector3f.mul(this.p2, (t - t1)/(t2 - t1)));
-    const A3  = Amaz.Vector3f.add(Amaz.Vector3f.mul(this.p2, (t3 - t)/(t3 - t2)), Amaz.Vector3f.mul(this.p3, (t - t2)/(t3 - t2)));
-    const B1  = Amaz.Vector3f.add(Amaz.Vector3f.mul(A1, (t2 - t)/(t2 - t0)), Amaz.Vector3f.mul(A2, (t - t0)/(t2 - t0)));
-    const B2  = Amaz.Vector3f.add(Amaz.Vector3f.mul(A2, (t3 - t)/(t3 - t1)), Amaz.Vector3f.mul(A3, (t - t1)/(t3 - t1)));
+    // const A1  = APJS.Vector3f.add(APJS.Vector3f.mul(this.p0, (t1 - t)/(t1 - t0)), APJS.Vector3f.mul(this.p1, (t - t0)/(t1 - t0)));
+    // const A2  = APJS.Vector3f.add(APJS.Vector3f.mul(this.p1, (t2 - t)/(t2 - t1)), APJS.Vector3f.mul(this.p2, (t - t1)/(t2 - t1)));
+    // const A3  = APJS.Vector3f.add(APJS.Vector3f.mul(this.p2, (t3 - t)/(t3 - t2)), APJS.Vector3f.mul(this.p3, (t - t2)/(t3 - t2)));
+    // const B1  = APJS.Vector3f.add(APJS.Vector3f.mul(A1, (t2 - t)/(t2 - t0)), APJS.Vector3f.mul(A2, (t - t0)/(t2 - t0)));
+    // const B2  = APJS.Vector3f.add(APJS.Vector3f.mul(A2, (t3 - t)/(t3 - t1)), APJS.Vector3f.mul(A3, (t - t1)/(t3 - t1)));
 
-    const dA1  = Amaz.Vector3f.mul(Amaz.Vector3f.sub(this.p1, this.p0), 1.0 / (t1 - t0))
-    const dA2  = Amaz.Vector3f.mul(Amaz.Vector3f.sub(this.p2, this.p1), 1.0 / (t2 - t1))
-    const dA3  = Amaz.Vector3f.mul(Amaz.Vector3f.sub(this.p3, this.p2), 1.0 / (t3 - t2))
-    const dB1  = Amaz.Vector3f.add(Amaz.Vector3f.add(Amaz.Vector3f.mul(Amaz.Vector3f.sub(A2, A1), 1.0 /(t2 - t0)), Amaz.Vector3f.mul(dA1, (t2 - t)/(t2 - t0))), Amaz.Vector3f.mul(dA2, (t - t0)/(t2 - t0)));
-    const dB2  = Amaz.Vector3f.add(Amaz.Vector3f.add(Amaz.Vector3f.mul(Amaz.Vector3f.sub(A3, A2), 1.0 /(t3 - t1)), Amaz.Vector3f.mul(dA2, (t3 - t)/(t3 - t1))), Amaz.Vector3f.mul(dA3, (t - t1)/(t3 - t1)));
-    const dC  = Amaz.Vector3f.add(Amaz.Vector3f.add(Amaz.Vector3f.mul(Amaz.Vector3f.sub(B2, B1), 1.0/(t2 - t1)), Amaz.Vector3f.mul(dB1, (t2 - t)/(t2 - t1))), Amaz.Vector3f.mul(dB2, (t - t1)/(t2 - t1)));
+    // const dA1  = APJS.Vector3f.mul(APJS.Vector3f.sub(this.p1, this.p0), 1.0 / (t1 - t0))
+    // const dA2  = APJS.Vector3f.mul(APJS.Vector3f.sub(this.p2, this.p1), 1.0 / (t2 - t1))
+    // const dA3  = APJS.Vector3f.mul(APJS.Vector3f.sub(this.p3, this.p2), 1.0 / (t3 - t2))
+    // const dB1  = APJS.Vector3f.add(APJS.Vector3f.add(APJS.Vector3f.mul(APJS.Vector3f.sub(A2, A1), 1.0 /(t2 - t0)), APJS.Vector3f.mul(dA1, (t2 - t)/(t2 - t0))), APJS.Vector3f.mul(dA2, (t - t0)/(t2 - t0)));
+    // const dB2  = APJS.Vector3f.add(APJS.Vector3f.add(APJS.Vector3f.mul(APJS.Vector3f.sub(A3, A2), 1.0 /(t3 - t1)), APJS.Vector3f.mul(dA2, (t3 - t)/(t3 - t1))), APJS.Vector3f.mul(dA3, (t - t1)/(t3 - t1)));
+    // const dC  = APJS.Vector3f.add(APJS.Vector3f.add(APJS.Vector3f.mul(APJS.Vector3f.sub(B2, B1), 1.0/(t2 - t1)), APJS.Vector3f.mul(dB1, (t2 - t)/(t2 - t1))), APJS.Vector3f.mul(dB2, (t - t1)/(t2 - t1)));
 
+
+    const A1  = this.p0.clone().multiply((t1 - t)/(t1 - t0)).add(this.p1.clone().multiply(t - t0)/(t1 - t0));
+    const A2  = this.p1.clone().multiply((t2 - t)/(t2 - t1)).add(this.p2.clone().multiply((t - t1)/(t2 - t1)));
+    const A3  = this.p2.clone().multiply((t3 - t)/(t3 - t2)).add(this.p3.clone().multiply((t - t2)/(t3 - t2)));
+    const B1  = A1.clone().multiply((t2 - t)/(t2 - t0)).add(A2.clone().multiply((t - t0)/(t2 - t0)));
+    const B2  = A2.clone().multiply((t3 - t)/(t3 - t1)).add(A3.clone().multiply((t - t1)/(t3 - t1)));
+
+    const dA1  = this.p1.clone().subtract(this.p0).multiply(1.0 / (t1 - t0));
+    const dA2  = this.p2.clone().subtract(this.p1).multiply(1.0 / (t2 - t1));
+    const dA3  = this.p3.clone().subtract(this.p2).multiply(1.0 / (t3 - t2));
+    const dB1  = A2.clone().subtract(A1).multiply(1.0 /(t2 - t0)).add(dA1.clone().multiply((t2 - t)/(t2 - t0))).add(dA2.clone().multiply((t - t0)/(t2 - t0)));
+    const dB2  = A3.clone().subtract(A2).multiply(1.0 /(t3 - t1)).add(dA1.clone().multiply((t3 - t)/(t3 - t1))).add(dA3.clone().multiply((t - t1)/(t3 - t1)));
+    const dC   = B2.clone().subtract(B1).multiply(1.0 /(t2 - t1)).add(dA1.clone().multiply((t2 - t)/(t2 - t1))).add(dB2.clone().multiply((t - t1)/(t2 - t1)));
     return dC;
   }
 }
 
 function screenToNormalize(screenVec3){
-  const normalizePt = new Amaz.Vector3f((screenVec3.x * 2.0 - 1.0) * screenWidth/screenHeight, screenVec3.y * 2.0 - 1.0, 0.0);
+  const normalizePt = new APJS.Vector3f((screenVec3.x * 2.0 - 1.0) * screenWidth/screenHeight, screenVec3.y * 2.0 - 1.0, 0.0);
   return normalizePt;
 }
 
 class CGBrush extends BaseNode {
   constructor() {
     super();
-    this.blitCB = new Amaz.CommandBuffer();
-    this.brushCB = new Amaz.CommandBuffer();
-    this.clearCB = new Amaz.CommandBuffer();
+    this.blitCB = new APJS.CommandBuffer();
+    this.brushCB = new APJS.CommandBuffer();
+    this.clearCB = new APJS.CommandBuffer();
     this.inputTexture = null;
     this.cameraList = [];
     this.cameraCount = 0;
@@ -188,7 +208,7 @@ class CGBrush extends BaseNode {
     this.time = 0.0;
     this.lastPosition = null;
     this.controlPts = [];
-    this.lastQuat = new Amaz.Quaternionf();
+    this.lastQuat = new APJS.Quaternionf();
     this.state = drawingState.IDLE;
     this.time = 0.0;
     this.counter = 0;
@@ -197,43 +217,43 @@ class CGBrush extends BaseNode {
   }
 
   _createMaterialWithShaderMap(shaders) {
-    const material = new Amaz.Material();
-    const xShader = new Amaz.XShader();
-    const pass = new Amaz.Pass();
+    const material = new APJS.Material();
+    const xShader = new APJS.XShader();
+    const pass = new APJS.Pass();
 
     pass.shaders = shaders;
-    const sematicsMap = new Amaz.Map();
-    sematicsMap.insert('attPosition', Amaz.VertexAttribType.POSITION);
-    sematicsMap.insert('attTexcoord0', Amaz.VertexAttribType.TEXCOORD0);
+    const sematicsMap = new APJS.Map();
+    sematicsMap.insert('attPosition', APJS.VertexAttribType.POSITION);
+    sematicsMap.insert('attTexcoord0', APJS.VertexAttribType.TEXCOORD0);
 
     pass.semantics = sematicsMap;
 
     //render state
-    const renderState = new Amaz.RenderState();
+    const renderState = new APJS.RenderState();
 
     //depth state
-    const depthStencilState = new Amaz.DepthStencilState();
+    const depthStencilState = new APJS.DepthStencilState();
     depthStencilState.depthTestEnable = false;
     depthStencilState.depthWriteEnable = false;
     renderState.depthstencil = depthStencilState;
 
     // Rect
-    renderState.viewport = new Amaz.ViewportState();
-    renderState.viewport.rect = new Amaz.Rect(0, 0, 1, 1); // value int percentage by default
+    renderState.viewport = new APJS.ViewportState();
+    renderState.viewport.rect = new APJS.Rect(0, 0, 1, 1); // value int percentage by default
     renderState.viewport.minDepth = 0;
     renderState.viewport.maxDepth = 1;
 
     // add color blend
-    let colorBlendState = new Amaz.ColorBlendState()
-    const attVec = new Amaz.Vector()
-    const attState = new Amaz.ColorBlendAttachmentState()
+    let colorBlendState = new APJS.ColorBlendState()
+    const attVec = new APJS.Vector()
+    const attState = new APJS.ColorBlendAttachmentState()
     attState.blendEnable = true;
-    attState.srcColorBlendFactor = Amaz.BlendFactor.SRC_ALPHA
-    attState.dstColorBlendFactor = Amaz.BlendFactor.ONE_MINUS_SRC_ALPHA
-    attState.srcAlphaBlendFactor = Amaz.BlendFactor.SRC_ALPHA
-    attState.dstAlphaBlendFactor = Amaz.BlendFactor.ONE_MINUS_SRC_ALPHA
-    attState.ColorBlendOp = Amaz.BlendOp.ADD
-    attState.AlphaBlendOp = Amaz.BlendOp.MAX
+    attState.srcColorBlendFactor = APJS.BlendFactor.SRC_ALPHA
+    attState.dstColorBlendFactor = APJS.BlendFactor.ONE_MINUS_SRC_ALPHA
+    attState.srcAlphaBlendFactor = APJS.BlendFactor.SRC_ALPHA
+    attState.dstAlphaBlendFactor = APJS.BlendFactor.ONE_MINUS_SRC_ALPHA
+    attState.ColorBlendOp = APJS.BlendOp.ADD
+    attState.AlphaBlendOp = APJS.BlendOp.MAX
     
     attVec.pushBack(attState)
     colorBlendState.attachments = attVec;
@@ -259,11 +279,8 @@ class CGBrush extends BaseNode {
     const halfHeight = orthoScale;
     const halfWidth = aspectRatio * halfHeight;
 
-    const orthoProjMat = new Amaz.Matrix4x4f();
-    orthoProjMat.setOrtho(-halfWidth, halfWidth, -halfHeight, halfHeight, zNear, zFar);
-
-    const projMat = new Amaz.Matrix4x4f();
-    projMat.setPerspective(60.0, screenWidth/screenHeight, 0.1, 100.0);
+    const orthoProjMat = APJS.Matrix4x4f.orthographic(-halfWidth, halfWidth, -halfHeight, halfHeight, zNear, zFar);
+    const projMat = APJS.Matrix4x4f.perspective(60.0, screenWidth/screenHeight, 0.1, 100.0);
     return orthoProjMat;
   }
 
@@ -273,30 +290,31 @@ class CGBrush extends BaseNode {
     this.clearCB.clearAll();
 
     this.clearCB.setRenderTexture(this.brushTexture);
-    this.clearCB.clearRenderTexture(true, true, new Amaz.Color(0.0, 0.0, 0.0, 0.0), 0);
+    this.clearCB.clearRenderTexture(true, true, new APJS.Color(0.0, 0.0, 0.0, 0.0), 0);
 
-    const clearTex = new Amaz.Texture2D();
-    clearTex.filterMin = Amaz.FilterMode.LINEAR;
-    clearTex.filterMag = Amaz.FilterMode.LINEAR;
-    clearTex.width = screenWidth;
-    clearTex.height = screenHeight;
-    clearTex.depth = 1;
-    clearTex.internalFormat = Amaz.InternalFormat.RGBA8
-    clearTex.dataType = Amaz.DataType.U8norm
-    clearTex.filterMipmap = Amaz.FilterMipmapMode.FilterMode_NONE
+    const clearTexDesc = new APJS.TextureCreateDesc();
+    clearTexDesc.filterMin = APJS.FilterMode.LINEAR;
+    clearTexDesc.filterMag = APJS.FilterMode.LINEAR;
+    clearTexDesc.width = screenWidth;
+    clearTexDesc.height = screenHeight;
+    clearTexDesc.depth = 1;
+    clearTexDesc.internalFormat = APJS.InternalFormat.RGBA8
+    clearTexDesc.dataType = APJS.DataType.U8norm
+    clearTexDesc.filterMipmap = APJS.FilterMipmapMode.FilterMode_NONE
+    const clearTex = APJS.TextureUtils.createPlaceHolderTexture(clearTexDesc);
 
     if(this.clearRT === null){
       this.clearRT = createRT(screenWidth, screenHeight);
     }
     
     this.blitCB.setRenderTexture(this.customMatBlitTexture);
-    this.blitCB.clearRenderTexture(true, true, new Amaz.Color(0.0, 0.0, 0.0, 0.0), 0);
+    this.blitCB.clearRenderTexture(true, true, new APJS.Color(0.0, 0.0, 0.0, 0.0), 0);
     this.brushCB.setRenderTexture(this.clearRT);
-    this.brushCB.clearRenderTexture(true, true, new Amaz.Color(0.0, 0.0, 0.0, 0.0), 0);
+    this.brushCB.clearRenderTexture(true, true, new APJS.Color(0.0, 0.0, 0.0, 0.0), 0);
     this.clearCB.blit(this.clearRT, this.brushTexture);
-    this.sys.scene.commitCommandBuffer(this.brushCB);
-    this.sys.scene.commitCommandBuffer(this.blitCB);
-    this.sys.scene.commitCommandBuffer(this.clearCB);
+    this.sys.APJScene.commitCommandBuffer(this.brushCB);
+    this.sys.APJScene.commitCommandBuffer(this.blitCB);
+    this.sys.APJScene.commitCommandBuffer(this.clearCB);
   }
 
 
@@ -305,7 +323,7 @@ class CGBrush extends BaseNode {
       this.customMatBlitTexture = createRT(screenHeight, screenHeight);
     }
 
-    const identityMat = new Amaz.Matrix4x4f();
+    const identityMat = new APJS.Matrix4x4f();
     identityMat.setIdentity();
 
     this.blitCB.clearAll();
@@ -325,18 +343,18 @@ class CGBrush extends BaseNode {
       this.brushTexture = createRT(screenWidth, screenHeight);
     }
 
-    const viewMatrix = lookAt(new Amaz.Vector3f(0.0, 0.0, 40.0), new Amaz.Vector3f(0.0,0.0,0.0),  new Amaz.Vector3f(0.0,1.0,0.0));
-    const transformMatrix = new Amaz.Matrix4x4f();
+    const viewMatrix = lookAt(new APJS.Vector3f(0.0, 0.0, 40.0), new APJS.Vector3f(0.0,0.0,0.0),  new APJS.Vector3f(0.0,1.0,0.0));
+    const transformMatrix = new APJS.Matrix4x4f();
     transformMatrix.setIdentity();
 
     // Do not render first frame; only for binding
-    transformMatrix.setScale(new Amaz.Vector3f(0.0,0.0,0.0));
+    transformMatrix.setScale(new APJS.Vector3f(0.0,0.0,0.0));
 
     this.brushCB.clearAll();
     this.brushCB.setRenderTexture(this.brushTexture);
     this.brushCB.setViewMatrix(viewMatrix);
     this.brushCB.setProjectionMatrix(this.projMat);
-    this.brushMaterial.setVec4('u_BrushColor', new Amaz.Vector4f(1.0,0.5,1.0,1.0));
+    this.brushMaterial.setVec4('u_BrushColor', new APJS.Vector4f(1.0,0.5,1.0,1.0));
     this.brushMaterial.setTex('u_BrushTexture', tex);
 
     this.brushCB.drawMesh(this.quadMesh, transformMatrix , this.brushMaterial, 0,0, null);
@@ -379,9 +397,9 @@ class CGBrush extends BaseNode {
     }
 
 
-    const quat = new Amaz.Quaternionf();
-    const transformMatrix = new Amaz.Matrix4x4f();
-    const viewMatrix = lookAt(new Amaz.Vector3f(0.0, 0.0, 40.0), new Amaz.Vector3f(0.0,0.0,0.0),  new Amaz.Vector3f(0.0,1.0,0.0));
+    const quat = new APJS.Quaternionf();
+    const transformMatrix = new APJS.Matrix4x4f();
+    const viewMatrix = lookAt(new APJS.Vector3f(0.0, 0.0, 40.0), new APJS.Vector3f(0.0,0.0,0.0),  new APJS.Vector3f(0.0,1.0,0.0));
     transformMatrix.setIdentity();
 
     this.blitCB.clearAll();
@@ -399,11 +417,11 @@ class CGBrush extends BaseNode {
         const catmullRomPos = this.catmullRomCurve.calPosition(t);
         const catmullRomDerivative = this.catmullRomCurve.calDerivative(t);
   
-        let quatCurrent = new Amaz.Quaternionf();
+        let quatCurrent = new APJS.Quaternionf();
         if(rotateStroke){
-          quatCurrent = quat.lookRotationToQuaternion(new Amaz.Vector3f(0,0,1.0), catmullRomDerivative);
+          quatCurrent = APJS.Quaternionf.lookAt(new APJS.Vector3f(0,0,1.0), catmullRomDerivative);
         }
-        transformMatrix.setTRS(catmullRomPos, quatCurrent, new Amaz.Vector3f(scale,scale,scale));
+        transformMatrix.compose(catmullRomPos, quatCurrent, new APJS.Vector3f(scale,scale,scale));
         
         this.brushMaterial.setTex('u_BrushTexture', this.customMatBlitTexture);
         this.brushCB.drawMesh(this.quadMesh, transformMatrix , this.brushMaterial, 0,0, null);
@@ -411,12 +429,12 @@ class CGBrush extends BaseNode {
     }
     else{
       if(this.indexCounter === 0){
-        let quatCurrent = new Amaz.Quaternionf();
-        const direction = screenToNormalize(pos).sub(screenToNormalize(this.lastPosition));
+        let quatCurrent = new APJS.Quaternionf();
+        const direction = screenToNormalize(pos).subtract(screenToNormalize(this.lastPosition));
         if(rotateStroke){
-          quatCurrent = quat.lookRotationToQuaternion(new Amaz.Vector3f(0,0,1.0), direction);
+          quatCurrent = APJS.Quaternionf.lookAt(new APJS.Vector3f(0,0,1.0), direction);
         }
-        transformMatrix.setTRS(screenToNormalize(pos), quatCurrent, new Amaz.Vector3f(scale,scale,scale));
+        transformMatrix.compose(screenToNormalize(pos), quatCurrent, new APJS.Vector3f(scale,scale,scale));
         this.brushMaterial.setTex('u_BrushTexture', this.customMatBlitTexture);
         this.brushCB.drawMesh(this.quadMesh, transformMatrix , this.brushMaterial, 0,0, null);
       }
@@ -426,8 +444,8 @@ class CGBrush extends BaseNode {
       }
     }
 
-    this.sys.scene.commitCommandBuffer(this.blitCB);
-    this.sys.scene.commitCommandBuffer(this.brushCB);
+    this.sys.APJScene.commitCommandBuffer(this.blitCB);
+    this.sys.APJScene.commitCommandBuffer(this.brushCB);
 
     this.lastPosition = pos;
   }
@@ -496,7 +514,7 @@ class CGBrush extends BaseNode {
     }
     
     // 2.1: Initialize Brush Material
-    const brushShaders = new Amaz.Map();
+    const brushShaders = new APJS.Map();
     addShaderToMap(brushShaders, 'gles2', BRUSH_OPENGLES_VS, BRUSH_OPENGLES_FS);
     addShaderToMap(brushShaders, 'metal', BRUSH_METAL_VS, BRUSH_METAL_FS);
     this.brushMaterial = this._createMaterialWithShaderMap(brushShaders);

@@ -1,4 +1,4 @@
-const Amaz = effect.Amaz;
+const APJS = require('./amazingpro');
 const {BaseNode} = require('./BaseNode');
 
 class CGSetComponentPropertyValue extends BaseNode {
@@ -36,7 +36,7 @@ class CGSetComponentPropertyValue extends BaseNode {
 
     let inputValue = this.inputs[2]();
     if (inputValue === null) {
-      if (this.valueType === 'Mesh' || this.valueType === 'Material' || this.valueType === 'Texture2D') {
+      if (this.valueType === 'Mesh' || this.valueType === 'Material' || this.valueType === 'Texture2D' || this.valueType === 'Texture') {
         inputValue = this.resource;
       }
     }

@@ -35,6 +35,7 @@
 			"displayTypeKey": "graph_type_number"
 		}
 	],
+	"scriptAPIVersion": "1.0.0",
 	"js": "CGAngleBetween.js",
 	"category": "Transform",
 	"supportedValueTypes": [

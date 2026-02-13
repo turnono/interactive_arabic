@@ -7,7 +7,7 @@
  */
 
 const {BaseNode} = require('./BaseNode');
-const Amaz = effect.Amaz;
+const APJS = require('./amazingpro');
 
 class CGDivide extends BaseNode {
   constructor() {
@@ -37,13 +37,13 @@ class CGDivide extends BaseNode {
     if (curType === 'Int' || curType === 'Double') {
       return op1 / op2;
     } else if (curType === 'Vector2f') {
-      return new Amaz.Vector2f(op1.x / op2.x, op1.y / op2.y);
+      return new APJS.Vector2f(op1.x / op2.x, op1.y / op2.y);
     } else if (curType === 'Vector3f') {
-      return new Amaz.Vector3f(op1.x / op2.x, op1.y / op2.y, op1.z / op2.z);
+      return new APJS.Vector3f(op1.x / op2.x, op1.y / op2.y, op1.z / op2.z);
     } else if (curType === 'Vector4f') {
-      return new Amaz.Vector4f(op1.x / op2.x, op1.y / op2.y, op1.z / op2.z, op1.w / op2.w);
+      return new APJS.Vector4f(op1.x / op2.x, op1.y / op2.y, op1.z / op2.z, op1.w / op2.w);
     } else if (curType === 'Color') {
-      return new Amaz.Color(op1.r / op2.r, op1.g / op2.g, op1.b / op2.b, op1.a / op2.a);
+      return new APJS.Color(op1.r / op2.r, op1.g / op2.g, op1.b / op2.b, op1.a / op2.a);
     }
   }
 }

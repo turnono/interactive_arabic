@@ -1,5 +1,5 @@
 'use strict';
-const Amaz = effect.Amaz;
+const APJS = require('./amazingpro');
 const {BaseNode} = require('./BaseNode');
 const JSAssetRuntimeManager = require('./JSAssetRuntimeManager');
 class CGUserUploadedMediaInfo extends BaseNode {

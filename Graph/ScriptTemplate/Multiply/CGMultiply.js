@@ -7,7 +7,7 @@
  */
 
 const {BaseNode} = require('./BaseNode');
-const Amaz = effect.Amaz;
+const APJS = require('./amazingpro');
 
 class CGMultiply extends BaseNode {
   constructor() {
@@ -51,7 +51,7 @@ class CGMultiply extends BaseNode {
         resultX *= op.x;
         resultY *= op.y;
       }
-      return new Amaz.Vector2f(resultX, resultY);
+      return new APJS.Vector2f(resultX, resultY);
     } else if (curType == 'Vector3f') {
       let resultX = 1.0;
       let resultY = 1.0;
@@ -67,7 +67,7 @@ class CGMultiply extends BaseNode {
         resultY *= op.y;
         resultZ *= op.z;
       }
-      return new Amaz.Vector3f(resultX, resultY, resultZ);
+      return new APJS.Vector3f(resultX, resultY, resultZ);
     } else if (curType == 'Vector4f') {
       let resultX = 1.0;
       let resultY = 1.0;
@@ -85,7 +85,7 @@ class CGMultiply extends BaseNode {
         resultZ *= op.z;
         resultW *= op.w;
       }
-      return new Amaz.Vector4f(resultX, resultY, resultZ, resultW);
+      return new APJS.Vector4f(resultX, resultY, resultZ, resultW);
     } else if (curType == 'Color') {
       let result = 1.0;
 

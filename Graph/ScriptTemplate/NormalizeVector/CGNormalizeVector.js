@@ -7,7 +7,7 @@
  */
 
 const {BaseNode} = require('./BaseNode');
-const Amaz = effect.Amaz;
+const APJS = require('./amazingpro');
 
 class CGNormalizeVector extends BaseNode {
   constructor() {
@@ -28,7 +28,7 @@ class CGNormalizeVector extends BaseNode {
       let magnitude = Math.sqrt(
         Math.pow(vector.x, 2) + Math.pow(vector.y, 2) + Math.pow(vector.z, 2) + Math.pow(vector.w, 2)
       );
-      return new Amaz.Vector4f(vector.x / magnitude, vector.y / magnitude, vector.z / magnitude, vector.w / magnitude);
+      return new APJS.Vector4f(vector.x / magnitude, vector.y / magnitude, vector.z / magnitude, vector.w / magnitude);
     }
   }
 }

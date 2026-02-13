@@ -31,6 +31,7 @@
 			"displayTypeKey": "graph_type_vec2"
 		}
 	],
+	"scriptAPIVersion": "1.0.0",
 	"js": "CGScreenPan.js",
 	"version": "2.0.0",
 	"amazingVersion": "10.40.0",
@@ -56,5 +57,7 @@
 	"nameKey": "graph_screen_pan_name",
 	"categoryKey": "graph_category_event",
 	"descriptionKey": "graph_screen_pan_description",
-	"contentFeature": ["ScreenPan"]
+	"contentFeature": [
+		"ScreenPan"
+	]
 }

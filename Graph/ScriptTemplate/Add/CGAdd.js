@@ -7,7 +7,7 @@
  */
 
 const {BaseNode} = require('./BaseNode');
-const Amaz = effect.Amaz;
+const APJS = require('./amazingpro');
 
 class CGAdd extends BaseNode {
   constructor() {
@@ -43,7 +43,7 @@ class CGAdd extends BaseNode {
         resultX += op.x;
         resultY += op.y;
       }
-      return new Amaz.Vector2f(resultX, resultY);
+      return new APJS.Vector2f(resultX, resultY);
     } else if (curType == 'Vector3f') {
       let resultX = 0.0;
       let resultY = 0.0;
@@ -59,7 +59,7 @@ class CGAdd extends BaseNode {
         resultY += op.y;
         resultZ += op.z;
       }
-      return new Amaz.Vector3f(resultX, resultY, resultZ);
+      return new APJS.Vector3f(resultX, resultY, resultZ);
     } else if (curType == 'Vector4f') {
       let resultX = 0.0;
       let resultY = 0.0;
@@ -77,7 +77,7 @@ class CGAdd extends BaseNode {
         resultZ += op.z;
         resultW += op.w;
       }
-      return new Amaz.Vector4f(resultX, resultY, resultZ, resultW);
+      return new APJS.Vector4f(resultX, resultY, resultZ, resultW);
     }
   }
 }

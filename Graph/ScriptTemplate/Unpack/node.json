@@ -115,6 +115,7 @@
 			"displayTypeKey": "graph_type_number"
 		}
 	],
+	"scriptAPIVersion": "1.0.0",
 	"js": "CGUnpackNode.js",
 	"lua": "CGUnpackNode.lua",
 	"luaFuncName": "CGUnpackNode",

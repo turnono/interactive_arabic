@@ -7,7 +7,7 @@
  */
 
 const {BaseNode} = require('./BaseNode');
-const Amaz = effect.Amaz;
+const APJS = require('./amazingpro');
 
 class CGSubtract extends BaseNode {
   constructor() {
@@ -27,11 +27,11 @@ class CGSubtract extends BaseNode {
     let v2 = this.inputs[1]();
     if (v1 !== undefined && v2 !== undefined) {
       if (this.valueType === 'Vector2f') {
-        return new Amaz.Vector2f(v1.x - v2.x, v1.y - v2.y);
+        return new APJS.Vector2f(v1.x - v2.x, v1.y - v2.y);
       } else if (this.valueType === 'Vector3f') {
-        return new Amaz.Vector3f(v1.x - v2.x, v1.y - v2.y, v1.z - v2.z);
+        return new APJS.Vector3f(v1.x - v2.x, v1.y - v2.y, v1.z - v2.z);
       } else if (this.valueType === 'Vector4f') {
-        return new Amaz.Vector4f(v1.x - v2.x, v1.y - v2.y, v1.z - v2.z, v1.w - v2.w);
+        return new APJS.Vector4f(v1.x - v2.x, v1.y - v2.y, v1.z - v2.z, v1.w - v2.w);
       } else {
         return v1 - v2;
       }

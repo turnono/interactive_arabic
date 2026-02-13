@@ -7,7 +7,7 @@
  */
 
 const {BaseNode} = require('./BaseNode');
-const Amaz = effect.Amaz;
+const APJS = require('./amazingpro');
 
 class CGRecordVideo extends BaseNode {
   constructor() {
@@ -36,13 +36,13 @@ class CGRecordVideo extends BaseNode {
   }
 
   onEvent(sys, event) {
-    if (event.type === Amaz.AppEventType.COMPAT_BEF) {
+    if (event.type === APJS.AppEventType.COMPAT_BEF) {
       let eventResult = event.args.get(0);
-      if (eventResult === Amaz.BEFEventType.BET_RECORD_VIDEO) {
+      if (eventResult === APJS.BEFEventType.BET_RECORD_VIDEO) {
         let eventResult1 = event.args.get(1);
 
         // Video Start Event
-        if (eventResult1 === Amaz.BEF_RECODE_VEDIO_EVENT_CODE.RECODE_VEDIO_START) {
+        if (eventResult1 === APJS.BEF_RECODE_VEDIO_EVENT_CODE.RECODE_VEDIO_START) {
           if (event.args.size() >= 3)
           {
               let eventResult2 = event.args.get(2);
@@ -54,7 +54,7 @@ class CGRecordVideo extends BaseNode {
         }
 
         // Video End Event
-        else if (eventResult1 === Amaz.BEF_RECODE_VEDIO_EVENT_CODE.RECODE_VEDIO_END) {
+        else if (eventResult1 === APJS.BEF_RECODE_VEDIO_EVENT_CODE.RECODE_VEDIO_END) {
           this._onRecordingEnded();
         }
       }

@@ -1,6 +1,6 @@
 const {BaseNode} = require('./BaseNode');
 const {getDefaultValue} = require('./GraphHelper');
-const Amaz = effect.Amaz;
+const APJS = require('./amazingpro');
 
 class CGGetItemFromArray extends BaseNode {
   constructor() {

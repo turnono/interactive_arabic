@@ -92,6 +92,7 @@
 		"EHD",
 		"EHI"
 	],
+	"scriptAPIVersion": "1.0.0",
 	"js": "CGSetScreenTransform.js",
 	"nameKey": "graph_set_screen_transform_name",
 	"categoryKey": "graph_category_utility",

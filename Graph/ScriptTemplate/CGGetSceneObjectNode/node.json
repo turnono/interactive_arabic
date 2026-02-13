@@ -24,6 +24,7 @@
 			"displayTypeKey": "graph_type_sceneobject"
 		}
 	],
+	"scriptAPIVersion": "1.0.0",
 	"js": "CGGetSceneObjectNode.js",
 	"version": "1.0.0",
 	"builtinClass": "AMGObjectNode",

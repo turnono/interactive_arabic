@@ -5,11 +5,12 @@
 		{
 			"name": "User Media Texture",
 			"description": "Input a Render Texture representing the user-uploaded media.",
-			"type": "RenderTexture",
-			"displayType": "Render Texture",
+			"type": "Texture",
+			"providerType": "RenderTextureProvider",
+			"displayType": "Texture",
 			"nameKey": "graph_user_media_info_input_usermediatexture",
 			"descriptionKey": "graph_user_media_info_input_usermediatexture_description",
-			"displayTypeKey": "graph_type_rendertexture"
+			"displayTypeKey": "graph_type_texture"
 		}
 	],
 	"outputs": [
@@ -49,6 +50,7 @@
 		"EHD",
 		"EHI"
 	],
+	"scriptAPIVersion": "1.0.0",
 	"js": "CGUserUploadedMediaInfo.js",
 	"nameKey": "graph_user_media_info_name",
 	"categoryKey": "graph_category_utility",

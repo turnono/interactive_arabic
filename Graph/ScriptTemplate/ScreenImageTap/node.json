@@ -32,6 +32,7 @@
 			"displayTypeKey": "graph_type_boolean"
 		}
 	],
+	"scriptAPIVersion": "1.0.0",
 	"js": "CGScreenImageTap.js",
 	"version": "1.0.0",
 	"category": "Utility",

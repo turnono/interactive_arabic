@@ -1,6 +1,6 @@
 {
   "name": "Untitled",
-  "lastModified": "Tue, 18 Jun 2024 22:04:57 GMT",
+  "lastModified": "Thu, 20 Jun 2024 20:23:56 GMT",
   "version": "4.2.5",
   "internalVersion": "3.7.0",
   "toolName": "Effect House",
@@ -77,9 +77,9 @@
     "62": "Layer 62",
     "63": "Layer 63"
   },
-  "durationToCreate": 3644910063,
-  "durationCreation": 2144965537,
-  "durationBackground": 1885959698,
+  "durationToCreate": 3811649267,
+  "durationCreation": 2311704741,
+  "durationBackground": 2052375335,
   "autoResetEffect": false,
   "selectedIdList": [
     "amz:Guid(16522382881305522032, 14304251646326686857)"
@@ -92,7 +92,7 @@
   "activityEnterFrom": "homepage",
   "activityType": "normal",
   "perfTested": true,
-  "lastSceneView": 0,
+  "lastSceneView": 1,
   "LastVideoInput": {
     "type": "preview_hand",
     "name": "preview_hand_fist_tteh",
